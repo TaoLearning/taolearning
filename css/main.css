@@ -4262,7 +4262,7 @@ li.menu-item-has-children:hover > .mega-menu{
 	-o-transform: translateY(0);
 	transform: translateY(0);
 }
-.tg-bgaboutus{background: url('../images/allhome/3/bgimg-01.png') no-repeat 100% 80px;}
+.tg-bgaboutus{background: url('../images/showcase.jpg') no-repeat 100% 80px;}
 .tg-aboutus{
 	width: 100%;
 	float: left;
@@ -4450,7 +4450,7 @@ li.menu-item-has-children:hover > .mega-menu{
 .tg-whitecontent .tg-whatwedo .tg-title h3 span{color: #fff;}
 .tg-whitecontent .tg-sectiontitle:before,
 .tg-whitecontent .tg-list.tg-liststyledash li:before{background: #fff;}
-.tg-bgaboutusvtwo{background: url('../images/allhome/4/bgimg-01.png') no-repeat 100% 80px;}
+.tg-bgaboutusvtwo{background: url('../images/showcase.jpg') no-repeat 100% 80px;}
 .tg-themefeaturesvthree{
 	padding: 0;
 	margin: -35px 0;
