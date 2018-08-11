@@ -1316,7 +1316,7 @@ li.menu-item-has-children:hover > .mega-menu{
 	position: relative;
 }
 .tg-fixedheader .tg-logo a img{
-	top: 0;
+	top: 10px;
 	left: 0;
 	z-index: 1;
 	position: absolute;
