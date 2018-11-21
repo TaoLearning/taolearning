@@ -1,733 +1,891 @@
-<!doctype html>
-<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
 <head>
-	<meta charset="utf-8">
-	<meta name="referrer" content="origin">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tao Learning Center</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/scrollbar.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link rel="stylesheet" href="css/transitions.css">
-	<link rel="stylesheet" href="css/royalslider.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/color.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-<body class="tg-home tg-homethree">
-	<!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="TaoFruit" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<!-- Business Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/business/business.css" type="text/css" />
+	<link rel="stylesheet" href="demos/business/css/fonts.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
-	<!--************************************
-			Loader Start
-	*************************************-->
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-	</div>
-	<!--************************************
-			Loader End
-	*************************************-->
-	<!--************************************
-			Full Page Search Start
-	*************************************-->
-	<div id="tg-search" class="tg-search">
-		<button type="button" class="tg-btnclose"><i class="icon-cross"></i></button>
-		<form>
-			<fieldset>
-				<div class="form-group">
-					<input type="search" name="search" class="form-control" value="" placeholder="Search...">
-					<button type="submit"><span class="icon-icons185"></span></button>
+
+	<!-- Theme Color
+	============================================= -->
+	<link rel="stylesheet" href="demos/business/css/colors.css" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Tao Campus</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header dark full-header" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<h1>Tao Campus</h1>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="not-dark">
+
+						<ul>
+							<li class="active"><a href="#"><div>About</div></a></li>
+							<li><a href="#"><div>Academics</div></a>
+								<ul>
+									<li><a href="#"><div>School of Business</div></a></li>
+									<li><a href="#"><div>School of Ministry</div></a></li>
+									<li><a href="#"><div>Liberal Arts</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Faith</div></a></li>
+							<li><a href="#"><div>Admissions</div></a></li>
+							<li><a href="#"><div>Services</div></a></li>
+						</ul>
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div><!-- #top-search end -->
+
+					</nav><!-- #primary-menu end -->
+
 				</div>
-			</fieldset>
-		</form>
-	</div>
-	<!--************************************
-			Full Page Search Start
-	*************************************-->
-	<!--************************************
-			Wrapper Start
-	*************************************-->
-	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
-		<!--************************************
-				Header Start
-		*************************************-->
-		<header id="tg-header" class="tg-header tg-headervthree tg-fixedheader">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="tg-headercontent">
-						<strong class="tg-logo">
-							<a href="https://taolearning.org">
-								<img src="//taolearning.org/images/logos/logo_white.png" alt="company logo here">
-								<img src="//taolearning.org/images/logos/logo_black.png" alt="company logo here">
-							</a>
-						</strong>
-						<nav id="tg-addnav" class="tg-addnav">
-							<ul>
-								<li><a href="#"><i class="icon-facebook-1"></i></a></li>
-							</ul>
-						</nav>
-						<nav id="tg-nav" class="tg-nav">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix" data-loop="true">
+
+			<div class="slider-parallax-inner">
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark" style="background-image: url('images/tao/aerial_campus.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 class="font-primary nott">Explore Programs.</h2>
+									<p class="t300 font-primary d-none d-sm-block">Self-paced curriculum with world class instruction.</p>
+									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Find Your Degree</a>
+								</div>
 							</div>
-							<div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
-								<ul>								
-									<li class="menu-item-has-children">
-											<a href="//taolearning.org/program">Join A Program</a>
-											<ul class="sub-menu">
-														<li><a href="//taolearning.org/program/internship.html">Internship</a></li>
-														<li><a href="//taolearning.org/program/career-training.html">Career Training</a></li>
-														<li><a href="//taolearning.org/program/leader-training.html">Team Leader Training</a></li>
-														<li><a href="//taolearning.org/program/executive-mentorship.html">Executive Mentorship</a></li>
-											</ul>
-									</li>
-									<li class="menu-item-has-children">
-											<a href="//taolearning.org/partner">Partner With Us</a>
-											<ul class="sub-menu">
-														<li><a href="//taolearning.org/partner/highschool.html">for High Schools</a></li>
-														<li><a href="//taolearning.org/partner/university.html">for Universities</a></li>
-														<li><a href="//taolearning.org/partner/startup.html">for Startups</a></li>
-														<li><a href="//taolearning.org/partner/corporation.html">for Corporations</a></li>
-											</ul>
-									</li>
-									<li class="menu-item-has-children">
-											<a href="//taolearning.org/aboutus.html">Read About Tao</a>
-											<ul class="sub-menu">
-														<li><a href="//taolearning.org/story">Intern Stories</a></li>
-														<li><a href="//taolearning.org/aboutus.html">Who We Are</a></li>
-														<li><a href="//taolearning.org/work">Our Work</a></li>
-														<li><a href="//taolearning.org/casestudy">Case Studies</a></li>
-											</ul>
-									</li>
-									<li><a href="//taolearning.org/contactus.html">Contact Us</a></li>
+						</div>
+						<div class="swiper-slide dark" style="background-image: url('images/tao/sidewalk_talk.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 class="font-primary">Your Story Matters</h2>
+									<p class="t300 font-primary d-none d-sm-block">Master the Art of Storytelling in Small & Intimate Classes</p>
+									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Admissions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide dark" style="background-image: url('images/tao/tree_meadow.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 class="font-primary">Study in Faith</h2>
+									<br>
+									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Live the Tao</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Slider Arrows
+					============================================= -->
+					<div class="slider-arrow-left" class="nobg"><i class="icon-line-arrow-left"></i></div>
+					<div class="slider-arrow-right" class="nobg"><i class="icon-line-arrow-right"></i></div>
+				</div>
+
+				<!-- Slider Mouse Icon
+				============================================= -->
+				<a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><img class="infinite animated fadeInDown" src="demos/business/images/mouse.svg" alt="" ></a>
+			</div>
+
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap nobottompadding" style="z-index: 1;">
+
+				<div class="container topmargin clearfix">
+
+					<!-- What We Do
+					============================================= -->
+					<div class="heading-block center noborder" data-heading="W">
+						<h3>What We Do</h3>
+					</div>
+					<div class="row clearfix">
+						<div class="center col-lg-8 offset-lg-2 bottommargin">
+							<h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">Canvas is a Powerful, Responsive &amp; Raw Multi-Purpose Multi-Page &amp; One-Page HTML5 Template. Build whatever you like with this Template. Be it <span class="t-rotate color">Business,Corporate,Medical,Travel,Construction,Real Estate,Media Agency,Portfolio,Restaurant,Magazine,Wedding,Christmas,Blog,App Showcase</span><br> just everything is possible with Canvas.</h3>
+						</div>
+
+						<div class="clear"></div>
+
+						<!-- Features colomns
+						============================================= -->
+						<div class="row clearfix">
+							<div class="col-lg-4 bottommargin-sm">
+								<div class="feature-box media-box fbox-bg">
+									<div class="fbox-media">
+										<a href="#"><img class="image_fade" src="demos/business/images/featured/1.jpg" alt="Featured Box Image"></a>
+									</div>
+									<div class="fbox-desc">
+										<h3 class="nott ls0 t600">Retina Ready Display<span class="subtitle font-secondary t300 ls0">Globally parallel task premium infomediaries</span></h3>
+										<a href="#" class="button-link noborder color">Read More</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 bottommargin-sm">
+								<div class="feature-box media-box fbox-bg">
+									<div class="fbox-media">
+										<a href="#"><img class="image_fade" src="demos/business/images/featured/2.jpg" alt="Featured Box Image"></a>
+									</div>
+									<div class="fbox-desc">
+										<h3 class="nott ls0 t600">Ultra Responsive Design<span class="subtitle font-secondary t300 ls0">Energistically visualize market-driven.</span></h3>
+										<a href="#" class="button-link noborder color">Read More</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 bottommargin-sm">
+								<div class="feature-box media-box fbox-bg">
+									<div class="fbox-media">
+										<a href="#"><img class="image_fade" src="demos/business/images/featured/3.jpg" alt="Featured Box Image"></a>
+									</div>
+									<div class="fbox-desc">
+										<h3 class="nott ls0 t600">1000+ HTML Pages Included<span class="subtitle font-secondary t300 ls0">Enthusiastically iterate enabled portals after.</span></h3>
+										<a href="#" class="button-link noborder color">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- How We Work
+				============================================= -->
+				<div class="section nobg clearfix">
+					<div class="container clearfix">
+						<div class="heading-block bottommargin-lg center noborder" data-heading="W">
+							<h3 class="nott ls0">How We Work</h3>
+						</div>
+					</div>
+
+					<!-- How We Work - Carousel
+					============================================= -->
+					<div id="oc-features" class="owl-carousel owl-carousel-full image-carousel carousel-widget">
+						<div class="oc-item">
+							<div class="row cleafix">
+								<div class="col-xl-8">
+									<img src="demos/business/images/carousel/1.jpg" alt="">
+								</div>
+								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
+									<h3>Great Team Work.</h3>
+									<p>Uniquely plagiarize dynamic convergence after equity invested experiences. Holisticly repurpose installed base infomediaries before web-enabled methods of empowerment.</p>
+									<a href="#" class="button-link">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="oc-item">
+							<div class="row cleafix">
+								<div class="col-xl-8">
+									<img src="demos/business/images/carousel/2.jpg" alt="">
+								</div>
+								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
+									<h3>Amazing Career Prospects.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor mollitia dignissimos, assumenda consequuntur consectetur! Laborum reiciendis, accusamus possimus et similique nisi obcaecati ex doloremque ea odio.</p>
+									<a href="#" class="button-link">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="oc-item">
+							<div class="row cleafix">
+								<div class="col-xl-8">
+									<img src="demos/business/images/carousel/3.jpg" alt="">
+								</div>
+								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
+									<h3>Beautiful Workspace.</h3>
+									<p>Dolor mollitia dignissimos, assumenda consequuntur consectetur! Laborum reiciendis, error explicabo consectetur adipisci, accusamus possimus et similique nisi obcaecati ex doloremque ea odio.</p>
+									<a href="#" class="button-link">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- About Us
+				============================================= -->
+				<div class="section nopadding notopmargin nobg clearfix" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
+					<div class="row common-height clearfix">
+						<div class="col-lg-6 center col-padding" style="background: url('demos/business/images/sections/1.jpg') center center no-repeat; background-size: cover;">
+							<div>&nbsp;</div>
+						</div>
+
+						<div class="col-lg-6 col-padding">
+							<div>
+								<div style="position: relative;">
+									<div class="heading-block noborder" data-heading="A">
+										<h3 class="nott ls0">About Us</h3>
+									</div>
+								</div>
+
+								<!-- About Us Featured Boxes
+								============================================= -->
+								<div class="row clearfix">
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-globe"></i></a>
+											</div>
+											<h3>All over the World</h3>
+											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+										</div>
+									</div>
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-gears"></i></a>
+											</div>
+											<h3>Fully Customisable</h3>
+											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+										</div>
+									</div>
+									<div class="col-lg-10 col-md-8">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-document"></i></a>
+											</div>
+											<h3>Helpfull Documentation</h3>
+											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Our Works
+				============================================= -->
+				<div class="section nobg nobottommargin clearfix">
+					<div class="container clearfix">
+						<div class="heading-block center noborder" data-heading="O">
+							<h3 class="nott ls0">Our Works</h3>
+						</div>
+
+						<!-- Portfolio Filter
+						============================================= -->
+						<ul class="portfolio-filter style-2 center clearfix" data-container="#portfolio">
+
+							<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
+							<li><a href="#" data-filter=".pf-icons">Icons</a></li>
+							<li><a href="#" data-filter=".pf-illustrations">Illustrations</a></li>
+							<li><a href="#" data-filter=".pf-uielements">UI Elements</a></li>
+							<li><a href="#" data-filter=".pf-media">Media</a></li>
+							<li><a href="#" data-filter=".pf-graphics">Graphics</a></li>
+
+						</ul><!-- #portfolio-filter end -->
+					</div>
+
+					<!-- Portfolio Items
+					============================================= -->
+					<div id="portfolio" class="portfolio grid-container portfolio-nomargin clearfix">
+
+						<article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="demos/business/images/portfolio/1.jpg" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Open Imagination</a></h3>
+										<span><a href="#">Media</a>, <a href="#">Icons</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-illustrations">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="demos/business/images/portfolio/2.jpg" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Locked Steel Gate</a></h3>
+										<span><a href="#">Illustrations</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-graphics pf-uielements">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="demos/business/images/portfolio/3.jpg" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Mac Sunglasses</a></h3>
+										<span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-icons pf-illustrations">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/4.jpg" alt="Open Imagination"></a></div>
+											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/4-2.jpg" alt="Open Imagination"></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-overlay" data-lightbox="gallery">
+									<div class="portfolio-desc">
+										<h3><a href="#">Morning Dew</a></h3>
+										<span><a href="#">Icons</a>, <a href="#">Illustrations</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-graphics pf-illustrations">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/5.jpg" alt="Open Imagination"></a></div>
+											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/5-2.jpg" alt="Open Imagination"></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-overlay" data-lightbox="gallery">
+									<div class="portfolio-desc">
+										<h3><a href="#">Shake It!</a></h3>
+										<span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-uielements pf-icons">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="demos/business/images/portfolio/6.jpg" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Backpack Contents</a></h3>
+										<span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-uielements pf-media">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="demos/business/images/portfolio/7.jpg" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Console Activity</a></h3>
+										<span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-graphics">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="demos/business/images/portfolio/8.jpg" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Sunset Bulb Glow</a></h3>
+										<span><a href="#">Graphics</a></span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+					</div><!-- #portfolio end -->
+				</div>
+
+				<!-- Video Sections
+				============================================= -->
+				<div class="section nobg notopmargin clearfix">
+					<div class="container clearfix">
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/24help.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Responsive Layout</h3>
+								<p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/barcode.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Retina Ready Graphics</h3>
+								<p>Looks beautiful &amp; ultra-sharp on Retina Displays with Retina Icons, Fonts &amp; Images.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/buy.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Powerful Performance</h3>
+								<p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/card.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">HTML5 Video</h3>
+								<p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/doc.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Parallax Support</h3>
+								<p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/dropbox.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Endless Possibilities</h3>
+								<p>Complete control on each &amp; every element that provides endless customization possibilities.</p>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_one_third bottommargin">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/piggy-bank.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Light &amp; Dark Color Schemes</h3>
+								<p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third bottommargin">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/home.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Boxed &amp; Wide Layouts</h3>
+								<p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third bottommargin col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/business/images/icons/offers.svg" alt=""></a>
+								</div>
+								<h3 class="nott t600 ls0">Extensive Documentation</h3>
+								<p>We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
+							</div>
+						</div>
+
+						<div class="clear line"></div>
+
+						<div class="row topmargin-lg clearfix">
+							<div class="col-lg-6 nopadding">
+								<!-- Youtube Video Link
+								============================================= -->
+								<a href="https://www.youtube.com/watch?v=NS0txu_Kzl8" data-lightbox="iframe">
+									<img src="demos/business/images/sections/video.jpg" alt="Youtube Video" class="image_fade" style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
+									<i class="icon-play" style="position: absolute; top: 50%; left: 50%; font-size: 60px; color: #FFF; margin-top: -45px; margin-left: -23px"></i>
+								</a>
+							</div>
+							<!-- Video Texts
+							============================================= -->
+							<div class="col-lg-6" style="padding-left: 60px;">
+								<div class="heading-block topmargin-sm bottommargin-sm noborder">
+									<h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">A small Video from Our Customers.</h3>
+								</div>
+								<p class="t400">Interactively facilitate.<br>Tactical systems with compelling materials. Objectively re-engineer diverse relationships long-term impact methodologies.</p>
+								<h5 class="nobottommargin t600">&middot; SemiColonWeb - Author, Themeforest Market. <a href="#"><img src="demos/business/images/tf-logo.png" height="18" alt="" style="margin-left: 4px"></a></h5>
+								<a href="#" class="button-link bottommargin">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Parallax Area
+				============================================= -->
+				<div class="section parallax topmargin-lg nobottommargin notopborder clearfix" style="background-image: url('demos/business/images/sections/2.jpg'); background-size: cover;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+					<div class="container clearfix">
+
+						<div class="row cleafix">
+							<div class="col-md-6 dark" style="padding-left: 60px;">
+								<div class="heading-block bottommargin-sm noborder">
+									<h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">Collections from Our Customers.</h3>
+								</div>
+								<p>Appropriately implement user friendly e-markets and backend processes. Competently expedite competitive vortals rather than client-based testing procedures. Professionally matrix exceptional schemas vis-a-vis leveraged paradigms. Authoritatively coordinate just in time networks with strategic potentialities.</p>
+								<a href="#" class="button-link noleftmargin">Read More</a>
+							</div>
+
+							<div class="topmargin d-block d-lg-none d-xl-block"></div>
+
+							<!-- Testimonials slider
+							============================================= -->
+							<div class="col-md-5 offset-md-1">
+								<h4 class="dark">Testimonials Scroller</h4>
+								<div class="fslider testimonial" data-animation="slide" data-arrows="false">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide">
+												<div class="testimonial noborder noshadow">
+													<div class="testi-content">
+														<p class="bottommargin-sm font-primary">Great support, great documentation and you guys done a fantastic job in commenting everything, makes it very easy to customize, so thank you.</p>
+														<div class="testi-meta">
+															SmileyDot
+															<span>ThemeForest user</span>
+															<div class="testimonials-rating">
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="testimonial noborder noshadow">
+													<div class="testi-content">
+														<p class="bottommargin-sm font-primary">I wish that I could choose more than one reason for my 5-star rating! The Design is great, the features are fantastic, the documentation top-notch.</p>
+														<div class="testi-meta">
+															georgewhoffman
+															<span>ThemeForest user</span>
+															<div class="testimonials-rating">
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="testimonial noborder noshadow">
+													<div class="testi-content">
+														<p class="bottommargin-sm font-primary">Excellent Template really versatile and well documented. Makes anyone look like a design professional.</p>
+														<div class="testi-meta">
+															georgeuser077
+															<span>ThemeForest user</span>
+															<div class="testimonials-rating">
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="testimonial noborder noshadow">
+													<div class="testi-content">
+														<p class="bottommargin-sm font-primary">This is the most robust template I've ever worked with. So much can be done with this multi-purpose package. Regular updates and enhancements add tremendous value.</p>
+														<div class="testi-meta">
+															rmandaro
+															<span>ThemeForest user</span>
+															<div class="testimonials-rating">
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="testimonial noborder noshadow">
+													<div class="testi-content">
+														<p class="bottommargin-sm font-primary">I've been using Canvas for months now and it has exceeded my expectations. Their support has been great too.</p>
+														<div class="testi-meta">
+															kwelch2
+															<span>ThemeForest user</span>
+															<div class="testimonials-rating">
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+																<i class="icon-star3"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Team Work
+				============================================= -->
+				<div class="section nobg nobottompadding nobottommargin clearfix">
+					<div class="container clearfix">
+						<div class="row clearfix">
+
+							<div class="col-lg-5 order-lg-12">
+								<div class="device-xl device-md topmargin-lg"></div>
+								<h3 class="nobottommargin" style="font-size: 40px;">Great Team Work.</h3>
+								<h3 class="t300 ls4 lowercase" style="font-size: 15px; color: #999;">Designed by Semicolonweb</h3>
+								<p>Uniquely plagiarize dynamic convergence after equity invested experiences. Holisticly repurpose installed base infomediaries before web-enabled methods of empowerment.</p>
+								<a href="#" class="button-link bottommargin">Read More</a>
+							</div>
+
+							<div class="col-lg-7 order-lg-1">
+								<div style="position: relative; margin-bottom: 0;" class="ohidden" data-height-xl="520" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
+									<img class="man" src="demos/business/images/sections/man.jpg" style="position: absolute; top: 0; left: auto;" alt="Chrome">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Brands Carousel
+				============================================= -->
+				<div class="section nomargin clearfix" style="padding: 80px 0">
+					<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="0" data-nav="false" data-pagi="false" data-loop="true" data-autoplay="3000" data-items-xs="2" data-items-sm="3" data-items-md="5" data-items-lg="5" data-items-xl="5">
+
+						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/linkedin.svg" style="height: 24px" alt="Brands"></a></div>
+						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/nat-geo.svg" style="height: 24px" alt="Brands"></a></div>
+						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/jetblue.svg" style="height: 24px" alt="Brands"></a></div>
+						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/zillow.svg" style="height: 24px" alt="Brands"></a></div>
+						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/amazon.svg" style="height: 24px" alt="Brands"></a></div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="noborder" style="padding: 30px 0; background-color: #FFF">
+
+			<div class="container clearfix">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+					<div class="col_one_fourth">
+						<img src="demos/business/images/logo@2x.png" alt="" height="100" style="margin-top: -30px">
+					</div>
+					<div class="col_three_fourth col_last">
+						<div class="col_one_fourth">
+							<div class="widget widget_links clearfix">
+								<h4>Hire</h4>
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
 								</ul>
 							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!--************************************
-				Header End
-		*************************************-->
-		<div class="tg-pushpage">
-			<!--************************************
-					Home Slider Start
-			*************************************-->
-			<div id="tg-homeslidervfive" class="tg-homeslider owl-carousel tg-homeslidervfive">
-				<figure class="item" data-vide-bg="poster: images/parallax/creatives.jpg" data-vide-options="position: 0% 50%">
-					<figcaption>
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<div class="tg-slidercontent">
-										<div class="tg-description">
-											<p>A Collaborative Working Experience.</p>
-										</div>
-										<h1>We are a <em>Team</em> of Learners<span>Having fun building our careers.</span></h1>
-										<div class="tg-btns">
-											<a class="tg-btn tg-btnpink" href="get-started.html"><span>Get Started</span></a>
-										</div>
-									</div>
-								</div>
+						</div>
+						<div class="col_one_fourth">
+							<div class="widget widget_links clearfix">
+								<h4>Community</h4>
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+								</ul>
 							</div>
 						</div>
-					</figcaption>
-				</figure>
-				<figure class="item" data-vide-bg="poster: images/slider/img-06.jpg" data-vide-options="position: 0% 50%">
-					<figcaption>
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<div class="tg-slidercontent">
-										<div class="tg-description">
-											<p>A Totally New Way to Grow your Business.</p>
-										</div>
-										<h1>We <em>Create</em> Digital Products<span>That Make People’s Lives Easier.</span></h1>
-										<div class="tg-btns">
-											<a class="tg-btn tg-btnpink" href="javascript:void(0);"><span>buy vation</span></a>
-										</div>
-									</div>
-								</div>
+						<div class="col_one_fourth">
+							<div class="widget widget_links clearfix">
+								<h4>Learn</h4>
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+								</ul>
 							</div>
 						</div>
-					</figcaption>
-				</figure>
-				<figure class="item" data-vide-bg="poster: images/slider/img-05.jpg" data-vide-options="position: 0% 50%">
-					<figcaption>
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<div class="tg-slidercontent">
-										<div class="tg-description">
-											<p>A Totally New Way to Grow your Business.</p>
-										</div>
-										<h1>We <em>Create</em> Digital Products<span>That Make People’s Lives Easier.</span></h1>
-										<div class="tg-btns">
-											<a class="tg-btn tg-btnpink" href="javascript:void(0);"><span>buy vation</span></a>
-										</div>
-									</div>
-								</div>
+						<div class="col_one_fourth col_last">
+							<div class="widget widget_links clearfix">
+								<h4>About</h4>
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+								</ul>
 							</div>
 						</div>
-					</figcaption>
-				</figure>
-			</div>
-			<!--************************************
-					Home Slider End
-			*************************************-->
-			<!--************************************
-					Main Start
-			*************************************-->
-			<main id="tg-main" class="tg-main tg-haslayout">
-				<!--************************************
-						Services Start
-				*************************************-->
-				<section class="tg-sectionspace tg-haslayout">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="tg-sectionhead tg-sectionheadvthree">
-									<div class="tg-sectiontitle">
-										<h2><span>Tao Learning Center</span>Join A Program</h2>
-									</div>
-								</div>
-							</div>
-							<div class="tg-services tg-servicesvsix">
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-									<div class="tg-service">
-										<figure><a href="program/internship.html"><img src="images/remote_work.jpg" alt="image description"></a></figure>
-										<div class="tg-servicetitle">
-											<h3><a href="program/internship.html"><span>100% Remote & Accredited</span>Online Internship</a></h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-									<div class="tg-service">
-										<figure><a href="program/career-training.html"><img src="images/creative_work.jpg" alt="image description"></a></figure>
-										<div class="tg-servicetitle">
-											<h3><a href="program/career-training.html"><span>Enhance Your Skillset</span>Ongoing Career Training</a></h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-									<div class="tg-service">
-										<figure><a href="program/leader-training.html"><img src="images/funleaders.jpg" alt="image description"></a></figure>
-										<div class="tg-servicetitle">
-											<h3><a href="program/leader-training.html"><span>Learn Remote Management Techniques</span>Agile Team Leader Training</a></h3>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="clear"></div>
+						<div class="line line-sm"></div>
+						<div class="col_two_third">
+							<small class="t300" style="color: #AAA">Copyright &copy; 2018 All Rights Reserved by TaoFruit.</small>
 						</div>
-					</div>
-				</section>
-				<!--************************************
-						Services End
-				*************************************-->
-				<!--************************************
-						Our Main Goal Start
-				*************************************-->
-				<section class="tg-haslayout" data-z-index="1" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/presentation.jpg">
-					<div class="tg-parallax tg-parallaxmaingoal">
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-push-2 col-md-8 col-lg-push-2 col-lg-8">
-									<div class="tg-maingoal text-center">
-										<div class="tg-title tg-titlevone">
-											<h3><span>Join from Anywhere -</span>Experience a Flexible Internship</h3>
-										</div>
-										<div class="tg-description">
-											<p>We use Agile methodology to forget schedules, forget deadlines, and focus on the fun side of a Creative Agency.  See How it Works.</p>
-										</div>
-										<div class="tg-btnbox">
-											<a class="tg-btnplay" href="https://www.youtube.com/watch?v=jk8U8_fsToI?autoplay=1" data-rel="prettyPhoto[video]"><i class="icon-play3"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--************************************
-						Our Main Goal End
-				*************************************-->
-				<!--************************************
-						Best Theme Start
-				*************************************-->
-				<section class="tg-haslayout">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="tg-besttheme">
-									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-										<div class="tg-textshortcode">
-											<h2>Number of Openings in<br> Executive Mentorship</h2>
-											<div class="tg-skills">
-												<div class="tg-skill">
-													<span>Digital Designers</span>
-													<span>125/150 Members</span>
-													<div class="tg-skillholder" data-percent="74%">
-														<div class="tg-skillbar"></div>
-													</div>
-												</div>
-												<div class="tg-skill">
-													<span>Machine Learning and Computer Programming</span>
-													<span>11/12 Members</span>
-													<div class="tg-skillholder" data-percent="90%">
-														<div class="tg-skillbar"></div>
-													</div>
-												</div>
-												<div class="tg-skill">
-													<span>Human Resources</span>
-													<span>12/18 Members</span>
-													<div class="tg-skillholder" data-percent="75%">
-														<div class="tg-skillbar"></div>
-													</div>
-												</div>
-											</div>
-											<div class="tg-description text-center">
-												<a class="tg-btn" href="executive_mentorship.html"><span>Join the Executive Mentorship</span></a>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-										<div class="tg-themefeatures">
-											<div class="tg-themefeature">
-												<span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-												<h3>Digital Design Department</h3>
-												<div class="tg-description">
-													<p>We like to see candidates blend creative thinking with the ability to communicate and articulate to development teams.</p>
-												</div>
-											</div>
-											<div class="tg-themefeature">
-												<span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-												<h3>Development Department</h3>
-												<div class="tg-description">
-													<p>Those who utilize the design team and work well in a team environment will excel well in this program.  No cowboys allowed.</p>
-												</div>
-											</div>
-											<div class="tg-themefeature">
-												<span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-												<h3>Human Resources</h3>
-												<div class="tg-description">
-													<p>We automate and streamline as much HR as possible.  When you choreograph energy and social patterns, you'll get noticed.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--************************************
-						Best Theme End
-				*************************************-->
-				
-				<!--************************************
-						About Company Start
-				*************************************-->
-				<section class="tg-sectionspace tg-haslayout tg-bgaboutus">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="tg-aboutus">
-									<div class="tg-sectionhead tg-sectionheadvthree">
-										<div class="tg-sectiontitle">
-											<h2><span>Based in San Francisco, CA</span>We are leaders in the Creative Industry.  Come learn our culture.</h2>
-										</div>
-									</div>
-									<div class="tg-description">
-										<p>We don't just teach design & development, we live it.  Tao Learning is operated by an Award-Winning Creative Agency with a Creative Director & CTO who has built beautiful startups and hired by numerous Fortune 500s.</p>
-									</div>
-									<div class="tg-themefeatures tg-themefeaturesvtwo">
-										<div class="tg-themefeature">
-											<span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-											<h3>Make a Difference</h3>
-											<div class="tg-description">
-												<p>Show up, collaborate, and learn while you make an impact.  You'll feel best when you blend your education with tangibles.</p>
-											</div>
-										</div>
-										<div class="tg-themefeature">
-											<span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-											<h3>Speak in Silence</h3>
-											<div class="tg-description">
-												<p>The eternal Tao can brand with no words.  Can design with no canvas.  Can develop with no software.  Tao Learning teaches this.</p>
-											</div>
-										</div>
-										<div class="tg-themefeature">
-											<span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-											<h3>Repeat our Success</h3>
-											<div class="tg-description">
-												<p>We have over 20 years of creating awesome stuff.  This is your chance to learn our secret recipes to succcess and own them.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--************************************
-						About Company End
-				*************************************-->
-				<!--************************************
-						Portfolio Start
-				*************************************-->
-				<div id="tg-galleryfilterable" class="tg-galleryfilterable tg-galleryfilterablevtwo">
-					<div class="tg-portfolioitem tg-widthquarter">
-						<figure>
-							<a href="work/thesacreds.html">
-								<img src="images/portfolio/the_sacreds.jpg" alt="image description">
-								<div class="tg-portfoliohover">
-									<h2><span>Game Development</span></h2>
-									<h3><span>The Sacreds</span></h3>
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="tg-portfolioitem tg-widthquarter">
-						<figure>
-							<a href="work/">
-								<img src="images/portfolio/brand_identity.jpg" alt="image description">
-								<div class="tg-portfoliohover">
-									<h2><span>Brand Identity</span></h2>
-									<h3><span>Tao Fruit</span></h3>
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="tg-portfolioitem tg-widthquarter">
-						<figure>
-							<a href="work/7steps.html">
-								<img src="images/portfolio/7steps.jpg" alt="image description">
-								<div class="tg-portfoliohover">
-									<h2><span>Content Writing</span></h2>
-									<h3><span>Tao Publishing</span></h3>
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="tg-portfolioitem tg-widthquarter">
-						<figure>
-								<a href="work/ai.html">
-									<img src="images/portfolio/tao_intel.jpg" alt="image description">
-									<div class="tg-portfoliohover">
-										<h2><span>Artificial Intelligence</span></h2>
-										<h3><span>Tao Cyber</span></h3>
-									</div>
+						<div class="col_one_third col_last">
+							<div class="fright clearfix">
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
 								</a>
-						</figure>
-					</div>
-				</div>
-				<!--************************************
-						Portfolio End
-				*************************************-->
-				<!--************************************
-						Pricing Plans
-				*************************************-->
-				<section class="tg-sectionspace tg-haslayout">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12 col-sm-12 col-md-12 col-lg-push-2 col-lg-8">
-								<div class="tg-sectionhead tg-sectionheadvthree">
-									<div class="tg-sectiontitle">
-										<h2><span>Join Today</span>Pricing Plans</h2>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="row">
-									<div class="tg-pkgplans">
-										<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-											<div class="tg-pkgplan">
-												<div class="tg-planhead">
-													<h3>Online Internship</h3>
-													<h4>100% Remote & Accredited</h4>
-													<h5><sup>$</sup> 0 <sub>/ mo.</sub></h5>
-												</div>
-												<div class="tg-planbody">
-													<ul>
-														<li>Friendly Team Environment</li>
-														<li>Enterprise Office Tools</li>
-														<li>Flexible Schedule</li>
-														<li>Earn School Credit</li>
-														<li>Enjoyable Creative Projects</li>
-														<li><span class="tg-empty"></span></li>
-													</ul>
-												</div>
-												<div class="tg-planfoot">
-													<a class="tg-btn" href="//taolearning.org/program/internship.html"><span>Learn More</span></a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-											<div class="tg-pkgplan">
-												<div class="tg-planhead">
-													<h3>Ongoing Careeer Training</h3>
-													<h4>Enhance Your Skillset</h4>
-													<h5><sup>$</sup> 35 <sub>/ mo.</sub></h5>
-												</div>
-												<div class="tg-planbody">
-													<ul>
-														<li>Flexible Agile Projects</li>
-														<li>Get Daily Studio Secrets</li>
-														<li>Personal Career Advice</li>
-														<li>Use AI to Streamline Tasks</li>
-														<li>Learn New Pro Skills</li>
-														<li><span class="tg-empty"></span></li>
-													</ul>
-												</div>
-												<div class="tg-planfoot">
-													<a class="tg-btn" href="//taolearning.org/program/career-training.html"><span>Learn More</span></a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-											<div class="tg-pkgplan">
-												<div class="tg-planhead">
-													<h3>Team Leader Training</h3>
-													<h4>Learn Remote Management Techniques</h4>
-													<h5><sup>$</sup> 55 <sub>/ mo.</sub></h5>
-												</div>
-												<div class="tg-planbody">
-													<ul>
-														<li>Manage Your 1st Team</li>
-														<li>Real Project Training</li>
-														<li>Coaching from Upper Management</li>
-														<li>Scrum Master Certification</li>
-														<li>Develop AI Team Solutions</li>
-														<li><span class="tg-empty"></span></li>
-													</ul>
-												</div>
-												<div class="tg-planfoot">
-													<a class="tg-btn" href="//taolearning.org/program/leader-training.html"><span>Learn More</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--************************************
-						Testimonials End
-				*************************************-->
-				<!--************************************
-						Latest News Start
-				*************************************-->
-				<section class="tg-sectionspace tg-haslayout">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-xs col-sm-12 col-md-12 col-lg-push-2 col-lg-8">
-								<div class="tg-sectionhead tg-sectionheadvtwo">
-									<div class="tg-sectiontitle">
-										<h2><a href="//taolearning.org/story">Intern Stories</a></h2>
-									</div>
-									<div class="tg-description">
-										<p>Read about Tao Learning Experiences from various interns in our programs.</p>
-									</div>
-								</div>
-							</div>
-							<div class="tg-posts tg-postsvtwo">
-								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-									<article class="tg-post">
-										<figure>
-											<img src="story/morocco/photos/tunnel.jpg" alt="image description">
-											<figcaption>
-												<a class="tg-category" href="story/morocco">Copywriting</a>
-												<div class="tg-postcontent">
-													<div class="tg-posttitle">
-														<h3><a href="story/morocco">Copywriting in Morocco</a></h3>
-													</div>
-													<div class="tg-description">
-														<p>Summer is branded as a time of relaxation, a time to do nothing and enjoy the peace of life. That’s what my family told me when I announced that I would be starting a remote internship.</p>
-													</div>
-													<ul class="tg-postmetadata">
-														<li>
-															<figure><a href="storymorocco"><img src="images/allhome/1/img-09.jpg" alt="image description"></a></figure>
-															<span>By Lalla</span>
-														</li>
-														<li><time datetime="2017-07-07">15 Aug 2018</time></li>
-													</ul>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-									<article class="tg-post">
-										<figure>
-											<img src="images/allhome/2/img-08.jpg" alt="image description">
-											<figcaption>
-												<a class="tg-category" href="javascript:void(0);(0);">Human Resources</a>
-												<div class="tg-postcontent">
-													<div class="tg-posttitle">
-														<h3><a href="javascript:void(0);">Planning &amp; Strategy</a></h3>
-													</div>
-													<div class="tg-description">
-														<p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos dolor sit amet.</p>
-													</div>
-													<ul class="tg-postmetadata">
-														<li>
-															<figure><a href="javascript:void(0);(0);"><img src="images/allhome/1/img-09.jpg" alt="image description"></a></figure>
-															<span>By Haley</span>
-														</li>
-														<li><time datetime="2017-07-07">25 Sep 2018</time></li>
-													</ul>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-									<article class="tg-post">
-										<figure>
-											<img src="images/allhome/2/img-09.jpg" alt="image description">
-											<figcaption>
-												<a class="tg-category" href="javascript:void(0);(0);">Human Resources</a>
-												<div class="tg-postcontent">
-													<div class="tg-posttitle">
-														<h3><a href="javascript:void(0);">Planning &amp; Strategy</a></h3>
-													</div>
-													<div class="tg-description">
-														<p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos dolor sit amet.</p>
-													</div>
-													<ul class="tg-postmetadata">
-														<li>
-															<figure><a href="javascript:void(0);(0);"><img src="images/allhome/1/img-09.jpg" alt="image description"></a></figure>
-															<span>By Haley</span>
-														</li>
-														<li><time datetime="2017-07-07">25 Sep 2016</time></li>
-													</ul>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--************************************
-						Latest News End
-				*************************************-->
-				
-			</main>
-			<!--************************************
-					Main End
-			*************************************-->
-			<!--************************************
-					Footer Start
-			*************************************-->
-			<footer id="tg-footer" class="tg-footer tg-footervtwo">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="tg-footerlogobar">
-								<strong class="tg-logo"><a href="//taolearning.org"><img src="images/logos/logo_white.png" alt="image description"></a></strong>
+
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-gplus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-pinterest">
+									<i class="icon-pinterest"></i>
+									<i class="icon-pinterest"></i>
+								</a>
+
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-vimeo">
+									<i class="icon-vimeo"></i>
+									<i class="icon-vimeo"></i>
+								</a>
+
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-instagram">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="tg-footercolumns">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-								<div class="tg-footercolumn tg-widget">
-									<ul>
-										<li><a href="aboutus.html">Read About Tao</a></li>
-										<li><a href="program">Join A Program</a></li>
-										<li><a href="partner">Partner with Us</a></li>
-										<li><a href="work">See Our Work</a></li>
-										<li><a href="story">Read Intern Stories</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-								<div class="tg-footercolumn tg-widget">
-									<ul class="tg-socialicons">
-										<li><a href="javascript:void(0);"><i class="icon-facebook-1"></i></a></li>
-										<li><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#116;&#097;&#111;&#108;&#105;&#102;&#101;&#115;&#116;&#121;&#108;&#101;&#046;&#111;&#114;&#103;"><i class="icon-envelope"></i></a></li>
-										<li><a href="javascript:void(0);"><i class="icon-google4"></i></a></li>
-									</ul>
-									<h4>Newsletter</h4>
-									<form class="tg-formtheme tg-formsubscribe" action="https://formspree.io/info@taolearning.org" method="POST">
-										<fieldset>	
-											<input type="hidden" name="name" value="Student Inquiry">
-											<input type="hidden" name="message" value="Please add me to the newsletter!">
-											<input type="text" name="_gotcha" style="display:none" />
-											<input type="hidden" name="_subject" value="Inquiry: Tao Learning" />
-											<input type="hidden" name="_next" value="https://taolearning.org/thanks.html" />
-											<input type="email" name="_replyto" class="form-control" placeholder="Enter your Email">
-											<button type="submit" value="Send"><i class="icon-envelope"></i></button>
-										</fieldset>
-									</form>
-									<span class="tg-copyright">Copyright &copy; 2018 Tao Fruit LLC. All right reserved.</span>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-								<div class="tg-footercolumn tg-widget">
-									<ul>
-										<li><a href="aboutus.html">About Us</a></li>
-										<li><a href="aboutus.html">Who We Are</a></li>
-										<li><a href="casestudy/">Case Studies</a></li>
-										<li><a href="contactus.html">Contact Us</a></li>
-										<li><a href="comingsoon.html">Privacy Policy</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!--************************************
-					Footer End
-			*************************************-->
-		</div>
-	</div>
-	<!--************************************
-			Wrapper End
-	*************************************-->
-	<script src="js/vendor/jquery-library.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
-	<script src="js/jquery.singlePageNav.min.js"></script>
-	<script src="js/jquery-scrolltofixed.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.vide.min.js"></script>
-	<script src="js/royalslider.min.js"></script>
-	<script src="js/scrollbar.min.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/prettyPhoto.js"></script>
-	<script src="js/sticky-kit.js"></script>
-	<script src="js/countdown.js"></script>
-	<script src="js/parallax.js"></script>
-	<script src="js/collapse.js"></script>
-	<script src="js/countTo.js"></script>
-	<script src="js/appear.js"></script>
-	<script src="js/gmap3.js"></script>
-	<script src="js/main.js"></script>
+
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		// Owl Carousel Scripts
+		$('#oc-features').owlCarousel({
+			items: 1,
+			margin: 60,
+		    nav: true,
+		    navText: ['<i class="icon-line-arrow-left"></i>','<i class="icon-line-arrow-right"></i>'],
+		    dots: false,
+		    stagePadding: 30,
+		    responsive:{
+				768: { items: 2 },
+				1200: { stagePadding: 200 }
+			},
+		});
+	</script>
+
 </body>
 </html>
