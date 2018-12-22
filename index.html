@@ -1,903 +1,622 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="college, campus, university, courses, school, educational">
+    <meta name="description" content="ATENA - College, University and campus template">
+    <meta name="author" content="Ansonika">
+    <title>ATENA - College, University and campus template</title>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="TaoFruit" />
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-	<!-- Stylesheets
-	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+    <!-- BASE CSS -->
+    <link href="css/main_font/main_font.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
+    <link href="css/icon_font/pe-icon-7-stroke.min.css" rel="stylesheet">
+    <link href="css/fontello/css/fontello.min.css" rel="stylesheet">
+    <link href="css/edu_fonts/edu_fonts.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
 
-	<!-- Business Demo Specific Stylesheet -->
-	<link rel="stylesheet" href="demos/business/business.css" type="text/css" />
-	<link rel="stylesheet" href="demos/business/css/fonts.css" type="text/css" />
-	<!-- / -->
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
-	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
-
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lt IE 9]>
-		<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->
-
-	<!-- Theme Color
-	============================================= -->
-	<link rel="stylesheet" href="demos/business/css/colors.css" type="text/css" />
-
-	<!-- Document Title
-	============================================= -->
-	<title>Tao Learning</title>
-
+    <!-- SPECIFIC CSS -->
+	<link href="layerslider/css/layerslider.css" rel="stylesheet">
+    <link href="css/tabs.css" rel="stylesheet">
 </head>
 
-<body class="stretched">
+<body>
 
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="clearfix">
+<div id="preloader">
+	<div class="pulse"></div>
+</div><!-- Pulse Preloader -->
 
-		<!-- Header
-		============================================= -->
-		<header id="header" class="transparent-header dark full-header" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full">
+    <header>
+		<a id="logo" href="index.html"><img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true"></a>
+		<nav id="top-nav">
+			<ul>
+            	<li><a href="#search"><i class=" icon-search"></i></a></li>
+				<li><a href="tour.html">Tour</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+			</ul>
+		</nav>
+		<a id="menu-trigger" href="#"><span class="menu-trigger-text">Menu</span><span class="menu-trigger-icon"></span></a>
+	</header> <!-- End Header -->
+    
+    <nav id="side-nav">
+		<ul class="side-nav-menu">    
+         <li class="item-has-children">
+				<a href="#">Home</a>
+				<ul class="sub-menu">
+					<li><a href="index.html">Home Layer slider</a></li>
+                    <li><a href="index_2.html">Home Video</a></li>
+					<li><a href="index_3.html">Home version 2</a></li>
+                    <li><a href="index_4.html">Home version 3</a></li>
+                    <li><a href="index_5.html">Home quick contact</a></li>
+				</ul>
+			</li> <!-- item-has-children -->        
+            <li class="item-has-children">
+				<a href="#">Academics</a>
+				<ul class="sub-menu">
+					<li><a href="diploma.html">Diploma courses</a></li>
+                    <li><a href="graduate.html">Graduate courses</a></li>
+					<li><a href="master.html">Master courses</a></li>
+                    <li><a href="apply_online.html">Apply online</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+				</ul>
+			</li> <!-- item-has-children -->
+			<li class="item-has-children">
+				<a href="#">About</a>
+				<ul class="sub-menu">
+					<li><a href="about.html">About us</a></li>
+                    <li><a href="contacts.html">Plan a visit</a></li>
+					<li><a href="staff.html">Staff</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</li> <!-- item-has-children -->
+            <li>
+            <li class="item-has-children">
+				<a href="#">Elements &amp; pages</a>
+				<ul class="sub-menu">
+					<li><a href="icon-pack-1.html">Icon pack 1</a></li>
+					<li><a href="icon-pack-2.html">Icon pack 2</a></li>
+					<li><a href="icon-pack-3.html">Icon pack 3</a></li>
+                    <li><a href="icon-pack-4.html">Icon pack 4</a></li>
+                    <li><a href="agenda_calendar.html">Agenda calendar</a></li>
+                    <li><a href="shortcodes.html">Shortcodes</a></li>
+                    <li><a href="site_launch/index.html">Site launch/Coming soon</a></li>
+				</ul>
+			</li> <!-- item-has-children -->
+            <li>
+            <ul class="side-nav-menu single-item-wp">
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul> <!--single-item-wp -->
+            <ul class="side-nav-menu single-item-wp">
+                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#register">Register</a></li>
+                <li class="hidden-lg hidden-md"><a href="#search">Search</a></li>
+                <li><a href="#0">Terms &amp; Conditions</a></li>
+            </ul> <!--single-item-wp -->
+            </li>
+        </ul> <!-- side-nav-menu -->
+		<div id="social">
+            <ul>
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+           </ul>
+       </div>
+	</nav><!--End nav-->
+    
+	<div class="main-wrapper">
 
-			<div id="header-wrap">
+	<div id="full-slider-wrapper">
+    <div id="layerslider" style="width:100%;height:650px;">
+        <!-- first slide -->
+        <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
+            <img src="img/slides/slide_1.jpg" class="ls-bg" alt="Slide background">
+        	<h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;" >Atena <strong>Excellence</strong> in teaching</h3>
+            <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;" >COLLEGE / UNIVERSITY / CAMPUS</p>
+            <p class="ls-l" style="top:62%; left:50%;" data-ls="durationin:2000;delayin:1300;easingin:easeOutElastic;" ><a href="tour.html" class="button_intro">Take a tour</a> <a href="about.html" class="button_intro outline">About us</a></p>
+       </div>
+       
+        <!-- second slide -->
+    <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
+            <img  src="img/slides/slide_2.jpg" class="ls-bg" alt="Slide background">
+        	<h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;" >Atena <strong>Qualified</strong> teachers</h3>
+            <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;" >COLLEGE / UNIVERSITY / CAMPUS</p>
+            <p class="ls-l" style="top:65%; left:50%;" data-ls="durationin:2000;delayin:1300;easingin:easeOutElastic;" ><a href="tour.html" class="button_intro">Take a tour</a> <a href="about.html" class="button_intro outline">About us</a></p>
+    </div>
+    
+     <!-- third slide -->
+     <div class="ls-slide" data-ls="slidedelay:5000; transition2d:5;" >
+             <img src="img/slides/slide_3.jpg" class="ls-bg" alt="Slide background">
+        	<h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;" ><strong>Great</strong> students community</h3>
+            <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;" >COLLEGE / UNIVERSITY / CAMPUS</p>
+            <p class="ls-l" style="top:65%; left:50%;" data-ls="durationin:2000;delayin:1300;easingin:easeOutElastic;" ><a href="tour.html" class="button_intro">Take a tour</a> <a href="about.html" class="button_intro outline">About us</a></p>
+    </div>
+      
+    <!-- fourth slide -->
+    <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
+        <img src="img/slides/slide_4.jpg" class="ls-bg" alt="Slide background">
+        	<h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;" ><strong>Well equiped</strong> classrooms</h3>
+            <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;" >COLLEGE / UNIVERSITY / CAMPUS</p>
+            <p class="ls-l" style="top:65%; left:50%;" data-ls="durationin:2000;delayin:1300;easingin:easeOutElastic;"><a href="tour.html" class="button_intro">Take a tour</a> <a href="about.html" class="button_intro outline">About us</a></p>
+    </div>
+ 
+    </div>
+    </div><!-- End layerslider -->
+    
+    <div class="container_gray_bg" id="home_feat_1">
+    <div class="container">
+    	<div class="row">
+        	<div class="col-md-4 col-sm-4">
+            	 <div class="home_feat_1_box">
+                        <a href="#">
+                        <img src="img/home_feat_1_1.jpg" class="img-responsive" alt="">
+                        <div class="short_info"><h3>Plan a visit</h3><i class="arrow_carrot-right_alt2"></i></div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+           <div class="home_feat_1_box">
+                        <a href="#">
+                        <img src="img/home_feat_1_2.jpg" class="img-responsive" alt="">
+                        <div class="short_info"><h3>Study Programs</h3><i class="arrow_carrot-right_alt2"></i></div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+           <div class="home_feat_1_box">
+                        <a href="#">
+                        <img src="img/home_feat_1_3.jpg" class="img-responsive" alt="">
+                        <div class="short_info"><h3>Admissions</h3><i class="arrow_carrot-right_alt2"></i></div>
+                        </a>
+                    </div>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
+    </div><!-- End container_gray_bg -->
+    
+    <div class="container margin_60">
+    <div class="main_title">
+    <h2>Atena core feautures</h2>
+    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    </div>
+    	<div class="row">
+        	<div class="col-md-6 col-sm-6">
+            	<div class="box_feat_home">
+                	<i class=" iconcustom-certificate"></i>
+                	<h3>Quality Certifications</h3>
+                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+            	<div class="box_feat_home">
+                	<i class=" iconcustom-innovation"></i>
+                	<h3>Learning Best Practice</h3>
+                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                </div>
+            </div>
+        </div><!-- End row -->
+        <div class="row">
+        	<div class="col-md-6 col-sm-6">
+            	<div class="box_feat_home">
+                	<i class=" iconcustom-education_online"></i>
+                	<h3>Online Resources</h3>
+                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+            	<div class="box_feat_home">
+                	<i class=" iconcustom-know_how"></i>
+                	<h3>Study Plan Tutors</h3>
+                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                </div>
+            </div>
+        </div><!-- End row -->
+        <div class="row">
+        	<div class="col-md-6 col-sm-6">
+            	<div class="box_feat_home">
+                	<i class=" iconcustom-science"></i>
+                	<h3>Advanced Practice</h3>
+                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+            	<div class="box_feat_home">
+                	<i class=" iconcustom-test"></i>
+                	<h3>Research</h3>
+                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                </div>
+            </div>
+        </div><!-- End row -->
+        <hr class="more_margin">
+        
+        <div class="row add_bottom_60">
+            <div class="main_title">
+            <h2>Atena focus on these ....</h2>
+            <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+            </div>
+        	<div class="col-md-6 col-md-offset-3">
+            <div id="graph">
+            <img src="img/graphic.jpg" class="wow zoomIn" data-wow-delay="0.1s" alt="">
+            	<div class="features step_1 wow zoomIn" data-wow-delay="1s">
+            	<h4><strong>01.</strong> Students growth</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                </div>
+                <div class="features step_2 wow zoomIn" data-wow-delay="1.5s">
+                <h4><strong>02.</strong> Best learning practice</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                </div>
+                <div class="features step_3 wow zoomIn" data-wow-delay="2s">
+                <h4><strong>03.</strong> Focus on targets</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                </div>
+                <div class="features step_4 wow zoomIn" data-wow-delay="2.5s">
+                <h4><strong>04.</strong> Interdisciplanary model</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                </div>
+                </div>
+                </div>
+            </div><!-- End row -->
+           	<div class="text-center"><a href="tour.html" class=" button_outline large">Take a tour of ATENA</a></div>
+    </div><!-- End container -->
+    
+ 	<div class="bg_content testimonials">
+              <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                        <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        </ol><!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <p>
+                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                </blockquote>
+                               <small><img class="img-circle" src="img/testimonial_1.jpg" alt="">Stefany</small>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <p>
+                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                </blockquote>
+                                 <small><img class="img-circle" src="img/testimonial_2.jpg" alt="">Karla</small>
+                            </div>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <p>
+                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                </blockquote>
+                                <small><img class="img-circle" src="img/testimonial_1.jpg" alt="">Maira</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End bg_content -->
+    
+    <div class="container margin_60">
+          <div class="main_title">
+    <h2>Latest from Atena ....</h2>
+    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    </div>
+    <div id="tabs" class="tabs">
+				<nav>
+					<ul>
+						<li><a href="#section-1" class="icon-courses"><span>Courses</span></a></li>
+						<li><a href="#section-2" class="icon-news"><span>News</span></a></li>
+						<li><a href="#section-3" class="icon-events"><span>Events</span></a></li>
+					</ul>
+				</nav>
+				<div class="content">
+					<section id="section-1">
+						<div class="row list_courses_tabs">
+                        	<div class="col-md-4 col-sm-4">
+                            <h2>Diploma Courses</h2>
+							<ul>
+                            	<li><div><a href="#"><figure><img src="img/course_1_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Mathemacis</strong> diploma</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_2_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Sciences</strong> diploma</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_3_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Litterature</strong> diploma</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_4_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Arts</strong> diploma</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_5_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Music</strong> diploma</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                  <li>
+                                <div><a href="#" class="link_normal">View all Diploma courses</a></div>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                             <h2>Graduate Courses</h2>
+							<ul>
+                            	<li>
+                                <div><a href="#"><figure><img src="img/course_6_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Engineering</strong> graduate</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_7_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Biology</strong> graduate</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_8_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Psicology</strong> graduate</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_9_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Economy</strong> graduate</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_10_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Architecture</strong> graduate</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                 <li>
+                                <div><a href="#" class="link_normal">View all Graduate courses</a></div>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                             <h2>Master Courses</h2>
+							<ul>
+                            	<li><div><a href="#"><figure><img src="img/course_11_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Information tecnology</strong> master</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li><div><a href="#"><figure><img src="img/course_12_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Digital media</strong> master</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#"><figure><img src="img/course_13_thumb.jpg" alt="" class="img-rounded"></figure>
+                           	    <h3><strong>Sculpture</strong> master</h3><small>Start 3 October 2015</small></a></div>
+                                </li>
+                                <li>
+                                <div><a href="#" class="link_normal">View all Master courses</a></div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+					</section>
+					<section id="section-2">
+						<div class="row list_news_tabs">
+                        	<div class="col-md-4 col-sm-4">
+                            <p><a href="#0"><img src="img/news_1_thumb.jpg" alt="" class="img-responsive"></a></p>
+                                  <span class="date_published">20 Agusut 2015</span>
+							<h3><a href="#0">Success Stories for Atena College in 2015's </a></h3>
+                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <a href="#0" class="button small">Read more</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                            <p><a href="#0"><img src="img/news_2_thumb.jpg" alt="" class="img-responsive"></a></p>
+                                  <span class="date_published">20 Agusut 2015</span>
+							<h3><a href="#0">Boost in A-Level Grades in 2015 for Students</a></h3>
+                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <a href="#0" class="button small">Read more</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                            <p><a href="#0"><img src="img/news_3_thumb.jpg" alt="" class="img-responsive"></a></p>
+                                  <span class="date_published">20 Agusut 2015</span>
+							<h3><a href="#0">Caps Off To Sport at Atena</a></h3>
+                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <a href="#0" class="button small">Read more</a>
+                            </div>
+                        </div><!--End row -->
+					</section>
+					<section id="section-3">
+					<div class="row list_news_tabs">
+                        	<div class="col-md-4 col-sm-4">
+                            <p><a href="#0"><img src="img/event_1_thumb.jpg" alt="" class="img-responsive"></a></p>
+                                  <span class="date_published">20 Agusut 2015</span>
+							<h3><a href="#0">Next students meeting</a></h3>
+                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <a href="#0" class="button small">Read more</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                            <p><a href="#0"><img src="img/event_2_thumb.jpg" alt="" class="img-responsive"></a></p>
+                                  <span class="date_published">20 Agusut 2015</span>
+							<h3><a href="#0">10 October Open day</a></h3>
+                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <a href="#0" class="button small">Read more</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                            <p><a href="#0"><img src="img/event_3_thumb.jpg" alt="" class="img-responsive"></a></p>
+                                  <span class="date_published">20 Agusut 2015</span>
+							<h3><a href="#0">Photography workshop</a></h3>
+                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <a href="#0" class="button small">Read more</a>
+                            </div>
+                        </div><!--End row -->
+					</section>
+					
+				</div><!-- /content -->
+			</div><!-- End tabs -->
+            </div>
+    
+ 
+    
+    <div class="bg_content magnific">
+            <div>
+                <h3>Discover the Campus</h3>
+                <p>
+                     Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+                </p>
+                <a href="https://vimeo.com/20370747" class="video_pop"><i class="arrow_triangle-right_alt2"></i></a>
+            </div>
+        </div><!-- End bg_content -->
+        
+        <div class="container_gray_bg" id="newsletter_container">
+        <div class="container margin_60">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3>Subscribe to our Newsletter for latest news.</h3>
+                    <div id="message-newsletter"></div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
+                        <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
+                        <button id="submit-newsletter" class="button"> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div><!-- End newsletter_container -->
 
-				<div class="container clearfix">
+        <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 col-sm-3">
+                    <p id="logo_footer">
+                        <img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true">
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Academic</h4>
+                    <ul>
+                        <li><a href="#">Plans of study</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Students</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Plan a visit</a></li>
+                    </ul>
+                    <ul id="contacts_footer">
+                        <li>Info line - <a href="tel://033284322">+0332 84322456</a></li>
+                        <li>Email - <a href="#">info@atena.com</a> / <a href="#">office@atena.com</a></li>
+                    </ul>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+        </footer><!-- End footer -->
+        <div id="copy">
+            <div class="container">
+                 © Atena 2015 - All rights reserved.
+            </div>
+        </div><!-- End copy -->
+	</div> <!-- main-wrapper -->
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="demos/business/images/logo-dark.png"><img src="demos/business/images/logo.png" alt="Tao Mgt"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="demos/business/images/logo-dark@2x.png"><img src="demos/business/images/logo@2x.png" alt="Tao Mgt"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu" class="not-dark">
-
-						<ul>
-							<li><a href="#"><div>Philosophy</div></a></li>
-							<li><a href="#"><div>Programs</div></a>
-								<ul>
-									<li><a href="#"><div>PreSchool</div></a></li>
-									<li><a href="#"><div>K-12 Education</div></a></li>
-									<li><a href="#"><div>Higher Education</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#"><div>Centers</div></a>
-								<ul>
-									<li><a href="#"><div>Marietta, OH USA</div></a></li>
-									<li><a href="#"><div>Islamabad, Pakistan</div></a></li>
-									<li><a href="#"><div>Platanillo, Costa Rica</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#"><div>Partners</div></a>
-								<ul>
-									<li><a href="#"><div>Staffing Agency</div></a></li>
-									<li><a href="#"><div>Sponsor a Program</div></a></li>
-									<li><a href="#"><div>Own a Learning Center</div></a></li>
-								</ul>
-							</li>
-						</ul>
-
-						<!-- Top Search
-						============================================= -->
-						<div id="top-search">
-							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-							<form action="search.html" method="get">
-								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
-							</form>
-						</div><!-- #top-search end -->
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
+	
+ <!-- Login modal -->   
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myLogin" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+				<form action="#" class="popup-form" id="myLogin">
+					<input type="text" class="form-control form-white" placeholder="Username">
+					<input type="text" class="form-control form-white" placeholder="Password">
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="accept_1" id="check_1" name="check_1" />
+							<label for="check_1"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</form>
 			</div>
-
-		</header><!-- #header end -->
-
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix" data-loop="true">
-
-			<div class="slider-parallax-inner">
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide dark" style="background-image: url('images/tao/aerial_campus.jpg'); background-size: cover">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 class="font-primary nott">Explore Programs.</h2>
-									<p class="t300 font-primary d-none d-sm-block">Self-paced curriculum with world class instruction.</p>
-									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Find Your Degree</a>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide dark" style="background-image: url('images/tao/sidewalk_talk.jpg'); background-size: cover">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 class="font-primary">Your Story Matters</h2>
-									<p class="t300 font-primary d-none d-sm-block">Master the Art of Storytelling in Small & Intimate Classes</p>
-									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Admissions</a>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide dark" style="background-image: url('images/tao/tree_meadow.jpg'); background-size: cover">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 class="font-primary">Study in Faith</h2>
-									<br>
-									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Live the Tao</a>
-								</div>
-							</div>
+		</div>
+	</div>  
+    
+<!-- Register modal -->   
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myRegister" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+				<form action="#" class="popup-form" id="myRegister">
+					<input type="text" class="form-control form-white" placeholder="Name">
+					<input type="text" class="form-control form-white" placeholder="Last Name">
+                    <input type="email" class="form-control form-white" placeholder="Email">
+                    <input type="text" class="form-control form-white" placeholder="Password">
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="accept_2" id="check_2" name="check_2" />
+							<label for="check_2"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
 						</div>
 					</div>
-					<!-- Slider Arrows
-					============================================= -->
-					<div class="slider-arrow-left" class="nobg"><i class="icon-line-arrow-left"></i></div>
-					<div class="slider-arrow-right" class="nobg"><i class="icon-line-arrow-right"></i></div>
-				</div>
-
-				<!-- Slider Mouse Icon
-				============================================= -->
-				<a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><img class="infinite animated fadeInDown" src="demos/business/images/mouse.svg" alt="" ></a>
+					<button type="submit" class="btn btn-submit">Register</button>
+				</form>
 			</div>
-
-		</section>
-
-		<!-- Content
-		============================================= -->
-		<section id="content">
-
-			<div class="content-wrap nobottompadding" style="z-index: 1;">
-
-				<div class="container topmargin clearfix">
-
-					<!-- What We Do
-					============================================= -->
-					<div class="heading-block center noborder" data-heading="W">
-						<h3>What We Do</h3>
-					</div>
-					<div class="row clearfix">
-						<div class="center col-lg-8 offset-lg-2 bottommargin">
-							<h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">Canvas is a Powerful, Responsive &amp; Raw Multi-Purpose Multi-Page &amp; One-Page HTML5 Template. Build whatever you like with this Template. Be it <span class="t-rotate color">Business,Corporate,Medical,Travel,Construction,Real Estate,Media Agency,Portfolio,Restaurant,Magazine,Wedding,Christmas,Blog,App Showcase</span><br> just everything is possible with Canvas.</h3>
-						</div>
-
-						<div class="clear"></div>
-
-						<!-- Features colomns
-						============================================= -->
-						<div class="row clearfix">
-							<div class="col-lg-4 bottommargin-sm">
-								<div class="feature-box media-box fbox-bg">
-									<div class="fbox-media">
-										<a href="#"><img class="image_fade" src="demos/business/images/featured/1.jpg" alt="Featured Box Image"></a>
-									</div>
-									<div class="fbox-desc">
-										<h3 class="nott ls0 t600">Retina Ready Display<span class="subtitle font-secondary t300 ls0">Globally parallel task premium infomediaries</span></h3>
-										<a href="#" class="button-link noborder color">Read More</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-4 bottommargin-sm">
-								<div class="feature-box media-box fbox-bg">
-									<div class="fbox-media">
-										<a href="#"><img class="image_fade" src="demos/business/images/featured/2.jpg" alt="Featured Box Image"></a>
-									</div>
-									<div class="fbox-desc">
-										<h3 class="nott ls0 t600">Beautifully Responsive Design<span class="subtitle font-secondary t300 ls0">Amazing Learning Atmosphere of the world.</span></h3>
-										<a href="#" class="button-link noborder color">Read More</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-4 bottommargin-sm">
-								<div class="feature-box media-box fbox-bg">
-									<div class="fbox-media">
-										<a href="#"><img class="image_fade" src="demos/business/images/featured/3.jpg" alt="Featured Box Image"></a>
-									</div>
-									<div class="fbox-desc">
-										<h3 class="nott ls0 t600">1000+ HTML Pages Included<span class="subtitle font-secondary t300 ls0">Enthusiastically iterate enabled portals after.</span></h3>
-										<a href="#" class="button-link noborder color">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- How We Work
-				============================================= -->
-				<div class="section nobg clearfix">
-					<div class="container clearfix">
-						<div class="heading-block bottommargin-lg center noborder" data-heading="W">
-							<h3 class="nott ls0">How We Work</h3>
-						</div>
-					</div>
-
-					<!-- How We Work - Carousel
-					============================================= -->
-					<div id="oc-features" class="owl-carousel owl-carousel-full image-carousel carousel-widget">
-						<div class="oc-item">
-							<div class="row cleafix">
-								<div class="col-xl-8">
-									<img src="demos/business/images/carousel/1.jpg" alt="">
-								</div>
-								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
-									<h3>Great Team Work.</h3>
-									<p>Uniquely plagiarize dynamic convergence after equity invested experiences. Holisticly repurpose installed base infomediaries before web-enabled methods of empowerment.</p>
-									<a href="#" class="button-link">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="oc-item">
-							<div class="row cleafix">
-								<div class="col-xl-8">
-									<img src="demos/business/images/carousel/2.jpg" alt="">
-								</div>
-								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
-									<h3>Amazing Career Prospects.</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor mollitia dignissimos, assumenda consequuntur consectetur! Laborum reiciendis, accusamus possimus et similique nisi obcaecati ex doloremque ea odio.</p>
-									<a href="#" class="button-link">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="oc-item">
-							<div class="row cleafix">
-								<div class="col-xl-8">
-									<img src="demos/business/images/carousel/3.jpg" alt="">
-								</div>
-								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
-									<h3>Beautiful Workspace.</h3>
-									<p>Dolor mollitia dignissimos, assumenda consequuntur consectetur! Laborum reiciendis, error explicabo consectetur adipisci, accusamus possimus et similique nisi obcaecati ex doloremque ea odio.</p>
-									<a href="#" class="button-link">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- About Us
-				============================================= -->
-				<div class="section nopadding notopmargin nobg clearfix" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
-					<div class="row common-height clearfix">
-						<div class="col-lg-6 center col-padding" style="background: url('demos/business/images/sections/1.jpg') center center no-repeat; background-size: cover;">
-							<div>&nbsp;</div>
-						</div>
-
-						<div class="col-lg-6 col-padding">
-							<div>
-								<div style="position: relative;">
-									<div class="heading-block noborder" data-heading="A">
-										<h3 class="nott ls0">About Us</h3>
-									</div>
-								</div>
-
-								<!-- About Us Featured Boxes
-								============================================= -->
-								<div class="row clearfix">
-									<div class="col-lg-10 col-md-8 bottommargin">
-										<div class="feature-box fbox-plain">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-globe"></i></a>
-											</div>
-											<h3>All over the World</h3>
-											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-										</div>
-									</div>
-									<div class="col-lg-10 col-md-8 bottommargin">
-										<div class="feature-box fbox-plain">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-gears"></i></a>
-											</div>
-											<h3>Fully Customisable</h3>
-											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-										</div>
-									</div>
-									<div class="col-lg-10 col-md-8">
-										<div class="feature-box fbox-plain">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-document"></i></a>
-											</div>
-											<h3>Helpfull Documentation</h3>
-											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Our Works
-				============================================= -->
-				<div class="section nobg nobottommargin clearfix">
-					<div class="container clearfix">
-						<div class="heading-block center noborder" data-heading="O">
-							<h3 class="nott ls0">Our Works</h3>
-						</div>
-
-						<!-- Portfolio Filter
-						============================================= -->
-						<ul class="portfolio-filter style-2 center clearfix" data-container="#portfolio">
-
-							<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
-							<li><a href="#" data-filter=".pf-icons">Icons</a></li>
-							<li><a href="#" data-filter=".pf-illustrations">Illustrations</a></li>
-							<li><a href="#" data-filter=".pf-uielements">UI Elements</a></li>
-							<li><a href="#" data-filter=".pf-media">Media</a></li>
-							<li><a href="#" data-filter=".pf-graphics">Graphics</a></li>
-
-						</ul><!-- #portfolio-filter end -->
-					</div>
-
-					<!-- Portfolio Items
-					============================================= -->
-					<div id="portfolio" class="portfolio grid-container portfolio-nomargin clearfix">
-
-						<article class="portfolio-item pf-media pf-icons">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="demos/business/images/portfolio/1.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a href="#">Open Imagination</a></h3>
-										<span><a href="#">Media</a>, <a href="#">Icons</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-illustrations">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="demos/business/images/portfolio/2.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a href="#">Locked Steel Gate</a></h3>
-										<span><a href="#">Illustrations</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-graphics pf-uielements">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="demos/business/images/portfolio/3.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a href="#">Mac Sunglasses</a></h3>
-										<span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-icons pf-illustrations">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/4.jpg" alt="Open Imagination"></a></div>
-											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/4-2.jpg" alt="Open Imagination"></a></div>
-										</div>
-									</div>
-								</div>
-								<div class="portfolio-overlay" data-lightbox="gallery">
-									<div class="portfolio-desc">
-										<h3><a href="#">Morning Dew</a></h3>
-										<span><a href="#">Icons</a>, <a href="#">Illustrations</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-graphics pf-illustrations">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/5.jpg" alt="Open Imagination"></a></div>
-											<div class="slide"><a href="#"><img src="demos/business/images/portfolio/5-2.jpg" alt="Open Imagination"></a></div>
-										</div>
-									</div>
-								</div>
-								<div class="portfolio-overlay" data-lightbox="gallery">
-									<div class="portfolio-desc">
-										<h3><a href="#">Shake It!</a></h3>
-										<span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-uielements pf-icons">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="demos/business/images/portfolio/6.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a href="#">Backpack Contents</a></h3>
-										<span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-uielements pf-media">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="demos/business/images/portfolio/7.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a href="#">Console Activity</a></h3>
-										<span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-graphics">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="demos/business/images/portfolio/8.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a href="#">Sunset Bulb Glow</a></h3>
-										<span><a href="#">Graphics</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-					</div><!-- #portfolio end -->
-				</div>
-
-				<!-- Video Sections
-				============================================= -->
-				<div class="section nobg notopmargin clearfix">
-					<div class="container clearfix">
-
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/24help.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Responsive Layout</h3>
-								<p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-							</div>
-						</div>
-
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/barcode.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Retina Ready Graphics</h3>
-								<p>Looks beautiful &amp; ultra-sharp on Retina Displays with Retina Icons, Fonts &amp; Images.</p>
-							</div>
-						</div>
-
-						<div class="col_one_third col_last">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/buy.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Powerful Performance</h3>
-								<p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
-							</div>
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/card.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">HTML5 Video</h3>
-								<p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
-							</div>
-						</div>
-
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/doc.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Parallax Support</h3>
-								<p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
-							</div>
-						</div>
-
-						<div class="col_one_third col_last">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/dropbox.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Endless Possibilities</h3>
-								<p>Complete control on each &amp; every element that provides endless customization possibilities.</p>
-							</div>
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="col_one_third bottommargin">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/piggy-bank.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Light &amp; Dark Color Schemes</h3>
-								<p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
-							</div>
-						</div>
-
-						<div class="col_one_third bottommargin">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/home.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Boxed &amp; Wide Layouts</h3>
-								<p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
-							</div>
-						</div>
-
-						<div class="col_one_third bottommargin col_last">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="demos/business/images/icons/offers.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Extensive Documentation</h3>
-								<p>We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
-							</div>
-						</div>
-
-						<div class="clear line"></div>
-
-						<div class="row topmargin-lg clearfix">
-							<div class="col-lg-6 nopadding">
-								<!-- Youtube Video Link
-								============================================= -->
-								<a href="https://www.youtube.com/watch?v=NS0txu_Kzl8" data-lightbox="iframe">
-									<img src="demos/business/images/sections/video.jpg" alt="Youtube Video" class="image_fade" style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
-									<i class="icon-play" style="position: absolute; top: 50%; left: 50%; font-size: 60px; color: #FFF; margin-top: -45px; margin-left: -23px"></i>
-								</a>
-							</div>
-							<!-- Video Texts
-							============================================= -->
-							<div class="col-lg-6" style="padding-left: 60px;">
-								<div class="heading-block topmargin-sm bottommargin-sm noborder">
-									<h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">A small Video from Our Customers.</h3>
-								</div>
-								<p class="t400">Interactively facilitate.<br>Tactical systems with compelling materials. Objectively re-engineer diverse relationships long-term impact methodologies.</p>
-								<h5 class="nobottommargin t600">&middot; SemiColonWeb - Author, Themeforest Market. <a href="#"><img src="demos/business/images/tf-logo.png" height="18" alt="" style="margin-left: 4px"></a></h5>
-								<a href="#" class="button-link bottommargin">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Parallax Area
-				============================================= -->
-				<div class="section parallax topmargin-lg nobottommargin notopborder clearfix" style="background-image: url('demos/business/images/sections/2.jpg'); background-size: cover;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
-					<div class="container clearfix">
-
-						<div class="row cleafix">
-							<div class="col-md-6 dark" style="padding-left: 60px;">
-								<div class="heading-block bottommargin-sm noborder">
-									<h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">Collections from Our Customers.</h3>
-								</div>
-								<p>Appropriately implement user friendly e-markets and backend processes. Competently expedite competitive vortals rather than client-based testing procedures. Professionally matrix exceptional schemas vis-a-vis leveraged paradigms. Authoritatively coordinate just in time networks with strategic potentialities.</p>
-								<a href="#" class="button-link noleftmargin">Read More</a>
-							</div>
-
-							<div class="topmargin d-block d-lg-none d-xl-block"></div>
-
-							<!-- Testimonials slider
-							============================================= -->
-							<div class="col-md-5 offset-md-1">
-								<h4 class="dark">Testimonials Scroller</h4>
-								<div class="fslider testimonial" data-animation="slide" data-arrows="false">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide">
-												<div class="testimonial noborder noshadow">
-													<div class="testi-content">
-														<p class="bottommargin-sm font-primary">Great support, great documentation and you guys done a fantastic job in commenting everything, makes it very easy to customize, so thank you.</p>
-														<div class="testi-meta">
-															SmileyDot
-															<span>ThemeForest user</span>
-															<div class="testimonials-rating">
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testimonial noborder noshadow">
-													<div class="testi-content">
-														<p class="bottommargin-sm font-primary">I wish that I could choose more than one reason for my 5-star rating! The Design is great, the features are fantastic, the documentation top-notch.</p>
-														<div class="testi-meta">
-															georgewhoffman
-															<span>ThemeForest user</span>
-															<div class="testimonials-rating">
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testimonial noborder noshadow">
-													<div class="testi-content">
-														<p class="bottommargin-sm font-primary">Excellent Template really versatile and well documented. Makes anyone look like a design professional.</p>
-														<div class="testi-meta">
-															georgeuser077
-															<span>ThemeForest user</span>
-															<div class="testimonials-rating">
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testimonial noborder noshadow">
-													<div class="testi-content">
-														<p class="bottommargin-sm font-primary">This is the most robust template I've ever worked with. So much can be done with this multi-purpose package. Regular updates and enhancements add tremendous value.</p>
-														<div class="testi-meta">
-															rmandaro
-															<span>ThemeForest user</span>
-															<div class="testimonials-rating">
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testimonial noborder noshadow">
-													<div class="testi-content">
-														<p class="bottommargin-sm font-primary">I've been using Canvas for months now and it has exceeded my expectations. Their support has been great too.</p>
-														<div class="testi-meta">
-															kwelch2
-															<span>ThemeForest user</span>
-															<div class="testimonials-rating">
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-																<i class="icon-star3"></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Team Work
-				============================================= -->
-				<div class="section nobg nobottompadding nobottommargin clearfix">
-					<div class="container clearfix">
-						<div class="row clearfix">
-
-							<div class="col-lg-5 order-lg-12">
-								<div class="device-xl device-md topmargin-lg"></div>
-								<h3 class="nobottommargin" style="font-size: 40px;">Great Team Work.</h3>
-								<h3 class="t300 ls4 lowercase" style="font-size: 15px; color: #999;">Designed by Semicolonweb</h3>
-								<p>Uniquely plagiarize dynamic convergence after equity invested experiences. Holisticly repurpose installed base infomediaries before web-enabled methods of empowerment.</p>
-								<a href="#" class="button-link bottommargin">Read More</a>
-							</div>
-
-							<div class="col-lg-7 order-lg-1">
-								<div style="position: relative; margin-bottom: 0;" class="ohidden" data-height-xl="520" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
-									<img class="man" src="demos/business/images/sections/man.jpg" style="position: absolute; top: 0; left: auto;" alt="Chrome">
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<!-- Brands Carousel
-				============================================= -->
-				<div class="section nomargin clearfix" style="padding: 80px 0">
-					<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="0" data-nav="false" data-pagi="false" data-loop="true" data-autoplay="3000" data-items-xs="2" data-items-sm="3" data-items-md="5" data-items-lg="5" data-items-xl="5">
-
-						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/linkedin.svg" style="height: 24px" alt="Brands"></a></div>
-						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/nat-geo.svg" style="height: 24px" alt="Brands"></a></div>
-						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/jetblue.svg" style="height: 24px" alt="Brands"></a></div>
-						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/zillow.svg" style="height: 24px" alt="Brands"></a></div>
-						<div class="oc-item"><a href="#"><img src="demos/business/images/clients/amazon.svg" style="height: 24px" alt="Brands"></a></div>
-
-					</div>
-				</div>
-
-			</div>
-
-		</section><!-- #content end -->
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="noborder" style="padding: 30px 0; background-color: #FFF">
-
-			<div class="container clearfix">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
-					<div class="col_one_fourth">
-						<img src="demos/business/images/logo@2x.png" alt="" height="100" style="margin-top: -30px">
-					</div>
-					<div class="col_three_fourth col_last">
-						<div class="col_one_fourth">
-							<div class="widget widget_links clearfix">
-								<h4>Hire</h4>
-								<ul>
-									<li><a href="#">Documentation</a></li>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col_one_fourth">
-							<div class="widget widget_links clearfix">
-								<h4>Community</h4>
-								<ul>
-									<li><a href="#">Documentation</a></li>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col_one_fourth">
-							<div class="widget widget_links clearfix">
-								<h4>Learn</h4>
-								<ul>
-									<li><a href="#">Documentation</a></li>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col_one_fourth col_last">
-							<div class="widget widget_links clearfix">
-								<h4>About</h4>
-								<ul>
-									<li><a href="#">Documentation</a></li>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="clear"></div>
-						<div class="line line-sm"></div>
-						<div class="col_two_third">
-							<small class="t300" style="color: #AAA">Copyright &copy; 2018 All Rights Reserved by TaoFruit.</small>
-						</div>
-						<div class="col_one_third col_last">
-							<div class="fright clearfix">
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-gplus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-pinterest">
-									<i class="icon-pinterest"></i>
-									<i class="icon-pinterest"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-vimeo">
-									<i class="icon-vimeo"></i>
-									<i class="icon-vimeo"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-instagram">
-									<i class="icon-instagram"></i>
-									<i class="icon-instagram"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</footer><!-- #footer end -->
-
-	</div><!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
-	<!-- External JavaScripts
-	============================================= -->
-	<script src="js/jquery.js"></script>
-	<script src="js/plugins.js"></script>
-
-	<!-- Footer Scripts
-	============================================= -->
-	<script src="js/functions.js"></script>
-
-	<script>
-		// Owl Carousel Scripts
-		$('#oc-features').owlCarousel({
-			items: 1,
-			margin: 60,
-		    nav: true,
-		    navText: ['<i class="icon-line-arrow-left"></i>','<i class="icon-line-arrow-right"></i>'],
-		    dots: false,
-		    stagePadding: 30,
-		    responsive:{
-				768: { items: 2 },
-				1200: { stagePadding: 200 }
-			},
-		});
-	</script>
-
+		</div>
+	</div>
+    
+  <!-- Search modal -->   
+ <div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="type keyword(s) here" >
+        <button type="submit" class="button">Search</button>
+    </form>
+</div>
+    
+<!-- Common scripts -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions.js"></script>
+<script src="assets/validate.js"></script>
+
+<!-- Specific scripts -->
+<script src="layerslider/js/greensock.js"></script>
+ <script src="layerslider/js/layerslider.transitions.js"></script>
+<script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		'use strict';
+        $('#layerslider').layerSlider({
+            autoStart: true,
+			responsive: true,
+			responsiveUnder: 1280,
+			layersContainer: 1170,
+            skinsPath: 'layerslider/skins/'
+            // Please make sure that you didn't forget to add a comma to the line endings
+            // except the last line!
+        });
+    });
+</script>
+<script src="js/tabs.js"></script>
+<script>new CBPFWTabs( document.getElementById( 'tabs' ) );</script>
 </body>
 </html>
