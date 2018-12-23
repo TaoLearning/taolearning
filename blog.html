@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="college, campus, university, courses, school, educational">
-    <meta name="description" content="ATENA - College, University and campus template">
+    <meta name="description" content="Tao Learning">
     <meta name="author" content="Ansonika">
-    <title>ATENA - College, University and campus template</title>
+    <title>Tao Learning</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
