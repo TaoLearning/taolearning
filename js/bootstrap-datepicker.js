@@ -518,7 +518,7 @@
                 startDate: startDate
             });
             this.update();
-            this.updateNavArrows();
+            this.updTaovArrows();
         },
 
         setEndDate: function(endDate) {
@@ -526,7 +526,7 @@
                 endDate: endDate
             });
             this.update();
-            this.updateNavArrows();
+            this.updTaovArrows();
         },
 
         setDaysOfWeekDisabled: function(daysOfWeekDisabled) {
@@ -534,7 +534,7 @@
                 daysOfWeekDisabled: daysOfWeekDisabled
             });
             this.update();
-            this.updateNavArrows();
+            this.updTaovArrows();
         },
 
         place: function() {
@@ -747,7 +747,7 @@
             this.picker.find('tfoot th.clear')
                 .text(cleartxt)
                 .toggle(this.o.clearBtn !== false);
-            this.updateNavArrows();
+            this.updTaovArrows();
             this.fillMonths();
             var prevMonth = UTCDate(year, month - 1, 28),
                 day = DPGlobal.getDaysInMonth(prevMonth.getUTCFullYear(), prevMonth.getUTCMonth());
@@ -858,7 +858,7 @@
             yearCont.html(html);
         },
 
-        updateNavArrows: function() {
+        updTaovArrows: function() {
             if (!this._allow_update)
                 return;
 
@@ -1234,7 +1234,7 @@
                 .hide()
                 .filter('.datepicker-' + DPGlobal.modes[this.viewMode].clsName)
                 .css('display', 'block');
-            this.updateNavArrows();
+            this.updTaovArrows();
         }
     };
 

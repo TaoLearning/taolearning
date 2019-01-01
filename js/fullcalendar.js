@@ -6202,7 +6202,7 @@ function DayEventRenderer() {
 	}
 
 
-	// Build a concatenated HTML string for an array of segments
+	// Build a concTaoted HTML string for an array of segments
 	function buildHTML(segments) {
 		var html = '';
 		for (var i=0; i<segments.length; i++) {

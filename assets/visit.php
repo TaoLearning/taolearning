@@ -69,8 +69,8 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_visit";
 $usersubject = "Thank You";
-$userheaders = "From: info@atena.com\n";
-$usermessage = "Thank you for contact ATENA. We will reply shortly!";
+$userheaders = "From: info@Tao.com\n";
+$usermessage = "Thank you for contact Tao. We will reply shortly!";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
