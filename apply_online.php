@@ -73,8 +73,8 @@ function delayedRedirect(){
 
 						/*$subject = "".$_POST['subject'];*/
 						$to = "your@email.com";
-						$subject = "Apply from ATENA";
-						$headers = "From: ATENA web site <noreply@yourdomain.com>";
+						$subject = "Apply from Tao";
+						$headers = "From: Tao web site <noreply@yourdomain.com>";
 						
 						$message = "\nPERSONAL DETAILS"; 
 						$message .= "\nName: " . $_POST['name_apply'];
@@ -104,7 +104,7 @@ function delayedRedirect(){
 						//Confirmation page
 						$user = "$mail";
 						$usersubject = "Thank You";
-						$userheaders = "From: info@atena.com\n";
+						$userheaders = "From: info@Tao.com\n";
 						/*$usermessage = "Thank you for your time. Your request is successfully submitted.\n"; WITH OUT SUMMARY*/
 						//Confirmation page WITH  SUMMARY
 						$usermessage = "Thank you for your time. Your request is successfully submitted.\n\nSUMMARY\n$message"; 
