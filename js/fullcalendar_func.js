@@ -39,84 +39,84 @@
 			events: [
 				{
 					title: 'Lesson',
-					start: '2015-07-01'
+					start: '2019-07-01'
 				},
 				{
 					title: 'Lesson',
 					start: '2014-07-07',
-					end: '2015-07-10'
+					end: '2019-07-10'
 				},
 				{
 					title: 'Exam',
-					start: '2015-07-09T10:30:00'
+					start: '2019-07-09T10:30:00'
 				},
 				{
 					title: 'Meeting',
-					start: '2015-07-12T10:30:00',
-					end: '2015-07-12T12:30:00'
+					start: '2019-07-12T10:30:00',
+					end: '2019-07-12T12:30:00'
 				},
 				{
 					title: 'Lunch',
-					start: '2015-07-12T12:00:00'
+					start: '2019-07-12T12:00:00'
 				},
 				{
 					title: 'Click for Google',
 					url: 'http://google.com/',
-					start: '2015-07-28'
+					start: '2019-07-28'
 				},
 				{
 					title: 'Lesson',
-					start: '2015-08-01'
+					start: '2019-08-01'
 				},
 				{
 					title: 'Lesson',
-					start: '2015-08-07',
-					end: '2015-08-10'
+					start: '2019-08-07',
+					end: '2019-08-10'
 				},
 				{
 					title: 'Exam',
-					start: '2015-08-09T10:30:00'
+					start: '2019-08-09T10:30:00'
 				},
 				{
 					title: 'Meeting',
-					start: '2015-08-12T10:30:00',
-					end: '2015-08-12T12:30:00'
+					start: '2019-08-12T10:30:00',
+					end: '2019-08-12T12:30:00'
 				},
 				{
 					title: 'Lunch',
-					start: '2015-08-12T12:00:00'
+					start: '2019-08-12T12:00:00'
 				},
 				{
 					title: 'Click for Google',
 					url: 'http://google.com/',
-					start: '2015-08-28'
+					start: '2019-08-28'
 				},
 				{
 					title: 'Lesson',
-					start: '2015-09-01'
+					start: '2019-09-01'
 				},
 				{
 					title: 'Lesson',
-					start: '2015-09-07',
-					end: '2015-09-10'
+					start: '2019-09-07',
+					end: '2019-09-10'
 				},
 				{
 					title: 'Exam',
-					start: '2015-09-09T10:30:00'
+					start: '2019-09-09T10:30:00'
 				},
 				{
 					title: 'Meeting',
-					start: '2015-09-12T10:30:00',
-					end: '2015-09-12T12:30:00'
+					start: '2019-09-12T10:30:00',
+					end: '2019-09-12T12:30:00'
 				},
 				{
 					title: 'Lunch',
-					start: '2015-09-12T12:00:00'
+					start: '2019-09-12T12:00:00'
 				},
 				{
 					title: 'Click for Google',
 					url: 'http://google.com/',
-					start: '2015-09-28'
+					start: '2019-09-28'
 				}
 			],
 			droppable: true, // this allows things to be dropped onto the calendar !!!
