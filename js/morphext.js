@@ -3,11 +3,11 @@
  * https://github.com/MrSaints/Morphext
  *
  * Built on jQuery Boilerplate
- * http://jqueryboilerplate.com/
+ * https://jqueryboilerplate.com/
  *
  * Copyright 2014 Ian Lai and other contributors
  * Released under the MIT license
- * http://ian.mit-license.org/
+ * https://ian.mit-license.org/
  */
 
 /*eslint-env browser */

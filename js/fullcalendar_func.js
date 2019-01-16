@@ -6,7 +6,7 @@
 			
 			'use strict';
 		
-			// create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+			// create an Event Object (https://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
 			// it doesn't need to have a start or end
 			var eventObject = {
 				title: $.trim($(this).text()) // use the element's text as the event title
@@ -61,7 +61,7 @@
 				},
 				{
 					title: 'Click for Google',
-					url: 'http://google.com/',
+					url: 'https://google.com/',
 					start: '2019-07-28'
 				},
 				{
@@ -88,7 +88,7 @@
 				},
 				{
 					title: 'Click for Google',
-					url: 'http://google.com/',
+					url: 'https://google.com/',
 					start: '2019-08-28'
 				},
 				{
@@ -115,7 +115,7 @@
 				},
 				{
 					title: 'Click for Google',
-					url: 'http://google.com/',
+					url: 'https://google.com/',
 					start: '2019-09-28'
 				}
 			],
@@ -132,7 +132,7 @@
 				copiedEventObject.start = date;
 				
 				// render the event on the calendar
-				// the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+				// the last `true` argument determines if the event "sticks" (https://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
 				$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
 				
 				// is the "remove after drop" checkbox checked?
