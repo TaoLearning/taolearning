@@ -22,8 +22,8 @@
   <a href="https://www.npmjs.com/package/sweetalert2"><img alt="Version" src="https://img.shields.io/npm/v/sweetalert2.svg"></a>
   <a href="https://github.com/sweetalert2/sweetalert2/blob/master/CHANGELOG.md"><img alt="semantic-release badge" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg"></a>
   <a href="https://www.jsdelivr.com/package/npm/sweetalert2"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/sweetalert2/badge?style=rounded"></a>
-  <a href="https://www.patreon.com/limonte"><img alt="Support me on Patreon" src="http://ionicabizau.github.io/badges/patreon.svg"></a>
-  <a href="https://www.paypal.me/limonte/5eur"><img alt="PayPal Donate" src="http://ionicabizau.github.io/badges/paypal.svg"></a>
+  <a href="https://www.patreon.com/limonte"><img alt="Support me on Patreon" src="https://ionicabizau.github.io/badges/patreon.svg"></a>
+  <a href="https://www.paypal.me/limonte/5eur"><img alt="PayPal Donate" src="https://ionicabizau.github.io/badges/paypal.svg"></a>
 </p>
 
 ---
@@ -185,8 +185,8 @@ If you would like to contribute enhancements or fixes, please do the following:
 4. To begin active development, run `npm start` or `yarn start`. This does several things for you:
  - Lints your code
  - Builds the `dist` folder
- - Serves sandbox.html @ http://localhost:8080/ (browser-sync ui:  http://localhost:8081/)
- - Serves unit tests @ http://localhost:3000
+ - Serves sandbox.html @ https://localhost:8080/ (browser-sync ui:  https://localhost:8081/)
+ - Serves unit tests @ https://localhost:3000
  - Re-lints, re-builds, re-loads and re-tests as necessary when files change
 
 Backers
