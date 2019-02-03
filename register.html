@@ -35,6 +35,19 @@
     <!-- SPECIFIC CSS -->
     <link href="css/skins/square/blue.css" rel="stylesheet">
     <script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js?render=6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO'></script>
+
+	<script>
+		grecaptcha.ready(function() {
+		grecaptcha.execute('6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO', {action: 'TLI Member Registration'})
+		.then(function(token) {
+		var recaptchaResponse = document.getElementById('recaptchaResponse');
+        recaptchaResponse.value = token;
+		// Verify the token on the server.
+		});
+		});
+	</script>
 </head>
 
 <body>
@@ -49,7 +62,7 @@
 		<nav id="top-nav">
 			<ul>
             	<li><a href="#search"><i class=" icon-search"></i></a></li>
-				<li><a href="tour.html">Tour</a></li>
+				<li><a href="https://www.youtube.com/watch?v=CEb2eC6GSSA" target="_blank">Tour</a></li>
                 <li><a href="https://login.microsoftonline.com/?whr=taolearning.org" target="_blank">Login</a></li>
 			</ul>
 		</nav>
@@ -99,7 +112,7 @@
 
         <div class="sub_header bg_1">
         	<div id="intro_txt">
-			<h1>Tao Learning <strong>Registration</strong></h1>
+			<h1>Member Registration</h1>
             <p>World's First P-20+ Education Platform</p>
             </div>
 		</div> <!--End sub_header -->
@@ -109,8 +122,7 @@
     	<div class="container">
                 	<ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li>Page active</li>
+                    <li>Member Registration</li>
                     </ul>
         </div>
     </div><!-- Position -->
@@ -198,12 +210,13 @@
                         
                          <div class="row">
                    	<div class="col-md-6">
-                                <label>Country</label>
+                                <label>Location</label>
                                 <div>
-								<select class="form-control required" name="country" id="country">
-									<option value="" selected>Select your country</option>
-									<option value="Europe">Europe</option>
-									<option value="Asia">Asia</option>
+								<select class="form-control required" name="location" id="location">
+									<option value="" selected>Select your location</option>
+                                    <option value="Asia">Asia</option>
+									<option value="Australia">Australia</option>
+									<option value="Europe">Europe</option>									
 									<option value="North America">North America</option>
 									<option value="South America">South America</option>
 								</select>
@@ -212,7 +225,7 @@
                             <div class="col-md-3">
                             <div class="form-group">
                                 <label>Zip/Postal Code</label>
-                                <input type="text" class="form-control styled required" id="zipcode" name="zipcode" placeholder="412238">
+                                <input type="text" class="form-control styled required" id="zipcode" name="zipcode" placeholder="41550">
                             </div>
                            </div>
                    </div>
@@ -290,10 +303,19 @@
                 <div class="form-group">
 					<input type="checkbox" name="policy_terms" id="policy_terms" class="required" value="Yes"><label>I accept the <a href="#0">terms and conditions</a> and general policy.</label>
 				</div>
-                     <p><button type="submit"  class="button">Submit</button></p>
-                      </div>
-                      </form>
-                    </div>
+                <div class="g-recaptcha"
+                    data-sitekey="6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO"
+                    data-callback="onSubmit"
+                    data-size="invisible">
+                </div>
+
+                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                <input type="text" name="_gotcha" style="display:none" />
+        
+                <p><button type="submit"  class="button">Submit</button></p>
+                </div>
+                </form>
+            </div>
            </div>
            <div class="col-md-3">
            		
