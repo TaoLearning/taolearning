@@ -34,6 +34,7 @@
     
     <!-- SPECIFIC CSS -->
     <link href="css/skins/square/blue.css" rel="stylesheet">
+    <script src="/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -499,5 +500,27 @@ $('input').iCheck({
  <script>
   $("#apply_online").validate();
 </script>
+
+ <script>
+    $('#btn-submit').on('click',function(e){
+        e.preventDefault();
+        var form = $(this).parents('form');
+        Swal({
+                title: '<strong>Registration Complete</strong>',
+                type: 'success',
+                html:
+                    'Check your email for Login details.<br>Account available within 5 minutes.',
+                showCloseButton: true,
+                focusConfirm: false,
+                confirmButtonText:
+                    '<a style="color: white" href="https://login.microsoftonline.com/?whr=taolearning.org"><i class="fa fa-address-card"></i> Login</a>',
+                confirmButtonAriaLabel: 'Login',
+            }), function(isConfirm){
+            if (isConfirm) form.submit();
+        });
+    });
+</script>
+
+
 </body>
 </html>
