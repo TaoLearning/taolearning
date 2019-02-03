@@ -214,6 +214,7 @@
                                 <div>
 								<select class="form-control required" name="location" id="location">
 									<option value="" selected>Select your location</option>
+                                    <option value="Africa">Africa</option>
                                     <option value="Asia">Asia</option>
 									<option value="Australia">Australia</option>
 									<option value="Europe">Europe</option>									
@@ -536,6 +537,7 @@ $('input').iCheck({
   $("#register").validate();
 </script>
 
+
  <script>
 
     $("#register").submit(function(event){
@@ -546,35 +548,19 @@ $('input').iCheck({
      event.preventDefault(); //prevent default action 
     var post_url = $(this).attr("action"); //get form action url
     var request_method = $(this).attr("method"); //get form GET/POST method
-    var form_data = new FormData(this); //Encode form elements for submission
+    var content_type = $(this).attr("enctype"); //get form GET/POST method
+    var form_data = $(this).serialize(); //Encode form elements for submission
     
-    $("#register")[0].reset();
+    
     $.ajax({
-        url : post_url,
-        type: request_method,
-        data : form_data,
-		contentType: false,
-		processData:false,
-		xhr: function(){
-		//upload Progress
-		var xhr = $.ajaxSettings.xhr();
-		if (xhr.upload) {
-			xhr.upload.addEventListener('progress', function(event) {
-				var percent = 0;
-				var position = event.loaded || event.position;
-				var total = event.total;
-				if (event.lengthComputable) {
-					percent = Math.ceil(position / total * 100);
-				}
-				//update progressbar
-				$("#upload-progress .progress-bar").css("width", + percent +"%");
-			}, true);
-		}
-		return xhr;
-	}
-    }).then(function(response){ //
-         Swal({
-                title: '<strong>Registration Complete</strong>',
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function (data) {
+                $("#register")[0].reset();
+                $("input:checkbox").attr('checked', false);
+                Swal({
+                title: '<strong>Registration Successful</strong>',
                 type: 'success',
                 html:
                     'Check your email for Login details.<br>Account available within 5 minutes.',
@@ -583,9 +569,16 @@ $('input').iCheck({
                 confirmButtonText:
                     '<a style="color: white" href="https://login.microsoftonline.com/?whr=taolearning.org"><i class="fa fa-address-card"></i> Login</a>',
                 confirmButtonAriaLabel: 'Login',
-            }),
-    
-
+            });
+                console.log('Submission was successful.');
+                console.log(data);
+                
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        }).then(function(response){ //
         $("#server-results").html(response);
     }); //form is validated do your work
     }
