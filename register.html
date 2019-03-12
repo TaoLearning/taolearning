@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="college, campus, university, courses, school, educational">
-    <meta name="description" content="Tao Learning">
-    <meta name="author" content="Tao Fuit">
-    <title>Tao Learning | Registration</title>
+    <title>Tao Learning Institute</title>
+    <meta name="description" content="Tao Learning is a clean, modern, and fully responsive HTML Template. it is designed for charity, non-profit, fundraising, donation, volunteer, businesses or any type of person or business who wants to showcase their work, services and professional way.">
+    <meta name="keywords" content="campaign, cause, charity, donate, donations, event, foundation, fund, fundraising, kids, ngo, non-profit, organization, volunteer">
+    <meta name="author" content="taofruit.com"> 
+	
+	<!-- ==============================================
+	Favicons
+	=============================================== -->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+	<!-- ==============================================
+	CSS VENDOR
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+	
+	<!-- ==============================================
+	Custom Stylesheet
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+    <script src="js/vendor/modernizr.min.js"></script>
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favico.png" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+	<script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
-    <!-- BASE CSS -->
-    <link href="css/main_font/main_font.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/menu.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
-    <link href="css/icon_font/pe-icon-7-stroke.min.css" rel="stylesheet">
-    <link href="css/fontello/css/fontello.min.css" rel="stylesheet">
-    <link href="css/edu_fonts/edu_fonts.min.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-
-    <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-    
-    <!-- SPECIFIC CSS -->
-    <link href="css/skins/square/blue.css" rel="stylesheet">
-    <script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
-
-    <script src='https://www.google.com/recaptcha/api.js?render=6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO'></script>
+	<script src='https://www.google.com/recaptcha/api.js?render=6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO'></script>
+	
+	<!-- Blue CSS -->
+	<link rel="stylesheet" type="text/css" href="css/blue.css">
+	
 
 	<script>
 		grecaptcha.ready(function() {
@@ -48,107 +54,141 @@
 		});
 		});
 	</script>
+	<style>
+ul {
+list-style-type: none;
+}
+</style>
+
 </head>
 
 <body>
 
-<div id="preloader">
-	<div class="pulse"></div>
-</div><!-- Pulse Preloader -->
+	<!-- LOAD PAGE -->
+	<div class="animationload">
+		<div class="loader"></div>
+	</div>
+	
+	<!-- BACK TO TOP SECTION -->
+	<a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
 
-    <header>
-        <div style="padding: 10px 0px 0px">
-		<a id="logo" href="index.html"><a href="https://taolearning.org"><img src="img/logo.png" width="125" height="40" alt="Tao" data-retina="true"></a></div>
-		<nav id="top-nav">
-			<ul>
-            	<li><a href="#search"><i class=" icon-search"></i></a></li>
-				<li><a href="https://www.youtube.com/watch?v=CEb2eC6GSSA" target="_blank">Tour</a></li>
-                <li><a href="https://login.microsoftonline.com/?whr=taolearning.org" target="_blank">Login</a></li>
-			</ul>
-		</nav>
-		<a id="menu-trigger" href="#"><span class="menu-trigger-text">Menu</span><span class="menu-trigger-icon"></span></a>
-	</header> <!-- End Header -->
-    
-    <nav id="side-nav">
-		<ul class="side-nav-menu">    
-         <li><a href="https://taolearning.org">HOME</a></li>       
-         <li><a href="https://taolearning.org/services.html">SERVICES</a></li> 
-        <li><a href="https://taolearning.org/method.html">METHOD</a></li>
-            <li class="item-has-children">
-				<a href="#">Centers</a>
-				<ul class="sub-menu">
-					<li><a>Ohio, USA</a></li>
-					<li><a>Islamabad, PK</a></li>
-					<li><a>Shenzhen, China</a></li>
-                    <li><a>Platanillo, Costa Rica</a></li>
-				</ul>
-			</li> <!-- item-has-children -->
-            <li>
-            <ul class="side-nav-menu single-item-wp">
-                <li><a href="method.html">Partners</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-            </ul> <!--single-item-wp -->
-            <ul class="side-nav-menu single-item-wp">
-                <li><a href="https://login.microsoftonline.com/?whr=taolearning.org" target="_blank">Login</a></li>
-                <li><a href="register">Register</a></li>
-                <li class="hidden-lg hidden-md"><a href="#search">Search</a></li>
-                <li><a href="#0">Terms &amp; Conditions</a></li>
-            </ul> <!--single-item-wp -->
-            </li>
-        </ul> <!-- side-nav-menu -->
-		<div id="social">
-            <ul>
-               <li><a href="https://www.facebook.com/Tao-Learning-477940502675306/"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-           </ul>
-       </div>
-	</nav><!--End nav-->
-        
-    
-	<div class="main-wrapper">
+	<!-- HEADER -->
+	<div class="header header-2">
 
-        <div class="sub_header bg_1">
-        	<div id="intro_txt">
-			<h1>Member Registration</h1>
-            <p>World's First P-20+ Education Platform</p>
-            </div>
-		</div> <!--End sub_header -->
- 
- 		<div class="container_gray_bg">
-        <div id="position">
-    	<div class="container">
-                	<ul>
-                    <li><a href="#">Home</a></li>
-                    <li>Member Registration</li>
-                    </ul>
-        </div>
-    </div><!-- Position -->
-        <div class="container margin_60">
- 		<div class="row">
-  
-           <div class="col-md-9">
-                	<div class="box_style_1">
-                    <form enctype='application/json' method="POST" action="https://prod-29.centralus.logic.azure.com:443/workflows/d83845ce58634cd9a482767223ed1302/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Em_94N9NBsDzZBW1VLYdq5jU_Mffqiiq_AAa7PKuYPc" id="register">
-                   	<div class="indent_title_in">
-                    <i class="pe-7s-user"></i>
-				<h3>Personal Details</h3>
-				<p>Fill out the information below.</p>
+	    <!-- NAVBAR SECTION -->
+		<div class="navbar-main">
+			<div class="container">
+			    <nav class="navbar navbar-expand-lg">
+			        <a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="" />
+					</a>
+			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			            <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			            <ul class="navbar-nav ml-auto">
+			                <li class="nav-item">
+			                    <a class="nav-link" href="about.html">ABOUT US</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link" href="whatwedo.html">WHAT WE DO</a>
+			                </li>
+			                <li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          PARTNERS
+						        </a>
+			                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="events-single.html">Introducing Partnerships</a>
+			                    	<a class="dropdown-item" href="events.html">Corporate</a>
+	          						<a class="dropdown-item" href="events-single.html">NonProfit & Government</a>
+									<a class="dropdown-item" href="events-single.html">Event Sponsors</a>
+									<a class="dropdown-item" href="events-single.html">Chapter Directors</a>
+							    </div>
+			                </li>
+							<li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          GET INVOLVED
+						        </a>
+			                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			                    	
+	          						<a class="dropdown-item" href="cause.html">Give to a Project</a>
+	          						<a class="dropdown-item" href="testimonials.html">Internships</a>
+	          						<a class="dropdown-item" href="news-grid.html">Fellowships</a>
+	          						<a class="dropdown-item" href="news-detail.html">Become an Advocate</a>
+	          						<a class="dropdown-item" href="cause-single.html">Volunteer</a>
+												<a class="dropdown-item" href="register.html">Register</a>
+							    </div>
+			                </li>
+							<li class="nav-item">
+			                    <a class="nav-link" href="https://login.microsoftonline.com/?whr=taolearning.org">LOGIN</a>
+			                </li>
+			            </ul>
+						 <a href="#" class="btn btn-secondary btn-nav ml-auto">FUNDRAISE</a>
+			            <a href="https://donorbox.org/taolearning" class="btn btn-primary btn-nav ml-auto">DONATE</a>
+			        </div>
+			    </nav>
 			</div>
-            	<div class="wrapper_indent">
+		</div>
+
+		
+
+	</div>
+	
+	 
+	<!-- BANNER -->
+	<div class="section banner-page" data-background="images/1920/learnblock2.jpg">
+		<div class="content-wrap pos-relative">
+			<div class="d-flex justify-content-center bd-highlight mb-3">
+				<div class="title-page">Register</div>
+			</div>
+			<div class="d-flex justify-content-center bd-highlight mb-3">
+			    <nav aria-label="breadcrumb">
+				  <ol class="breadcrumb ">
+				    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Get Involved</li>
+					<li class="breadcrumb-item active" aria-current="page">Register</li>
+				  </ol>
+				</nav>
+		  	</div>
+		</div>
+	</div>
+
+	<!-- CONTENT -->
+	<div class="section">
+		<div class="content-wrap2">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-sm-12 col-md-12">
+						<h2 class="section-heading">
+							Tao Learning <span>Registration</span>
+						</h2>
+						<div class="section-subheading">This registraiton gives you access to the digital Tao Learning platform.  To properly collaborate with us, you will want to devote a minimum of <span>4 hours</span> to studying how to use the system before reaching out to our staff.  You will be emailed login instructions along with training material to understand the system.</div>
+						<div class="margin-bottom-50"></div>
+					</div>
+				</div>
+<div class="row">
+	<div class="col-sm-9 col-md-9">
+						<div class="content">
+							<form enctype='application/json' method="POST" action="https://prod-29.centralus.logic.azure.com:443/workflows/d83845ce58634cd9a482767223ed1302/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Em_94N9NBsDzZBW1VLYdq5jU_Mffqiiq_AAa7PKuYPc" id="register" class="form-contact"  data-toggle="validator" novalidate="true">
+							
+							<div class="title">
+								<h3>Personal Details</h3>
+							</div>
+
+							<div class="wrapper_indent">
                         <div class="row">
                         	<div class="col-md-6">
                             	<div class="form-group"  >
                                 <label>First name</label>
-                                <input type="text" class="form-control styled required" id="name" name="firstname"  placeholder="First name">
+                                <input type="text" class="form-control styled required" id="name" name="firstname"  placeholder="First name" required="">
+								<div class="help-block with-errors"></div>
                             </div>
                             </div>
                             <div class="col-md-6">
                             	<div class="form-group">
                                 <label>Last name</label> 
-                                <input type="text" class="form-control styled required" id="lastname" name="lastname" placeholder="Last name">
+                                <input type="text" class="form-control styled required" id="lastname" name="lastname" placeholder="Last name" required="">
                             </div>
                             </div>
                         </div><!-- End row -->
@@ -156,7 +196,7 @@
                         	<div class="col-md-6">
                             	<div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control styled required" id="email" name="email" placeholder="youremail@domain.com">
+                                <input type="email" class="form-control styled required" id="email" name="email" placeholder="youremail@domain.com" required="">
                             </div>
                             </div>
                             <div class="col-md-6">
@@ -177,41 +217,41 @@
                             	<div class="form-group">
                                 <label>Gender</label><br>
                                 <div class="radio_inline">
-                                <input type="radio" name="gender" id="male" class="required" value="Male"><label style="margin-right:20px;">Male</label>
-                                <input type="radio" name="gender" id="female" class="required" value="Female"><label>Female</label>
+                                <label style="margin-right:20px;"><input type="radio" name="gender" id="male" class="required" value="Male">Male</label>
+                                <label><input type="radio" name="gender" id="female" class="required" value="Female">Female</label>
                                 </div>
                             </div>
                             </div>
                         </div><!-- End row -->
                       </div>
                       <hr class="styled_2">
-                      <div class="indent_title_in">
-                    <i class="pe-7s-map-marker"></i>
-				<h3>Address</h3>
-				
-			</div>
-            	<div class="wrapper_indent">
-                  
+					
+					<div class="indent_title_in">
+						<i class="pe-7s-map-marker"></i>
+						<h3>Address</h3>
+					</div>
+
+					<div class="wrapper_indent">
                    
                     <div class="row">
-                        	<div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Address line</label>
-                                <input type="text" class="form-control styled required" id="address" name="address" placeholder="Address">
-                            </div>
-                            </div>
-                            <div class="col-md-6">
-                            	<div class="form-group">
-                                <label>City</label>
-                                <input type="text" class="form-control styled required" id="city" name="city" placeholder="City">
-                            </div>
-                            </div>
-                        </div><!-- End row -->
+						<div class="col-md-6">
+							<div class="form-group">
+							<label>Address line</label>
+							<input type="text" class="form-control styled required" id="address" name="address" placeholder="Address">
+						</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							<label>City</label>
+							<input type="text" class="form-control styled required" id="city" name="city" placeholder="City">
+						</div>
+						</div>
+					</div><!-- End row -->
                         
-                         <div class="row">
+				<div class="row">
                    	<div class="col-md-6">
                                 <label>Location</label>
-                                <div>
+							<div>
 								<select class="form-control required" name="location" id="location">
 									<option value="" selected>Select your location</option>
                                     <option value="Africa">Africa</option>
@@ -223,49 +263,26 @@
 								</select>
 							</div>
                             </div>
-                            <div class="col-md-3">
+						<div class="col-md-3">
                             <div class="form-group">
                                 <label>Zip/Postal Code</label>
                                 <input type="text" class="form-control styled required" id="zipcode" name="zipcode" placeholder="41550">
                             </div>
-                           </div>
-                   </div>
-                        
-                        
-                      </div>
-                      <hr class="styled_2">
+						</div>
+                   </div>         
+				</div>
+					<hr class="styled_2">
                       <div class="indent_title_in">
-                    <i class="pe-7s-study"></i>
-				<h3>Academic Information</h3>
-				<p>Tell us a little about your Education desires and background.</p>
-			</div>
+                   	 <i class="pe-7s-study"></i>
+					<h3>Academic Information</h3>
+					<p>Tell us a little about your Education desires and background.</p>
+				</div>
             	<div class="wrapper_indent">
                     <div class="row list_courses_apply">
-                    	<div class="col-md-4">
-                        	<h4>Program Interest</h4>
-                            <ul>
-                            <li>
-                                <label><input type="radio" name="program" id="sunnyhive" value="sunnyhive" minlength="1"><a class="tooltip-1" data-placement="right" title="Preschool and Childcare">Sunny Hive</a></label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="program" id="steamhive" value="steamhive"><a class="tooltip-1" data-placement="right" title="K-12 Education">Steam Hive</a></label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="program" id="focushive" value="focushive"><a class="tooltip-1" data-placement="right" title="Library and Social Education">Focus Hive</a></label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="program" id="university" value="university"><a class="tooltip-1" data-placement="right" title="University Level">Tao University</a></label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="program" id="mentor" value="mentor"><a class="tooltip-1" data-placement="right" title="Internship and Business Level">Mentor Program</a></label>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
+						<div class="col-md-4">
                         <h4>Current Education Level</h4>
                             <select class="form-control required" name="current_level" id="current_level" >
-                                <option value="" selected>Select Current Level</option>
-                                <option value="none">None</option>
+                                <option value="none" selected>None</option>
                                 <option value="preschool">Preschool</option>
                                 <option value="Middle School">Middle School</option>
                                 <option value="High School">High School</option>
@@ -276,49 +293,66 @@
                             </select>
 
                         </div>
+                    	<div class="col-md-4">
+                        	<h4>Type of Interest</h4>
+							<select class="form-control required" name="interest" id="interest" >
+                                <option value="none" selected>Not Sure</option>
+                                <option value="Mentor">Find a Mentor</option>
+								<option value="University">Tao University</option>
+								<option value="Fellowship">Fellowship</option>
+                                <option value="Volunteer">Volunteer</option>
+                                <option value="Fundraise">Fundraise</option>
+                                <option value="Internship">Internship</option>
+                            </select>
+                        </div>
+                        
                         <div class="col-md-4">
                         	<h4>Commitment Desired</h4>
-                              <ul>
-                            <li>
-                                <label><input type="radio" name="time" id="part" value="Part Time">Part-Time</label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="time" id="full" value="Full Time">Full-time</label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="time" id="digital" value="Digital Only">Digital Only</label>
-                            </li>
-                            </ul>
+							<select class="form-control required" name="time" id="time" >
+                                <option value="none" selected>Not Sure</option>
+								<option value="intensive">Intensive - Short Term</option>
+                                <option value="flexible">Flexible - Long Term</option>
+                                <option value="part">Part Time - Long Term</option>
+                                <option value="full">Full Time - Long Term</option>
+                                <option value="livein">Live-In Desired - Long Term</option>
+                            </select>
                         </div>
                     </div>
-                    
-                    
-                      </div>
-                      
-                      <hr class="styled_2">
-                      
-                      <div class="wrapper_indent">
-                      <div class="form-group">
-					<input type="checkbox" name="understand_days" id="understand_days" class="required" value="Yes"><label>I understand I am only given <a href="#0">60 days</a> to complete the Welcome Class to become a member.</label>
 				</div>
-                <div class="form-group">
-					<input type="checkbox" name="policy_terms" id="policy_terms" class="required" value="Yes"><label>I accept the <a href="#0">terms and conditions</a> and general policy.</label>
-				</div>
-                <div class="g-recaptcha"
-                    data-sitekey="6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO"
-                    data-callback="onSubmit"
-                    data-size="invisible">
-                </div>
+                      
+                      <br>
+                  
+					<div class="form-group">
+						<h4>Introduce Yourself</h4>
+							<textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell us About Yourself and Why You Want to Join"></textarea>
+						<div class="help-block with-errors"></div>
+						<br>
+					
+							<label><input type="checkbox" name="understand_days" id="understand_days" class="required" value="Yes">I understand I only have <a href="#0">60 days</a> to complete the Welcome Class to become a member.</label>
+						<br><br>
+							
+							<label><input type="checkbox" name="policy_terms" id="policy_terms" class="required" value="Yes">I accept the <a href="#0">terms and conditions</a> and general policy.</label>
+						
+						</div>
+						<div class="g-recaptcha"
+							data-sitekey="6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO"
+							data-callback="onSubmit"
+							data-size="invisible">
+						</div>
 
-                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-                <input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+						<input type="text" name="_gotcha" style="display:none" />
         
-                <p><button type="submit"  class="button">Submit</button></p>
-                </div>
-                </form>
-            </div>
-           </div>
-           <div class="col-md-3">
+                <div class="form-group">
+					<div id="success"></div>
+					<button type="submit" class="btn btn-primary">REGISTER</button>
+				</div>
+				</div>
+				</form>
+							<div class="margin-bottom-50"></div>
+							<p><em>Note: Download <a href="https://teams.microsoft.com" target="_blank">Microsoft Teams</a> once you have registered and login using the credentials we email you.</em></p>
+						 </div>
+						 <div class="col-md-3" style="background-color: #eee">
            		
                     <h4><strong>Open Registration Rules</strong></h4>
                     <p>You will be given <strong>60 days</strong> of free membership to learn our system and to pass the Welcome class.  Your progress will be monitored to see if you are accepted into our full program.  Following class rules is mandatory for approval.</p>
@@ -348,196 +382,165 @@
             <hr class="styled">
                     <div class="box_side"><h4>Ask for Details</h4> <i class="icon-email"></i>
                     <p>Email us any questions you have to better understand our registration process.  Though, keep in mind, we give priority to those who have faith and embrace their journey without self doubt.  Enjoy your journey, learning one. </p>
-                    <a href="mailto:info@taolearning.org?subject=Registration%20Question" class="button small">Email Us</a>
+                    <a href="mailto:info@taolearning.org?subject=Registration%20Question" class="button small btn btn-secondary">Ask a Question</a>
             </div>
-
-           </div>
-            </div><!--End row -->
-        </div><!--End container -->
-        </div><!--End container_gray_bg -->
-  
-  		<div class="container margin_60">
-         <div class="main_title">
-    <h2>Frequently Asked Questions</h2>
-    <p>Find the answers to your Education Desires.</p>
-    </div>
-        	<div class="row">
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>How much does it cost?</h4>
-                 <p>We service hundreds of learning platforms, so it is best to look at the pricing directly on the service you are seeking.  Each program has different rates and various services offered.</p>
-             </div>
-            </div>
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Where is the software?</h4>
-                <p>We utilize Office 365.  After you are registered, you will receive an email with your login details.  Check your spam folder if you do not find the email.  This includes login details.  You can also go directly to <a href="https://office.com" target="_blank">Office.com</a> and login to the platform there.</p>
-             </div>
-            </div>
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>What is P-20+ Education?</h4>
-                <p>Most people know K-12 Education.  P stands for Preschool.  Then the "20" means 8 years after high school.  The "+" means we go beyond the education system and step into business mentorship, too.  So our P-20+ model helps people from preschool all the way into their business education needs once they have secured a career.</p>
-             </div>
-            </div>
-        </div><!--End row -->
-        <div class="row">
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>What is the 60 Day limit?</h4>
-                <p>When you first sign up, you are automatically enrolled into a 60 day Welcome Course.  Here, you do not have a teacher.  Instead, you are expected to learn the software and navigate your way around our material to show that you have passion and aptitute in our environment.  We give new registrants 60 days to make use of this software before we decide to accept them or turn them away.  View this as our application process.</p>
-             </div>
-            </div>
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>How do I pass the Application Process?</h4>
-                <p>Currently, we are observing behavior in the Welcome Class to make sure applicants are not disrupting other student learning and to make sure applicants are using best-practices for their learning process.  This means reading all the material, using all the tools we provide, and exhibiting excitement and participation in the Tao Cloud.</p>
-             </div>
-            </div>
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>What if I want a Personal Mentor?</h4>
-                <p>We offer a mentorship program if you desire a 1-on-1 personalized experience.  You may find details on this program by visiting <a href="https://taomentor.com" tareget="_blank">Tao Mentor</a>.  Here, you can book directly with a certified mentor.  Our mentors can help boost your career and get your track on life with our innovative software and business connections.  Each relationship is unique and we cater the program to your needs.</p>
-             </div>
-            </div>
-        </div><!--End row -->
-        </div><!--End container -->
-        
-	<div class=" container_gray_line" id="newsletter_container">
-        <div class="container margin_60">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <h3>Subscribe to our Newsletter for latest news.</h3>
-                    <div id="message-newsletter"></div>
-                    <form method="post" action="https://prod-22.centralus.logic.azure.com:443/workflows/c7b5f1a0e7c44cc98737d95d6ad516f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=xjS5hm7mz5Ws2ZBp_Gtuss2SH2EdK1rwVwlRmtFdoOg" name="newsletter" id="newsletter" class="form-inline">
-                        <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
-                        <button id="submit-newsletter" class="button"> Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-       </div><!-- End newsletter_container -->
-	
-	<footer>
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-3 col-sm-3">
-                    <p id="logo_footer">
-                        <a href="https://taolearning.org"><img src="img/logo.png" width="125" height="40" alt="Tao" data-retina="true"></a>
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h4>About</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="https://account.activedirectory.windowsazure.com/proofup.aspx?whr=taolearning.org">Login</a></li>
-                        <li><a href="register">Register</a></li>
-                        <li><a href="#">Terms and condition</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h4>Academic</h4>
-                    <ul>
-                        <li><a href="#">Plans of study</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Admissions</a></li>
-                        <li><a href="#">Staff</a></li>
-                        <li><a href="#">Students</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h4>Contact us</h4>
-                    <ul>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Plan a visit</a></li>
-                    </ul>
-                    <ul id="contacts_footer">
-                        <li>Info line - <a href="tel://17405380172">+17405380172</a></li>
-                        <li>Email - <a href="mailto:info@taolearning.org">info@taolearning.org</a></li>
-                    </ul>
-                </div>
-            </div><!-- End row -->
-        </div><!-- End container -->
-        </footer><!-- End footer -->
-        <div id="copy">
-            <div class="container">
-                 © Tao Learning 2019 - All rights reserved.
-            </div>
-        </div><!-- End copy -->    
-	</div> <!-- main-wrapper -->	
-    
-<!-- Login modal -->   
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myLogin" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content modal-popup">
-				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-				<form action="#" class="popup-form" id="myLogin">
-					<input type="text" class="form-control form-white" placeholder="Username">
-					<input type="text" class="form-control form-white" placeholder="Password">
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="accept_1" id="check_1" name="check_1" />
-							<label for="check_1"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
-						</div>
 					</div>
-					<button type="submit" class="btn btn-submit">Submit</button>
-				</form>
+				</div>
 			</div>
 		</div>
-	</div>  
-    
-<!-- Register modal -->   
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myRegister" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content modal-popup">
-				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-				<form action="#" class="popup-form" id="myRegister">
-					<input type="text" class="form-control form-white" placeholder="Name">
-					<input type="text" class="form-control form-white" placeholder="Last Name">
-                    <input type="email" class="form-control form-white" placeholder="Email">
-                    <input type="text" class="form-control form-white" placeholder="Password">
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="accept_2" id="check_2" name="check_2" />
-							<label for="check_2"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
-						</div>
+	</div>	
+
+	<!-- CTA -->
+	<div class="section cta">
+		<div class="content-wrap-20">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<div class="cta-1">
+			              	<div class="body-text">
+			                	<h3>Join your hand with us for a better life and beautiful future.</h3>
+			              	</div>
+			              	<div class="body-action">
+			                	<a href="https://donorbox.org/taolearning" class="btn btn-secondary">DONATE NOW</a>
+			              	</div>
+			            </div>
 					</div>
-					<button type="submit" id="btn-submit" class="btn btn-submit">Register</button>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
-    
-<!-- Search modal -->   
-<div id="search">
-    <button type="button" class="close">×</button>
-    <form>
-        <input type="search" value="" placeholder="type keyword(s) here" >
-        <button type="submit" class="button">Search</button>
-    </form>
-</div>
 
-<!-- Common scripts -->
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/common_scripts_min.js"></script>
-<script src="js/functions.js"></script>
-<script src="assets/validate.js"></script>
+	<!-- FOOTER SECTION -->
+	<div class="footer" data-background="images/dummy-img-1920x900-3.jpg">
+		<div class="content-wrap">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-3 col-md-3">
+						<div class="footer-item">
+							<img src="images/logo_w.png" alt="logo bottom" class="logo-bottom">
+							<div class="spacer-30"></div>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+							<a href="#"><i class="fa fa-angle-right"></i> Read More</a>
+						</div>
+					</div>
 
-<!-- Specific scripts -->
-<script src="js/icheck.js"></script>
-<script>  
-$('input').iCheck({
-   checkboxClass: 'icheckbox_square-blue',
-   radioClass: 'iradio_square-blue'
- });
- </script>
- <script src="js/jquery.validate.js"></script>
- <script>
-  $("#register").validate();
-</script>
+					<div class="col-sm-3 col-md-3">
+						<div class="footer-item">
+							<div class="footer-title">
+								WHO WE ARE
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-6 col-md-6">
+									<ul class="list">
+										<li><a href="about.html" title="About us">About us</a></li>
+										<li><a href="couses.html" title="Couses">Couses</a></li>
+										<li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>
+										<li><a href="gallery.html" title="Gallery">Gallery</a></li>
+										<li><a href="whatwedo.html" title="Faq">Faq</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<ul class="list">
+										<li><a href="our-team.html" title="Our Team">Our Team</a></li>
+										<li><a href="events.html" title="Events">Events</a></li>
+										<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-sm-3 col-md-3">
+						<div class="footer-item">
+							<div class="footer-title">
+								WHERE WE WORK
+							</div>
+							<ul class="list-info">
+								<li>
+									<div class="info-icon">
+										<span class="fa fa-map-marker"></span>
+									</div>
+									<div class="info-text">125 Frederick St, Marietta OH 45750</div> </li>
+								<li>
+									<div class="info-icon">
+										<span class="fa fa-phone"></span>
+									</div>
+									<div class="info-text">740-538-0172</div>
+								</li>
+								<li>
+									<div class="info-icon">
+										<span class="fa fa-envelope"></span>
+									</div>
+									<div class="info-text">info@taolearning.org</div>
+								</li>
+								<li>
+									<div class="info-icon">
+										<span class="fa fa-clock-o"></span>
+									</div>
+									<div class="info-text">Mon - Sat 09:00 - 17:00</div>
+								</li>
+							</ul>
 
+						</div>
+					</div>
+					
+					<div class="col-sm-3 col-md-3">
+						<div class="footer-item">
+							<div class="footer-title">
+								FOLLOW US
+							</div>
+							<p>Lit sed The Best in dolor sit amet consectetur adipisicing elit sedconsectetur adipisicing</p>
+							<div class="sosmed-icon primary">
+								<a href="#"><i class="fa fa-facebook"></i></a> 
+								<a href="#"><i class="fa fa-twitter"></i></a> 
+								<a href="#"><i class="fa fa-instagram"></i></a> 
+								<a href="#"><i class="fa fa-pinterest"></i></a> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fcopy">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<p class="ftex">Copyright 2019 &copy; <span class="color-primary">Tao Learning HTML Template</span>. Designed by <span class="color-primary">Tao Fruit.</span></p> 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- JS VENDOR -->
+	<script src="https://taolearning.org/js/jquery-1.11.2.min.js"></script>
+<script src="https://taolearning.org/js/common_scripts_min.js"></script>
+<script src="https://taolearning.org/js/functions.js"></script>
+	<script src="assets/validate.js"></script>
+
+	<!-- SENDMAIL -->
+	<!-- <script src="js/vendor/validator.min.js"></script> -->
+	<!-- <script src="js/vendor/form-scripts.js"></script> -->
+
+	<!-- Specific scripts -->
+	<script src="https://taolearning.org/js/icheck.js"></script>
+	<script>  
+	$('input').iCheck({
+	checkboxClass: 'icheckbox_square-blue',
+	radioClass: 'iradio_square-blue'
+	});
+	</script>
+	
+	 <script src="js/jquery.validate.js"></script>
+	<script>
+	$("#register").validate();
+	</script>
+	
+	
  <script>
 
     $("#register").submit(function(event){
@@ -587,6 +590,9 @@ $('input').iCheck({
 });
 </script>
 
+	<!-- MAIN JS -->
+	<script src="js/script.js"></script>
 
+		
 </body>
 </html>
