@@ -60,7 +60,7 @@
 				}
 				if (value == '') {
 					element.value = value;
-					// Issue #56: Setting the placeholder causes problems if the element continues to have focus.
+					// Issue #56: Setting the placeholder WHAT WE DO problems if the element continues to have focus.
 					if (element != safeActiveElement()) {
 						// We can't use `triggerHandler` here because of dummy text/password inputs :(
 						setPlaceholder.call(element);
