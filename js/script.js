@@ -32,16 +32,16 @@ $(document).ready(function(){
 	var navbarnav = jQuery('.navbar-nav');
 	var header = jQuery('.header');
 	
-	
+	/*
 	if ( top > batas ) {
 		navbar.addClass('stiky');
 		navbarnav.addClass('ml-auto');
-	}
+	} */ 
 	jQuery(window).scroll(function () {
 		top = jQuery(document).scrollTop();
 
 		
-		if ( top > batas ) {
+		/* if ( top > batas ) {
 			navbar.addClass('stiky');
 			navbarnav.addClass('ml-auto');
 		}else {
@@ -49,7 +49,7 @@ $(document).ready(function(){
 			if(header.hasClass('header-1')){
 				navbarnav.removeClass('ml-auto');
 			}
-		}
+		} */
 		
 
 	});
