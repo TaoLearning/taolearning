@@ -5119,3 +5119,11 @@ a.color-black:hover {
   top: -4px !important;
   right: 830px;
 }
+.footer .span.gc-cs-link {
+  color: white !important;
+}
+.header-2 {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
