@@ -5127,3 +5127,7 @@ a.color-black:hover {
   width: 100%;
   z-index: 5;
 }
+
+.top60 {
+  padding-top: 60px;
+}
