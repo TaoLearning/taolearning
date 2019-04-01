@@ -5131,3 +5131,34 @@ a.color-black:hover {
 .top60 {
   padding-top: 60px;
 }
+.top80 {
+  padding-top: 80px;
+}
+.banner .slider-pos {
+  top: 35% !important;
+}
+.banner .owl-nav {
+  top: 50% !important;
+}
+.icon-hamburger {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+@media (max-width: 1279px) { 
+  .no-display-mobile {
+    display: none; 
+  }
+  .banner .owl-nav {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) { 
+  .navbar-main ul {
+    margin-left: 0;
+    padding-top: 28px;
+  }
+}
