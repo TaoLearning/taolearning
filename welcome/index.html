@@ -5,10 +5,70 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
 
+	<!-- ==============================================
+	Favicons
+	=============================================== -->
+	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+	
+	<!-- ==============================================
+	CSS VENDOR
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="../css/vendor/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/vendor/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/vendor/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/vendor/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/vendor/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/vendor/animate.min.css">
+	
+	<!-- ==============================================
+	Custom Stylesheet
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	
+    <script src="js/vendor/modernizr.min.js"></script>
+
+	<script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+	<script src='https://www.google.com/recaptcha/api.js?render=6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO'></script>
+	
+	<!-- Blue CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/blue.css">
+	
+
+	<script>
+		grecaptcha.ready(function() {
+		grecaptcha.execute('6LcHIYcUAAAAAPnqH0iBwnDeFma0mWAMJKJHAoEO', {action: 'TLI Member Registration'})
+		.then(function(token) {
+		var recaptchaResponse = document.getElementById('recaptchaResponse');
+        recaptchaResponse.value = token;
+		// Verify the token on the server.
+		});
+		});
+	</script>
+	<style>
+ul {
+list-style-type: none;
+}
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139076987-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139076987-1');
+</script>
+
+
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Lato:300,400,600,700|Parisienne" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css" /> -->
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
@@ -46,55 +106,73 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
-		<!-- Header
-		============================================= -->
-		<header id="header" class="split-menu transparent-header dark static-sticky" data-sticky-class="semi-transparent">
+		<!-- HEADER -->
+    <div class="header header-2">
 
-			<div id="header-wrap">
-
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="demo-writer.html" class="standard-logo"><img src="demos/writer/images/logo.png" alt="Tao Skills Logo"></a>
-						<a href="demo-writer.html" class="retina-logo"><img src="demos/writer/images/logo@2x.png" alt="Tao Skills Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu" class="not-dark clearfix">
-
-						<ul>
-							<li><a href="#"><div>Tao Staff</div></a></li>
-							<li><a href="#"><div>Resources</div></a>
-								<ul>
-									<li><a href="#"><div>A Key of Mind</div></a></li>
-									<li><a href="#"><div>Knight of the Light</div></a></li>
-									<li><a href="#"><div>Jars &amp; The Ten Killer</div></a></li>
-									<li><a href="#"><div>Love without Flaws</div></a></li>
-									<li><a href="#"><div>Pirates of Water</div></a></li>
-									<li><a href="#"><div>Amusing the Jungle</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#"><div>Apprenticeship</div></a></li>
-						</ul>
-
-						<ul>
-							<li><a href="#"><div>About</div></a></li>
-							<li><a href="#"><div>Contact</div></a></li>
-							<li><a href="#"><div>Testimonials</div></a></li>
-						</ul>
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
+	    <!-- NAVBAR SECTION -->
+		<div class="navbar-main">
+			<div class="container">
+			    <nav class="navbar navbar-expand-lg">
+			        <a class="navbar-brand" href="../index.html">
+						<img src="../images/logo.png" alt="" />
+					</a>
+			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			            <span class="navbar-toggler-icon">
+							<svg class="icon-hamburger icon-menu" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<title>menu</title>
+								<path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+							</svg>
+						</span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			            <ul class="navbar-nav ml-auto">
+			                <li class="nav-item">
+			                    <a class="nav-link" href="../whatwedo.html">WHAT WE DO</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link" href="../introducing-partnerships.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						          PARTNERS
+								</a>
+								<!--
+			                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="introducing-partnerships.html">Introducing Partnerships</a>
+			                    	<a class="dropdown-item" href="corporate.html">Corporate</a>
+	          						<a class="dropdown-item" href="nonprofit-government.html">NonProfit & Government</a>
+									<a class="dropdown-item" href="event-sponsors.html">Event Sponsors</a>
+									<a class="dropdown-item" href="chapter-directors.html">Chapter Directors</a>
+							    </div> -->
+			                </li>
+							<li class="nav-item">
+			                    <a class="nav-link" target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiYmQ1ODZjYmUtMTAyMC00Mzk5LThkZmYtMzc4M2I4MWQzY2U2IiwidCI6IjJmZWJlOTBkLTg3MmUtNGUzMS1iMWVlLTc4OThhYWMwMTU5YyJ9">SEE USAGE</a>
+			                </li>
+							<li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="../get-started.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          GET INVOLVED
+								</a>
+								
+			                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			                    	
+	          						<a class="dropdown-item" href="give.html">Give to a Project</a>
+	          						<a class="dropdown-item" href="internships.html">Internships</a>
+	          						<a class="dropdown-item" href="smilecoach.html">SMILE Coach Training</a>
+	          						<a class="dropdown-item" href="advocate.html">Become an Advocate</a>
+	          						<a class="dropdown-item" href="volunteer.html">Volunteer</a>
+												<a class="dropdown-item" href="register.html">Register</a>
+							    </div>
+			                </li>
+			            </ul>
+						 <a href="../register.html" class="btn btn-secondary no-display-mobile btn-nav ml-auto">WELCOME CLASS</a> 
+			            <a href="https://donorbox.org/taolearning" class="btn btn-primary btn-nav ml-auto">DONATE</a>
+			        </div>
+			    </nav>
 			</div>
+		</div> 
 
-		</header><!-- #header end -->
+		
+
+    </div>
+
+		
 
 		<!-- Slider
 		============================================= -->
