@@ -129,7 +129,7 @@
             // Only fix the target element and the spacer if we need to.
             if (!isFixed()) {
                 //get REAL dimensions (decimal fix)
-                //Ref. http://stackoverflow.com/questions/3603065/how-to-make-jquery-to-not-round-value-returned-by-width
+                //Ref. https://stackoverflow.com/questions/3603065/how-to-make-jquery-to-not-round-value-returned-by-width
                 var dimensions = target[0].getBoundingClientRect();
 
                 // Set the spacer to fill the height and width of the target
@@ -396,7 +396,7 @@
             (!!window.requestAnimationFrame) ? requestAnimationFrame(checkScroll) : checkScroll();
         }
 
-        // From: http://kangax.github.com/cft/#IS_POSITION_FIXED_SUPPORTED
+        // From: https://kangax.github.com/cft/#IS_POSITION_FIXED_SUPPORTED
         var isPositionFixedSupported = function() {
             var container = document.body;
 
