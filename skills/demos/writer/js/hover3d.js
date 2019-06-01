@@ -3,10 +3,10 @@ jQuery Hover3d
 =================================================
 Version: 1.0.0
 Author: Rian Ariona
-Website: http://ariona.net
-Docs: http://ariona.github.io/hover3d
-Repo: http://github.com/ariona/hover3d
-Issues: http://github.com/ariona/hover3d/issues
+Website: https://ariona.net
+Docs: https://ariona.github.io/hover3d
+Repo: https://github.com/ariona/hover3d
+Issues: https://github.com/ariona/hover3d/issues
 */
 
 (function($){
