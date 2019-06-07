@@ -5167,3 +5167,4 @@ a.color-black:hover {
 object{
     pointer-events: none;
 }
+#loadOverlay{display: none;}
