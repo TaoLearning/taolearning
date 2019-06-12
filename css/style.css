@@ -3972,3 +3972,9 @@ only screen and (                min-resolution: 2dppx) {
 		display:block;
 	}
 }
+
+/* KRASHNIK */ 
+object{
+    pointer-events: none;
+}
+#loadOverlay{display: none;}
