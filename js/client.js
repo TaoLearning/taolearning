@@ -42,13 +42,16 @@ cardButton.addEventListener('click', function(ev) {
 function handleServerResponse(response) {
   if (response.error) {
     // Show error from server on payment form
+    var errorElement = document.getElementById('card-errors');
+    errorElement.textContent = result.error.message;
   } else if (response.requires_action) {
     // Use Stripe.js to handle required card action
     stripe.handleCardAction(
       response.payment_intent_client_secret
     ).then(function(result) {
       if (result.error) {
-        // Show error in payment form
+        var errorElement = document.getElementById('card-errors');
+        errorElement.textContent = result.error.message;
       } else {
         var myHeaders = new Headers();
         // The card action has been handled
