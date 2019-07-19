@@ -30,6 +30,7 @@
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
 <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+<script src="https://js.stripe.com/v3/"></script>
 </head>
 <body class="home">
 <!--[if lt IE 7]>
@@ -429,7 +430,7 @@
                             			<h3><a href="https://donorbox.org/taolearning" target="_blank">Literacy Matters</a></h3>
                     					<p>Reading and writing empowers individuals to participate in society, achieve their dreams and to experience the joy of a good book.</p>
                                         	<!-- <span class="meta-data">Donated $26400 / <span class="cause-target">$30000</span></span> -->
-                                    		<a href="https://donorbox.org/taolearning" class="btn btn-primary btn-lg" target="_blank">Donate Now</a>
+                                    		<a href="#" class="btn btn-primary btn-lg" target="_blank" data-toggle="modal" data-target="#DonateModal">Donate Now</a>
                           			</div>
                         		</div>
                     		</div>
@@ -965,6 +966,7 @@
 <div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" data-backdrop="static">
   	<div class="modal-dialog" role="document">
     	<div class="modal-content">
+            <form action="#" method="post" id="payment-form">
       		<div class="modal-header">
         		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         		<div class="row">
@@ -983,17 +985,25 @@
                         <h4>Enter your own</h4>
                         <div class="input-group">
                             <span class="input-group-addon" id="basic-addon1">$</span>
-                            <input type="number" class="form-control">
+                            <input type="number" class="form-control" name="donation-amount-manual">
                         </div>
                     </div>
                	</div>
-      		</div>
+            </div>
+            <div id="card-errors" role="alert"></div> 
       		<div class="modal-body">
        			<div class="row">
+                    <div class="col-md-6 col-sm-6 donation-form-infocol">
+                        <h4>Personal info</h4>
+                        <input type="text" class="form-control" placeholder="Full Name" id="cardholder-name">
+                        <input type="text" class="form-control" placeholder="Email address">
+                        <input type="text" class="form-control" placeholder="Phone no.">
+                        <label class="checkbox"><input type="checkbox"> Register me as a Tao Learning Member</label>
+                    </div>
                 	<div class="col-md-6 col-sm-6 donation-form-infocol">
-                    	<h4>Billing Address</h4>
+                        <h4>Billing Details</h4>
+                        <div class="form-control"  id="card-element"></div>
                         <input type="text" class="form-control" placeholder="Address line 1">
-                        <input type="text" class="form-control" placeholder="Address line 2">
        					<div class="row">
                 			<div class="col-md-8 col-sm-8 col-xs-8">
                         		<input type="text" class="form-control" placeholder="State/City">
@@ -1015,27 +1025,15 @@
                             </div>
                     	</div>
                     </div>
-                	<div class="col-md-6 col-sm-6 donation-form-infocol">
-                    	<h4>Personal info</h4>
-       					<div class="row">
-                			<div class="col-md-6 col-sm-6 col-xs-6">
-                        		<input type="text" class="form-control" placeholder="First name">
-                            </div>
-                			<div class="col-md-6 col-sm-6 col-xs-6">
-                        		<input type="text" class="form-control" placeholder="Last name">
-                            </div>
-                    	</div>
-                        <input type="text" class="form-control" placeholder="Email address">
-                        <input type="text" class="form-control" placeholder="Phone no.">
-                        <label class="checkbox"><input type="checkbox"> Register me on this website</label>
-                    </div>
+                	
                  </div>
       		</div>
       		<div class="modal-footer text-align-center">
-        		<button type="button" class="btn btn-primary">Make your donation now</button>
+        		<button type="button" class="btn btn-primary" id="card-button">Make your donation now</button>
                 <div class="spacer-20"></div>
                 <p class="small">Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi. Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet tellus malesuada, malesuada iaculis eros dignissim. Aenean vitae diam id lacus fringilla maximus. Mauris auctor efficitur nisl, non blandit urna fermentum nec. Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.</p>
-      		</div>
+              </div>
+            </form>
     	</div>
   	</div>
 </div>
@@ -1051,5 +1049,7 @@
 <script src="js/init.js"></script> <!-- All Scripts -->
 <script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
 <script src="js/circle-progress.js"></script> <!-- Circle Progress Bars -->
+<script src="js/client.js"></script> <!-- Krashnik Stripe Integration -->
+
 </body>
 </html>
