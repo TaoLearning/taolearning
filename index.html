@@ -31,6 +31,8 @@
 <script src="js/modernizr.js"></script><!-- Modernizr -->
 <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
 <script src="https://js.stripe.com/v3/"></script>
+<script src="js/components/bs-switches.js"></script>
+<script>jQuery(".bt-switch").bootstrapSwitch();</script>
 </head>
 <body class="home">
 <!--[if lt IE 7]>
@@ -973,32 +975,39 @@
                     <div class="col-md-6 col-sm-6 donate-amount-option">
                         <h4>Choose an amount</h4>
                         <ul class="predefined-amount">
-                            <li><label><input type="radio" name="donation-amount">$10</label></li>
-                            <li><label><input type="radio" name="donation-amount">$20</label></li>
-                            <li><label><input type="radio" name="donation-amount">$30</label></li>
-                            <li><label><input type="radio" name="donation-amount">$50</label></li>
-                            <li><label><input type="radio" name="donation-amount">$100</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="10">$10</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="20">$20</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="30">$30</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="50">$50</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="100">$100</label></li>
                         </ul>
                     </div>
-                    <span class="donation-choice-breaker">Or</span>
                     <div class="col-md-6 col-sm-6 donate-amount-option">
+                        <h4>Type of Donation</h4>
+                        <ul class="predefined-amount2 predefined-amount">
+                            <li><label><input type="radio" name="subscription" value="0">One-Time</label></li>
+                            <li><label><input type="radio" name="subscription" value="1">Monthly</label></li>
+                        </ul>
+                    </div>
+                    <!-- <span class="donation-choice-breaker">Or</span>
+                     <div class="col-md-6 col-sm-6 donate-amount-option">
                         <h4>Enter your own</h4>
                         <div class="input-group">
                             <span class="input-group-addon" id="basic-addon1">$</span>
-                            <input type="number" class="form-control" name="donation-amount-manual">
+                            <input type="number" class="form-control" min="10" name="donation-amount-manual">
                         </div>
-                    </div>
+                    </div> -->
                	</div>
             </div>
-            <div id="card-errors" role="alert"></div> 
       		<div class="modal-body">
        			<div class="row">
                     <div class="col-md-6 col-sm-6 donation-form-infocol">
                         <h4>Personal info</h4>
-                        <input type="text" class="form-control" placeholder="Full Name" id="cardholder-name">
-                        <input type="text" class="form-control" placeholder="Email address">
-                        <input type="text" class="form-control" placeholder="Phone no.">
-                        <label class="checkbox"><input type="checkbox"> Register me as a Tao Learning Member</label>
+                        <input type="text" class="form-control" placeholder="Full Name" name="fullname" id="cardholder-name">
+                        <input type="email" class="form-control" placeholder="Email Address" name="email">
+                        <input type="tel" class="form-control" placeholder="Phone Number" name="tel">
+                        <label class="checkbox"><input type="checkbox" name="membership"> Register me as a Tao Learning Member</label>
+
                     </div>
                 	<div class="col-md-6 col-sm-6 donation-form-infocol">
                         <h4>Billing Details</h4>
@@ -1012,7 +1021,7 @@
                         		<input type="text" class="form-control" placeholder="Zipcode">
                             </div>
                     	</div>
-       					<div class="row">
+       					<!-- <div class="row">
                 			<div class="col-md-3 col-sm-3 col-xs-3">
                         		<label>Country</label>
                             </div>
@@ -1023,15 +1032,18 @@
                                     <option>Netherlands</option>
                                 </select>
                             </div>
-                    	</div>
+                    	</div> -->
                     </div>
                 	
                  </div>
       		</div>
       		<div class="modal-footer text-align-center">
-        		<button type="button" class="btn btn-primary" id="card-button">Make your donation now</button>
-                <div class="spacer-20"></div>
-                <p class="small">Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi. Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet tellus malesuada, malesuada iaculis eros dignissim. Aenean vitae diam id lacus fringilla maximus. Mauris auctor efficitur nisl, non blandit urna fermentum nec. Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.</p>
+                <button type="button" class="btn btn-primary" id="card-button">Make your donation now</button>
+                <div class="spacer-10"></div>
+                <div id="card-errors" role="alert" class="text-center alert-error"></div>
+                <div class="spacer-10"></div>
+                <p class="small">
+                <br>Tao Learning Institute is a Section 501(c)3 charitable organization, EIN 83-3086300.<br>All donation are deemed tax-deductible absent any limitations on deductibility applicable to a particular taxpayer.<br>No goods or services were provided in exchange for your contribution.</p>
               </div>
             </form>
     	</div>

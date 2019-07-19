@@ -1,13 +1,28 @@
 var stripe = Stripe('pk_test_M4lUHJesnz3f9gWbUJzdncMV');
-
 var elements = stripe.elements();
 var cardElement = elements.create('card');
 cardElement.mount('#card-element');
 
-
 var cardholderName = document.getElementById('cardholder-name');
 var cardButton = document.getElementById('card-button');
-var amount = 
+// var cardButton = document.getElementById('card-button');
+// var cardButton = document.getElementById('card-button');
+// var cardButton = document.getElementById('card-button');
+// var cardButton = document.getElementById('card-button');
+// var cardButton = document.getElementById('card-button');
+
+var radios = document.getElementsByName('donation-amount');
+
+for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+        var donationamount = radios[i].value;
+        console.log(donationamount);
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+
 
 cardButton.addEventListener('click', function(ev) {
   stripe.createPaymentMethod('card', cardElement, {
