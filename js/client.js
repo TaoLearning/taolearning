@@ -1,13 +1,12 @@
-var stripe = Stripe('pk_test_M4lUHJesnz3f9gWbUJzdncMV');
-var elements = stripe.elements();
-var cardElement = elements.create('card');
+const stripe = Stripe('pk_test_M4lUHJesnz3f9gWbUJzdncMV');
+
+const elements = stripe.elements();
+const cardElement = elements.create('card');
 cardElement.mount('#card-element');
+const cardholderName = document.getElementById('cardholder-name');
+const cardButton = document.getElementById('card-button');
 
-var cardholderName = document.getElementById('cardholder-name');
-var cardButton = document.getElementById('card-button');
-
-
-cardButton.addEventListener('click', function(ev) {
+cardButton.addEventListener('click', async (ev) => {
   console.log("Submit Clicked");
   var email = document.getElementById('email').value;
   var tel = document.getElementById('tel').value;
@@ -17,70 +16,57 @@ cardButton.addEventListener('click', function(ev) {
   var donationamount = $("input[name=donation-amount]:checked").val();
   var subscription = document.getElementById("subscription").checked;
   var membership = document.getElementById("membership").checked;
-  stripe.createPaymentMethod('card', cardElement, {
-    billing_details: {name: cardholderName.value}
-  }).then(function(result) {
-    if (result.error) {
-      console.log("Error");
-      var errorElement = document.getElementById('card-errors');
-      errorElement.textContent = result.error.message;
-    } else {
-      console.log("Send Payment Method to Server");
-      // Otherwise send paymentMethod.id to your server (see Step 2)
-      var myHeaders = new Headers();
-      var fullbody = JSON.stringify({donationamount : donationamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: result.paymentMethod.id});
+
+  const {paymentMethod, error} =
+    await stripe.createPaymentMethod('card', cardElement, {
+      billing_details: {name: cardholderName.value}
+    });
+  if (error) {
+    // console.log(result.error.message);
+    // var errorElement = document.getElementById('card-errors');
+    // errorElement.textContent = result.error.message;
+  } else {
+    // Send paymentMethod.id to your server (see Step 2)
+    var fullbody = JSON.stringify({donationamount : donationamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: paymentMethod.id});
       console.log(fullbody);
-      fetch('https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==', {
-        method: 'POST',
-        headers: myHeaders,
-        cache: 'default',
-        body: fullbody
-      }).then(function(result) {
-        console.log("Handle Server Response");
-        // Handle server response (see Step 3)
-        console.log(result);
-        result.json().then(function(json) {
-          console.log("Made it Inside JSON Result");
-          handleServerResponse(json);
-        })
-      });
-    }
-  });
+
+    const response = await fetch('https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: fullbody
+    });
+
+    const json = await response.json();
+
+    // Handle server response (see Step 3)
+    handleServerResponse(json);
+  }
 });
 
 
-function handleServerResponse(response) {
+const handleServerResponse = async (response) => {
   if (response.error) {
-    console.log("Made a lasting error");
     // Show error from server on payment form
-    var errorElement = document.getElementById('card-errors');
-    errorElement.textContent = result.error.message;
+    console.log(response.error);
   } else if (response.requires_action) {
-    console.log("Stripe Action");
-    // Use Stripe.js to handle required card action
-    stripe.handleCardAction(
-      response.payment_intent_client_secret
-    ).then(function(result) {
-      if (result.error) {
-        var errorElement = document.getElementById('card-errors');
-        errorElement.textContent = result.error.message;
-      } else {
-        console.log("Payment Handled and Can be Confirmed Again");
-        var myHeaders = new Headers();
-        // The card action has been handled
-        // The PaymentIntent can be confirmed again on the server
-        fetch('https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==', {
-          method: 'POST',
-          headers: myHeaders,
-          cache: 'default',
-          body: JSON.stringify({ payment_intent_id: result.paymentIntent.id })
-        }).then(function(confirmResult) {
-          return confirmResult.json();
-        }).then(handleServerResponse);
-      }
-    });
+    // Use Stripe.js to handle the required card action
+    const { error: errorAction, paymentIntent } =
+      await stripe.handleCardAction(response.payment_intent_client_secret);
+
+    if (errorAction) {
+      // Show error from Stripe.js in payment form
+    } else {
+      // The card action has been handled
+      // The PaymentIntent can be confirmed again on the server
+      const serverResponse = await fetch('https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ payment_intent_id: paymentIntent.id })
+      });
+      handleServerResponse(await serverResponse.json());
+    }
   } else {
-    console.log("Success Message at End");
     // Show success message
+    // console.log("Success Message at End");
   }
 }
