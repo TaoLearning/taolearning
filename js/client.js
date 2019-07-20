@@ -5,30 +5,16 @@ cardElement.mount('#card-element');
 
 var cardholderName = document.getElementById('cardholder-name');
 var cardButton = document.getElementById('card-button');
-var donationamount = document.getElementsByName('donation-amount');
-var subscription = document.getElementsByName('subscription');
-var email = document.getElementById('email');
-var tel = document.getElementById('tel');
-var address = document.getElementById('address');
-var city = document.getElementById('city');
-var state = document.getElementById('state');
-var membership = document.getElementById('membership');
-
-// var radios = document.getElementsByName('donation-amount');
-
-// for (var i = 0, length = radios.length; i < length; i++) {
-//     if (radios[i].checked) {
-//         // do whatever you want with the checked radio
-//         var donationamount = radios[i].value;
-//         console.log(donationamount);
-//         // only one radio can be logically checked, don't check the rest
-//         break;
-//     }
-// }
-
+var email = document.getElementById('email').value;
+var tel = document.getElementById('tel').value;
+var address = document.getElementById('address').value;
+var city = document.getElementById('city').value;
+var state = document.getElementById('state').value;
 
 cardButton.addEventListener('click', function(ev) {
-  // var serializedReturn = $('input[id!=card-element]', this).serialize();
+  var donationamount = $("input[name=donation-amount]:checked").val();
+  var subscription = $("input[name=subscription]:checked").val();
+  var membership = document.getElementById("membership").checked;
   stripe.createPaymentMethod('card', cardElement, {
     billing_details: {name: cardholderName.value}
   }).then(function(result) {
@@ -36,17 +22,18 @@ cardButton.addEventListener('click', function(ev) {
       console.log("Error");
       var errorElement = document.getElementById('card-errors');
       errorElement.textContent = result.error.message;
-      // Show error in payment form
     } else {
+      // Otherwise send paymentMethod.id to your server (see Step 2)
       var myHeaders = new Headers();
       console.log("Send Payment");
-      // Otherwise send paymentMethod.id to your server (see Step 2)
+      var fullbody = JSON.stringify({donationamount : donationamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: result.paymentMethod.id});
+      console.log(fullbody);
       fetch('https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==', {
         method: 'POST',
         headers: myHeaders,
         mode: 'no-cors',
         cache: 'default',
-        body: JSON.stringify({donationamount, subscription, email, tel, address, city, state, membership, payment_method_id: result.paymentMethod.id})
+        body: fullbody
       }).then(function(result) {
         // Handle server response (see Step 3)
         result.json().then(function(json) {
