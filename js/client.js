@@ -25,7 +25,6 @@ cardButton.addEventListener('click', function(ev) {
     } else {
       // Otherwise send paymentMethod.id to your server (see Step 2)
       var myHeaders = new Headers();
-      console.log("Send Payment");
       var fullbody = JSON.stringify({donationamount : donationamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: result.paymentMethod.id});
       console.log(fullbody);
       fetch('https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==', {
