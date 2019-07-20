@@ -5,26 +5,30 @@ cardElement.mount('#card-element');
 
 var cardholderName = document.getElementById('cardholder-name');
 var cardButton = document.getElementById('card-button');
-// var cardButton = document.getElementById('card-button');
-// var cardButton = document.getElementById('card-button');
-// var cardButton = document.getElementById('card-button');
-// var cardButton = document.getElementById('card-button');
-// var cardButton = document.getElementById('card-button');
+var donationamount = document.getElementsByName('donation-amount');
+var subscription = document.getElementsByName('subscription');
+var email = document.getElementById('email');
+var tel = document.getElementById('tel');
+var address = document.getElementById('address');
+var city = document.getElementById('city');
+var state = document.getElementById('state');
+var membership = document.getElementById('membership');
 
-var radios = document.getElementsByName('donation-amount');
+// var radios = document.getElementsByName('donation-amount');
 
-for (var i = 0, length = radios.length; i < length; i++) {
-    if (radios[i].checked) {
-        // do whatever you want with the checked radio
-        var donationamount = radios[i].value;
-        console.log(donationamount);
-        // only one radio can be logically checked, don't check the rest
-        break;
-    }
-}
+// for (var i = 0, length = radios.length; i < length; i++) {
+//     if (radios[i].checked) {
+//         // do whatever you want with the checked radio
+//         var donationamount = radios[i].value;
+//         console.log(donationamount);
+//         // only one radio can be logically checked, don't check the rest
+//         break;
+//     }
+// }
 
 
 cardButton.addEventListener('click', function(ev) {
+  // var serializedReturn = $('input[id!=card-element]', this).serialize();
   stripe.createPaymentMethod('card', cardElement, {
     billing_details: {name: cardholderName.value}
   }).then(function(result) {
@@ -42,7 +46,7 @@ cardButton.addEventListener('click', function(ev) {
         headers: myHeaders,
         mode: 'no-cors',
         cache: 'default',
-        body: JSON.stringify({ payment_method_id: result.paymentMethod.id })
+        body: JSON.stringify({donationamount, subscription, email, tel, address, city, state, membership, payment_method_id: result.paymentMethod.id})
       }).then(function(result) {
         // Handle server response (see Step 3)
         result.json().then(function(json) {
