@@ -2,8 +2,11 @@
 /*--------------------------------------------------------------
 5.0 - Portfolio Styles BROUGHT FROM SUNNY BY KRASHNIK
 --------------------------------------------------------------*/
+/*
+Remove Background - Save for later.
+.portfolio-content{background-image:url(../images/hexagon1.png); background-repeat:no-repeat; background-size:contain; display:inline-block; width:381px; height:330px; position:relative; overflow:hidden; z-index:9;}  */
 
-.portfolio-content{background-image:url(../images/hexagon1.png); background-repeat:no-repeat; background-size:contain; display:inline-block; width:381px; height:330px; position:relative; overflow:hidden; z-index:9;}
+.portfolio-content{background-repeat:no-repeat; background-size:contain; display:inline-block; width:381px; height:330px; position:relative; overflow:hidden; z-index:9;} 
 
 .portfolio-content1{margin:auto; display:block; right:0px; left:15px;}
 
