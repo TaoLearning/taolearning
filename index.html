@@ -447,7 +447,7 @@
         	<span>Become a volunteer</span>
         	<strong>Join Us</strong>
         </a>
-        <a href="#" class="featured-link col-md-4 col-sm-4">
+        <a href="#" class="featured-link col-md-4 col-sm-4" data-toggle="modal" data-target="#DonateModal">
         	<span>Make A Difference</span>
         	<strong>Donate Here</strong>
         </a>
@@ -974,29 +974,19 @@
                     <div class="col-md-6 col-sm-6 donate-amount-option">
                         <h4>Choose an amount</h4>
                         <ul class="predefined-amount">
-                            <li><label><input type="radio" name="donation-amount" value="1000">$10</label></li>
-                            <li><label><input type="radio" name="donation-amount" value="2000" checked="checked">$20</label></li>
-                            <li><label><input type="radio" name="donation-amount" value="3000">$30</label></li>
-                            <li><label><input type="radio" name="donation-amount" value="5000">$50</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="2500">$25</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="5000" checked="checked">$50</label></li>
                             <li><label><input type="radio" name="donation-amount" value="10000">$100</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="25000">$250</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="50000">$500</label></li>
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6 donate-amount-option">
-                        <h4>Type of Donation</h4>
+                        <h4>Frequency</h4>
                         <ul class="predefined-amount2 predefined-amount">
-                            <!-- <li><label><input type="radio" name="subscription" value="false"  checked="checked">One-Time</label></li>
-                            <li><label><input type="radio" name="subscription" value="true" >Monthly</label></li> -->
                             <input class="bt-switch" type="checkbox" data-inverse="true" data-on-text="Monthly" data-off-text="One-Time" data-on-color="info" data-off-color="info" name="subscription" id="subscription">
                         </ul>
                     </div>
-                    <!-- <span class="donation-choice-breaker">Or</span>
-                     <div class="col-md-6 col-sm-6 donate-amount-option">
-                        <h4>Enter your own</h4>
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1">$</span>
-                            <input type="number" class="form-control" min="10" name="donation-amount-manual">
-                        </div>
-                    </div> -->
                	</div>
             </div>
       		<div class="modal-body">
@@ -1006,12 +996,10 @@
                         <input type="text" class="form-control" placeholder="Full Name" name="name" id="cardholder-name">
                         <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
                         <input type="tel" class="form-control" placeholder="Phone Number" name="tel" id="tel">
-                        
                         <div>
                             <input id="membership" class="checkbox-style" name="membership" type="checkbox">
                             <label for="membership" class="checkbox-style-1-label checkbox-small" style="font-weight:normal;">Register as a Member</label>
                             </div>
-
                     </div>
                 	<div class="col-md-6 col-sm-6 donation-form-infocol">
                         <h4>Billing Details</h4>
@@ -1025,20 +1013,7 @@
                         		<input type="text" class="form-control" placeholder="State" name="state" id="state">
                             </div>
                     	</div>
-       					<!-- <div class="row">
-                			<div class="col-md-3 col-sm-3 col-xs-3">
-                        		<label>Country</label>
-                            </div>
-                			<div class="col-md-9 col-sm-9 col-xs-9">
-                                <select class="selectpicker">
-                                    <option>United States</option>
-                                    <option>Australia</option>
-                                    <option>Netherlands</option>
-                                </select>
-                            </div>
-                    	</div> -->
                     </div>
-                	
                  </div>
       		</div>
       		<div class="modal-footer text-align-center">

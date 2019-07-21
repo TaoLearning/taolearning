@@ -20,6 +20,8 @@
 <link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css">
 <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
 <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+<link rel="stylesheet" href="css/components/radio-checkbox.css" type="text/css" />
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
 <!-- Color Style -->
@@ -27,9 +29,7 @@
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
-<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
-<script src="https://js.stripe.com/v3/"></script>
-</head>
+<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/></head>
 <body class="single-post">
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -727,77 +727,65 @@
 <div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" data-backdrop="static">
   	<div class="modal-dialog" role="document">
     	<div class="modal-content">
+            <form action="#" method="post" id="payment-form">
       		<div class="modal-header">
         		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         		<div class="row">
                     <div class="col-md-6 col-sm-6 donate-amount-option">
                         <h4>Choose an amount</h4>
                         <ul class="predefined-amount">
-                            <li><label><input type="radio" name="donation-amount">$10</label></li>
-                            <li><label><input type="radio" name="donation-amount">$20</label></li>
-                            <li><label><input type="radio" name="donation-amount">$30</label></li>
-                            <li><label><input type="radio" name="donation-amount">$50</label></li>
-                            <li><label><input type="radio" name="donation-amount">$100</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="2500">$25</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="5000" checked="checked">$50</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="10000">$100</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="25000">$250</label></li>
+                            <li><label><input type="radio" name="donation-amount" value="50000">$500</label></li>
                         </ul>
                     </div>
-                    <span class="donation-choice-breaker">Or</span>
                     <div class="col-md-6 col-sm-6 donate-amount-option">
-                        <h4>Enter your own</h4>
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1">$</span>
-                            <input type="number" class="form-control">
-                        </div>
+                        <h4>Frequency</h4>
+                        <ul class="predefined-amount2 predefined-amount">
+                            <input class="bt-switch" type="checkbox" data-inverse="true" data-on-text="Monthly" data-off-text="One-Time" data-on-color="info" data-off-color="info" name="subscription" id="subscription">
+                        </ul>
                     </div>
                	</div>
-      		</div>
+            </div>
       		<div class="modal-body">
        			<div class="row">
-                	<div class="col-md-6 col-sm-6 donation-form-infocol">
-                    	<h4>Billing Address</h4>
-                        <input type="text" class="form-control" placeholder="Address line 1">
-                        <input type="text" class="form-control" placeholder="Address line 2">
-       					<div class="row">
-                			<div class="col-md-8 col-sm-8 col-xs-8">
-                        		<input type="text" class="form-control" placeholder="State/City">
+                    <div class="col-md-6 col-sm-6 donation-form-infocol">
+                        <h4>Personal info</h4>
+                        <input type="text" class="form-control" placeholder="Full Name" name="name" id="cardholder-name">
+                        <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
+                        <input type="tel" class="form-control" placeholder="Phone Number" name="tel" id="tel">
+                        <div>
+                            <input id="membership" class="checkbox-style" name="membership" type="checkbox">
+                            <label for="membership" class="checkbox-style-1-label checkbox-small" style="font-weight:normal;">Register as a Member</label>
                             </div>
-                			<div class="col-md-4 col-sm-4 col-xs-4">
-                        		<input type="text" class="form-control" placeholder="Zipcode">
-                            </div>
-                    	</div>
-       					<div class="row">
-                			<div class="col-md-3 col-sm-3 col-xs-3">
-                        		<label>Country</label>
-                            </div>
-                			<div class="col-md-9 col-sm-9 col-xs-9">
-                                <select class="selectpicker">
-                                    <option>United States</option>
-                                    <option>Australia</option>
-                                    <option>Netherlands</option>
-                                </select>
-                            </div>
-                    	</div>
                     </div>
                 	<div class="col-md-6 col-sm-6 donation-form-infocol">
-                    	<h4>Personal info</h4>
+                        <h4>Billing Details</h4>
+                        <div class="form-control"  id="card-element"></div>
+                        <input type="text" class="form-control" placeholder="Address" name="Address" id="address">
        					<div class="row">
-                			<div class="col-md-6 col-sm-6 col-xs-6">
-                        		<input type="text" class="form-control" placeholder="First name">
+                			<div class="col-md-8 col-sm-8 col-xs-8">
+                        		<input type="text" class="form-control" placeholder="City" name="city" id="city">
                             </div>
-                			<div class="col-md-6 col-sm-6 col-xs-6">
-                        		<input type="text" class="form-control" placeholder="Last name">
+                			<div class="col-md-4 col-sm-4 col-xs-4">
+                        		<input type="text" class="form-control" placeholder="State" name="state" id="state">
                             </div>
                     	</div>
-                        <input type="text" class="form-control" placeholder="Email address">
-                        <input type="text" class="form-control" placeholder="Phone no.">
-                        <label class="checkbox"><input type="checkbox"> Register me on this website</label>
                     </div>
                  </div>
       		</div>
       		<div class="modal-footer text-align-center">
-        		<button type="button" class="btn btn-primary">Make your donation now</button>
-                <div class="spacer-20"></div>
-                <p class="small">Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi. Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet tellus malesuada, malesuada iaculis eros dignissim. Aenean vitae diam id lacus fringilla maximus. Mauris auctor efficitur nisl, non blandit urna fermentum nec. Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.</p>
-      		</div>
+                <button type="button" class="btn btn-primary" id="card-button">Make your donation now</button>
+                <div class="spacer-10"></div>
+                <div id="card-errors" role="alert" class="text-center alert-error"></div>
+                <div class="spacer-10"></div>
+                <p class="small">
+                <br>Tao Learning Institute is a Section 501(c)3 charitable organization, EIN 83-3086300.<br>All donation are deemed tax-deductible absent any limitations on deductibility applicable to a particular taxpayer.<br>No goods or services were provided in exchange for your contribution.</p>
+              </div>
+            </form>
+            <script src="https://js.stripe.com/v3/"></script>
     	</div>
   	</div>
 </div>
@@ -810,5 +798,8 @@
 <script src="js/init.js"></script> <!-- All Scripts -->
 <script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
 <script src="js/circle-progress.js"></script> <!-- Circle Progress Bars -->
+<script src="js/client.js"></script> <!-- Krashnik Stripe Integration -->
+<script src="js/components/bs-switches.js"></script>
+<script>jQuery(".bt-switch").bootstrapSwitch();</script>
 </body>
 </html>

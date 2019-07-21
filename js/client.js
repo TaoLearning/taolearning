@@ -73,6 +73,6 @@ const handleServerResponse = async (response) => {
     }
   } else {
     // console.log("Payment Successful");
-    window.location.replace("thankyou.html?name=" + cardholderName "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription);
+    window.location.replace("thankyou.html?name=" + cardholderName + "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription);
   }
 }
