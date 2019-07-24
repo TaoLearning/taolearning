@@ -7,8 +7,6 @@ cardElement.mount('#card-element');
 const cardholderName = document.getElementById('cardholder-name');
 const cardButton = document.getElementById('card-button');
 var errorElement = document.getElementById('card-errors');
-
-cardButton.addEventListener('click', async (ev) => {
 var email = document.getElementById('email').value;
 var tel = document.getElementById('tel').value;
 var address = document.getElementById('address').value;
@@ -18,18 +16,45 @@ var totalamount = parseInt($("input[name=donation-amount]:checked").val());
 var subscription = document.getElementById("subscription").checked;
 var membership = document.getElementById("membership").checked;
 
-  // console.log("Submit Clicked");
+function updateForm(control) {
+  errorElement = document.getElementById('card-errors');
+  email = document.getElementById('email').value;
+  tel = document.getElementById('tel').value;
+  address = document.getElementById('address').value;
+  city = document.getElementById('city').value;
+  state = document.getElementById('state').value;
+  totalamount = parseInt($("input[name=donation-amount]:checked").val());
+  subscription = document.getElementById("subscription").checked;
+  membership = document.getElementById("membership").checked;
+  console.log("Membership is " + subscription);
+  console.log("Amount is " + totalamount);
+
+
+// FOR SINGLE PAYMENT ONLY
+if(subscription == false){
+  console.log("Single Payment Activated");
+  cardButton.addEventListener('click', async (ev) => {
+  email = document.getElementById('email').value;
+  tel = document.getElementById('tel').value;
+  address = document.getElementById('address').value;
+  city = document.getElementById('city').value;
+  state = document.getElementById('state').value;
+  totalamount = parseInt($("input[name=donation-amount]:checked").val());
+  subscription = document.getElementById("subscription").checked;
+  membership = document.getElementById("membership").checked;
+
+  console.log("Submit Clicked");
   const {paymentMethod, error} =
   await stripe.createPaymentMethod('card', cardElement, {
     billing_details: {name: cardholderName.value}
   });
   if (error) {
   $("#card-errors").fadeIn();
-  // console.log(error.message);
+  console.log(error.message);
   errorElement.textContent = error.message;
   } else {
   $("#card-errors").fadeOut();
-  // console.log("Send Payment Stringify to Server");
+  console.log("Send Payment Stringify to Server");
   var fullbody = JSON.stringify({totalamount : totalamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: paymentMethod.id});
   console.log(fullbody);
 
@@ -49,18 +74,18 @@ var membership = document.getElementById("membership").checked;
 const handleServerResponse = async (response) => {
   if (response.error) {
     $("#card-errors").fadeIn();
-    // console.log(response.error.message);
+    console.log(response.error.message);
     errorElement.textContent = response.error.message;
   } else if (response.requires_action) {
     const { error: errorAction, paymentIntent } =
     await stripe.handleCardAction(response.payment_intent_client_secret);
 
     if (errorAction) {
-    // console.log(errorAction.message);
+    console.log(errorAction.message);
     $("#card-errors").fadeIn();
     errorElement.textContent = errorAction.message;
     } else {
-      // console.log("Send Payment (again) Stringify to Server");
+      console.log("Send Payment (again) Stringify to Server");
 
       const serverResponse = await fetch(fetchlink, {
         method: 'POST',
@@ -72,7 +97,12 @@ const handleServerResponse = async (response) => {
       handleServerResponse(await serverResponse.json());
     }
   } else {
-    // console.log("Payment Successful");
-    window.location.replace("thankyou.html?name=" + cardholderName + "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription);
+    console.log("Payment Successful");
+    // window.location.replace("thankyou.html?name=" + cardholderName.value) //+ "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription);
   }
+}}
+else{
+  // FOR MONTHLY DONATION SUBSCRIPTION
+  console.log("Monthly Payment Subscription");
+};
 }
