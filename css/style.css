@@ -2611,12 +2611,12 @@ body.boxed .body{
 #DonateModal .modal-header .form-control{
 	margin-bottom:0;
 }
-.donate-amount-option{
+.total-amount-option{
 	text-align:center;
 	padding-top:20px;
 	padding-bottom:5px;
 }
-.donate-amount-option .input-group{
+.total-amount-option .input-group{
 	width:70%;
 	margin-left:15%;
 }

@@ -971,17 +971,17 @@
       		<div class="modal-header">
         		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         		<div class="row">
-                    <div class="col-md-6 col-sm-6 donate-amount-option">
+                    <div class="col-md-6 col-sm-6 total-amount-option">
                         <h4>Choose an amount</h4>
                         <ul class="predefined-amount">
-                            <li><label><input type="radio" name="donation-amount" onclick="updateForm(this);" value="2500">$25</label></li>
-                            <li><label><input type="radio" name="donation-amount" onclick="updateForm(this);" value="5000" checked="checked">$50</label></li>
-                            <li><label><input type="radio" name="donation-amount" onclick="updateForm(this);" value="10000">$100</label></li>
-                            <li><label><input type="radio" name="donation-amount" onclick="updateForm(this);" value="25000">$250</label></li>
-                            <li><label><input type="radio" name="donation-amount" onclick="updateForm(this);" value="50000">$500</label></li>
+                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="2500">$25</label></li>
+                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="5000" checked="checked">$50</label></li>
+                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="10000">$100</label></li>
+                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="25000">$250</label></li>
+                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="50000">$500</label></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-sm-6 donate-amount-option">
+                    <div class="col-md-6 col-sm-6 total-amount-option">
                         <h4>Frequency</h4>
                         <ul class="predefined-amount2 predefined-amount">
                             <input class="bt-switch" type="checkbox" data-inverse="true" data-on-text="Monthly" data-off-text="One-Time" data-on-color="info" data-off-color="info" name="subscription" id="subscription" onchange="updateForm(this);">
@@ -997,7 +997,7 @@
                         <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
                         <input type="tel" class="form-control" placeholder="Phone Number" name="tel" id="tel">
                         <div>
-                            <input id="membership" class="checkbox-style" name="membership" type="checkbox">
+                            <input id="membership" class="checkbox-style" name="membership" onchange="updateForm(this);" type="checkbox">
                             <label for="membership" class="checkbox-style-1-label checkbox-small" style="font-weight:normal;">Register as a Member</label>
                             </div>
                     </div>

@@ -12,8 +12,8 @@ var tel = document.getElementById('tel').value;
 var address = document.getElementById('address').value;
 var city = document.getElementById('city').value;
 var state = document.getElementById('state').value;
-var totalamount = parseInt($("input[name=donation-amount]:checked").val());
-var subscription = document.getElementById("subscription").checked;
+var totalamount = 50000;
+var subscription = false;
 var membership = document.getElementById("membership").checked;
 
 function updateForm(control) {
@@ -23,26 +23,20 @@ function updateForm(control) {
   address = document.getElementById('address').value;
   city = document.getElementById('city').value;
   state = document.getElementById('state').value;
-  totalamount = parseInt($("input[name=donation-amount]:checked").val());
+  totalamount = parseInt($("input[name=total-amount]:checked").val());
   subscription = document.getElementById("subscription").checked;
   membership = document.getElementById("membership").checked;
-  console.log("Membership is " + subscription);
+  console.log("Subscription is " + subscription);
   console.log("Amount is " + totalamount);
-
+}
 
 // FOR SINGLE PAYMENT ONLY
+
+  cardButton.addEventListener('click', async (ev) => {
+  updateForm();
+
 if(subscription == false){
   console.log("Single Payment Activated");
-  cardButton.addEventListener('click', async (ev) => {
-  email = document.getElementById('email').value;
-  tel = document.getElementById('tel').value;
-  address = document.getElementById('address').value;
-  city = document.getElementById('city').value;
-  state = document.getElementById('state').value;
-  totalamount = parseInt($("input[name=donation-amount]:checked").val());
-  subscription = document.getElementById("subscription").checked;
-  membership = document.getElementById("membership").checked;
-
   console.log("Submit Clicked");
   const {paymentMethod, error} =
   await stripe.createPaymentMethod('card', cardElement, {
@@ -68,6 +62,13 @@ if(subscription == false){
 
   handleServerResponse(json);
   }
+}
+else{
+  // FOR MONTHLY DONATION SUBSCRIPTION
+  console.log("Monthly Payment Subscription");
+  errorElement.textContent = "We will offer monthly donations in the future. Thank you!";
+  $("#card-errors").fadeIn();
+}
 });
 
 
@@ -97,12 +98,7 @@ const handleServerResponse = async (response) => {
       handleServerResponse(await serverResponse.json());
     }
   } else {
-    console.log("Payment Successful");
+    console.log("Payment Successful");    
     // window.location.replace("thankyou.html?name=" + cardholderName.value) //+ "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription);
   }
-}}
-else{
-  // FOR MONTHLY DONATION SUBSCRIPTION
-  console.log("Monthly Payment Subscription");
-};
 }

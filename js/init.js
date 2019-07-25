@@ -481,9 +481,9 @@ $('.scrollto').on("click", function(){
 $(".fw-video, .post-media").fitVids();
 
 //Donation Modal
-$('.predefined-amount input[name=donation-amount]:checked').parent('label').addClass("selected");
-$('.predefined-amount input[name=donation-amount]').on('click',function() {
-	$('.predefined-amount input[name=donation-amount]:not(:checked)').parent('label').removeClass("selected");
+$('.predefined-amount input[name=total-amount]:checked').parent('label').addClass("selected");
+$('.predefined-amount input[name=total-amount]').on('click',function() {
+	$('.predefined-amount input[name=total-amount]:not(:checked)').parent('label').removeClass("selected");
 	$(this).parent('label').addClass("selected");
 });
 
