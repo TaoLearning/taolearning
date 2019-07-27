@@ -3978,3 +3978,7 @@ object{
     pointer-events: none;
 }
 #loadOverlay{display: none;}
+
+.btn-ghost.btn-light{
+  text-transform: uppercase;
+}
