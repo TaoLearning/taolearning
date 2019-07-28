@@ -3982,3 +3982,8 @@ object{
 .btn-ghost.btn-light{
   text-transform: uppercase;
 }
+
+#stories-slider .story-slider-cell{
+	/* vertical-align:top; */
+	height: auto;	
+}
