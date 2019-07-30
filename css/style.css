@@ -3987,3 +3987,11 @@ object{
 	/* vertical-align:top; */
 	height: auto;	
 }
+
+/* ADDED THESE TO FIX STAFF SECTION */
+.grid-staff-item-compact .grid-item-content h3{
+	font-size: 14px;
+}
+.grid-item h3{
+	letter-spacing:0px;
+}
