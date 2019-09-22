@@ -70,6 +70,6 @@ Tao Learning Menu
 		○ Volunteer
 		○ Register
 
-	• Become a Partner
+	• get-involved/give.html" class="btn btn-primary">Donate</a></div>
 	• Fundraise
 Donate

@@ -58,7 +58,7 @@
                     
                 </div>
              	<a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
-                <div class="header-info-col"><a href="../causes.html" class="btn btn-primary">Become a Partner</a></div>
+                <div class="header-info-col"><a href="../get-involved/give.html" class="btn btn-primary">Donate</a></div>
                 
                 <ul class="sf-menu dd-menu pull-right" role="menu">
                     <li class="megamenu"><a href="javascrip:void(0)">What We Do</a>
@@ -413,7 +413,7 @@
     	<div class="page-banner parallax" style="background-image:url(../images/1280/books450.jpg);">
         	<div class="container">
             	<div class="page-banner-text">
-        			<h1 class="block-title">Careers with us</h1>
+        			<h1 class="block-title">Give to a Cause</h1>
                 </div>
             </div>
         </div>
@@ -421,7 +421,157 @@
     <!-- Main Content -->
     <div id="main-container">
     	<div class="content">
-        	<div class="container">
+        	<div class="container" id="openings">
+            	<div class="row">
+                	<div class="col-md-8 col-sm-8">
+                    	<div class="modal-content">
+                            <form action="#" method="post" id="payment-form">
+                              <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 total-amount-option">
+                                        <h4>Choose an amount</h4>
+                                        <ul class="predefined-amount">
+                                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="2500">$5</label></li>
+                                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="2500" checked="checked">$25</label></li>
+                                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="9900">$99</label></li>
+                                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="50000">$500</label></li>
+                                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="200000">$2000</label></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 total-amount-option">
+                                        <h4>Frequency</h4>
+                                        <ul class="predefined-amount2 predefined-amount">
+                                            <input class="bt-switch" type="checkbox" data-inverse="true" data-on-text="Monthly" data-off-text="One-Time" data-on-color="info" data-off-color="info" name="subscription" id="subscription" onchange="updateForm(this);">
+                                        </ul>
+                                    </div>
+                                   </div>
+                            </div>
+                              <div class="modal-body">
+                                   <div class="row">
+                                    <div class="col-md-6 col-sm-6 donation-form-infocol">
+                                        <h4>Personal info</h4>
+                                        <input type="text" class="form-control" placeholder="Full Name" name="name" id="cardholder-name">
+                                        <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
+                                        <input type="tel" class="form-control" placeholder="Phone Number" name="tel" id="tel">
+                                        <div>
+                                            <input id="membership" class="checkbox-style" name="membership" onchange="updateForm(this);" type="checkbox">
+                                            <label for="membership" class="checkbox-style-1-label checkbox-small" style="font-weight:normal;">Register as a Member</label>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 donation-form-infocol">
+                                        <h4>Billing Details</h4>
+                                        <div class="form-control"  id="card-element"></div>
+                                        <input type="text" class="form-control" placeholder="Address" name="Address" id="address">
+                                           <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <input type="text" class="form-control" placeholder="City" name="city" id="city">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <input type="text" class="form-control" placeholder="State" name="state" id="state">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="modal-footer text-align-center">
+                                <button type="button" class="btn btn-primary" id="card-button">Make your donation now</button>
+                                <div class="spacer-10"></div>
+                                <div id="card-errors" role="alert" class="text-center alert-error"></div>
+                                <div class="spacer-10"></div>
+                                <p class="small">
+                                <br>Tao Learning Institute is a Section 501(c)3 charitable organization, EIN 83-3086300.<br>All donation are deemed tax-deductible absent any limitations on deductibility applicable to a particular taxpayer.<br>No goods or services were provided in exchange for your contribution.</p>
+                              </div>
+                            </form>
+                            <script src="https://js.stripe.com/v3/"></script>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="widget recent_posts">
+                            <h3 class="widgettitle">Popular Causes</h3>
+                            <ul>
+                                <li>
+                                    <a href="../single-post.html" class="media-box">
+                                        <img src="../images/600/themov2.jpg" alt="">
+                                    </a>
+                                    <h5><a href="../single-post.html">TheMOV Fitness Network</a></h5>
+                                    <span class="meta-data grid-item-meta">Health &amp; Wellness</span>
+                                </li>
+                                <li>
+                                    <a href="../single-post.html" class="media-box">
+                                        <img src="../images/600/silkwomen2.jpg" alt="">
+                                    </a>
+                                    <h5><a href="../single-post.html">The Silk Women&trade; Project</a></h5>
+                                    <span class="meta-data grid-item-meta">Career Advancement</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="well widget widget_volunteer_form">
+                            <h3>Become a Volunteer</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <input type="text" placeholder="First Name" name="firstname" class="form-control">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <input type="text" placeholder="Last  Name" name="lastname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <input type="email" placeholder="Email" name="email" class="form-control">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <input type="tel" placeholder="Phone Number" name="tel" class="form-control">
+                                    </div>
+                                </div>
+                                <label>Choose How to Help</label>
+                                <select name="interest" class="selectpicker">
+                                    <option>Teach Students Online</option>
+                                    <option>Travel to Developing Nation</option>
+                                    <option>Donate Items / Property</option>
+                                    <option>Create Education Material</option>
+                                    <option>Help with Business Operations</option>
+                                    <option>Other</option>
+                                </select>
+                                <input type="submit" class="btn btn-primary text-center" value="Submit">
+                                <div class="spacer-10"></div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-75"></div>
+            <div class="padding-tb75 parallax parallax-light parallax1 counters" style="background-image:url(../images/1280/space.jpg)">
+            	<div class="overlay-accent"></div>
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-dollar fa-4x"></i> </div>
+                            <div class="timer" data-perc="9000"> <span class="count">1380089</span> </div>
+                            <span class="fact">Amount raised</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-heart-o fa-4x"></i> </div>
+                            <div class="timer" data-perc="96"> <span class="count">36</span> </div>
+                            <span class="fact">Causes</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-bar-chart-o fa-4x"></i> </div>
+                            <div class="timer" data-perc="1500"> <span class="count">1211</span> </div>
+                            <span class="fact">Total members</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-hand-peace-o fa-4x"></i> </div>
+                            <div class="timer" data-perc="1500"> <span class="count">61098</span> </div>
+                            <span class="fact">People Impacted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-75"></div>
+            <div class="container">
                 <div class="text-align-center">
                     <h2>Why you should join the mission</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis<br>egestas rhoncus Donec facilisis fermentum sem, ac viverra ante luctus vel.<br>Donec vel mauris quam Lorem ipsum dolor sit amet.</p>
@@ -489,155 +639,6 @@
                     	<div class="spacer-75 hidden-sm hidden-xs"></div>
                    	</div>
                     <a href="#openings" class="btn btn-primary btn-lg scrollto">Current Openings</a>
-                </div>
-            </div>
-            <div class="spacer-75"></div>
-            <div class="padding-tb75 parallax parallax-light parallax1 counters" style="background-image:url(../images/1280/space.jpg)">
-            	<div class="overlay-accent"></div>
-            	<div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <div class="fact-ico"> <i class="fa fa-dollar fa-4x"></i> </div>
-                            <div class="timer" data-perc="9000"> <span class="count">1380089</span> </div>
-                            <span class="fact">Amount raised</span>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <div class="fact-ico"> <i class="fa fa-heart-o fa-4x"></i> </div>
-                            <div class="timer" data-perc="96"> <span class="count">36</span> </div>
-                            <span class="fact">Causes</span>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <div class="fact-ico"> <i class="fa fa-bar-chart-o fa-4x"></i> </div>
-                            <div class="timer" data-perc="1500"> <span class="count">1211</span> </div>
-                            <span class="fact">Total members</span>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <div class="fact-ico"> <i class="fa fa-hand-peace-o fa-4x"></i> </div>
-                            <div class="timer" data-perc="1500"> <span class="count">61098</span> </div>
-                            <span class="fact">People Impacted</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spacer-75"></div>
-            <div class="container" id="openings">
-            	<div class="row">
-                	<div class="col-md-7 col-sm-7">
-                    	<h2>Current Openings</h2>
-                        <hr class="sm">
-            			<div class="spacer-20"></div>
-                        <div class="job-block">
-                        	<a href="#" class="btn btn-default btn-sm">Apply now</a>
-                        	<span class="meta-data-thick">Administration</span>
-                            <h4>Project Coordinator</h4>
-                        	<span class="meta-data">NYC</span>
-                    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a href="#" class="basic-link">Read more</a>
-                        </div>
-                        <div class="job-block">
-                        	<a href="#" class="btn btn-default btn-sm">Apply now</a>
-                        	<span class="meta-data-thick">Education</span>
-                            <h4>Team leader</h4>
-                        	<span class="meta-data">NYC</span>
-                    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a href="#" class="basic-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-5">
-                    	<div class="well widget widget_volunteer_form">
-                        	<h3>Become a volunteer</h3>
-                            <form>
-                            	<label>Name</label>
-                            	<input type="text" class="form-control">
-                            	<label>Email</label>
-                            	<input type="email" class="form-control">
-                            	<label>Address</label>
-                            	<input type="text" class="form-control">
-                                <div class="row">
-                                	<div class="col-md-6 col-sm-6 col-xs-6">
-                            			<label>City</label>
-                                        <select class="selectpicker">
-                                        	<option>Albertville</option>
-                                        	<option>Auburn</option>
-                                        </select>
-                                	</div>
-                                	<div class="col-md-6 col-sm-6 col-xs-6">
-                            			<label>State</label>
-                                        <select class="selectpicker">
-                                        	<option value="AL">Alabama</option>
-                                            <option value="AK">Alaska</option>
-                                            <option value="AZ">Arizona</option>
-                                            <option value="AR">Arkansas</option>
-                                            <option value="CA">California</option>
-                                            <option value="CO">Colorado</option>
-                                            <option value="CT">Connecticut</option>
-                                            <option value="DE">Delaware</option>
-                                            <option value="DC">District Of Columbia</option>
-                                            <option value="FL">Florida</option>
-                                            <option value="GA">Georgia</option>
-                                            <option value="HI">Hawaii</option>
-                                            <option value="ID">Idaho</option>
-                                            <option value="IL">Illinois</option>
-                                            <option value="IN">Indiana</option>
-                                            <option value="IA">Iowa</option>
-                                            <option value="KS">Kansas</option>
-                                            <option value="KY">Kentucky</option>
-                                            <option value="LA">Louisiana</option>
-                                            <option value="ME">Maine</option>
-                                            <option value="MD">Maryland</option>
-                                            <option value="MA">Massachusetts</option>
-                                            <option value="MI">Michigan</option>
-                                            <option value="MN">Minnesota</option>
-                                            <option value="MS">Mississippi</option>
-                                            <option value="MO">Missouri</option>
-                                            <option value="MT">Montana</option>
-                                            <option value="NE">Nebraska</option>
-                                            <option value="NV">Nevada</option>
-                                            <option value="NH">New Hampshire</option>
-                                            <option value="NJ">New Jersey</option>
-                                            <option value="NM">New Mexico</option>
-                                            <option value="NY">New York</option>
-                                            <option value="NC">North Carolina</option>
-                                            <option value="ND">North Dakota</option>
-                                            <option value="OH">Ohio</option>
-                                            <option value="OK">Oklahoma</option>
-                                            <option value="OR">Oregon</option>
-                                            <option value="PA">Pennsylvania</option>
-                                            <option value="RI">Rhode Island</option>
-                                            <option value="SC">South Carolina</option>
-                                            <option value="SD">South Dakota</option>
-                                            <option value="TN">Tennessee</option>
-                                            <option value="TX">Texas</option>
-                                            <option value="UT">Utah</option>
-                                            <option value="VT">Vermont</option>
-                                            <option value="VA">Virginia</option>
-                                            <option value="WA">Washington</option>
-                                            <option value="WV">West Virginia</option>
-                                            <option value="WI">Wisconsin</option>
-                                            <option value="WY">Wyoming</option>
-                                        </select>
-                                	</div>
-                               	</div>
-                                <div class="row">
-                                	<div class="col-md-6 col-sm-6 col-xs-6">
-                            			<label>Postal Code</label>
-                            			<input type="text" class="form-control">
-                                	</div>
-                                	<div class="col-md-6 col-sm-6 col-xs-6">
-                            			<label>Country</label>
-                                        <select class="selectpicker">
-                                        	<option>United States</option>
-                                        	<option>Australia</option>
-                                        	<option>Netherlands</option>
-                                        </select>
-                                	</div>
-                               	</div>
-                                <input type="submit" class="btn btn-primary" value="Submit">
-                                <div class="spacer-10"></div>
-                            </form>
-                            <p class="small short">All fields are mandatory</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -712,5 +713,10 @@
 <script src="../js/init.js"></script> <!-- All Scripts -->
 <script src="../vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
 <script src="../js/circle-progress.js"></script> <!-- Circle Progress Bars -->
+<!-- Krashnik Stripe Integration -->
+<script src="../js/client.js"></script> 
+<script src="../js/components/bs-switches.js"></script>
+<script>jQuery(".bt-switch").bootstrapSwitch();</script>
+<!-- End Krashnik Stripe Integration -->
 </body>
 </html>
