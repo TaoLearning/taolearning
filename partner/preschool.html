@@ -532,36 +532,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
-                        <p class="lead">We advance education in a P-20+ Initiative. We are a 501c3 Non-Profit Organization headquartered in the USA with multiple literacy programs around the world &amp; online. </p>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="grid-item">
-                                    <a href="#"><img src="../images/230/52.jpg" alt=""></a>
-                                    <div class="grid-item-content">
-                                        <p>We have many online programs and in centers around the world to encourage children to find their inner voice. We inspire them to become authors, be creative, and express themselves at the earliest age possible. </p>
-                                        <a href="#">Learn More &raquo;</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="grid-item">
-                                    <a href="#"><img src="../images/230/5.jpg" alt=""></a>
-                                    <div class="grid-item-content">
-                                        <p>As the world becomes more tech-savvy, we embrace that side of education but also emphasize the importance of social collaboration, hive mentality, and teamwork. It is here that humans will find purpose in the future.</p>
-                                        <a href="#">Learn More &raquo;</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="grid-item">
-                                    <a href="#"><img src="../images/230/102.jpg" alt=""></a>
-                                    <div class="grid-item-content">
-                                        <p>Tao Learning is partnered with multiple enterprises to give students the opportunity to job shadow and intern in international businesses across multiple sectors. We continue to build partnerships for this purpose. </p>
-                                        <a href="#">Learn More &raquo;</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="lead">We advance education in a P-20+ Initiative through the <a href="../consortium/">Tao Learning Consortium</a> and a variety of learning programs. The consortium is a full-service literacy program from Preschool to Career Advancement, covering over 25 years of education with multiple <a href="../consortium/"><img src="../images/400/consortium.jpg" width="250px" alt="" class="align-left"></a>specialized programs to increase awareness, literacy, and inspiration for knowledge within each student on a worldwide scale.</p>
+                        <p>The consortium has programs segregated into age, nation, genre, and societal needs of the time. We have created this for over 20 years and continue to expand literacy programs in areas we feel are needed for future community development. The Consortium has a strong focus on STEAM Education, Health &amp; Wellness, Mental Health, developing a passion for knowledge, and literacy in all top career fields. The literacy programs are quite unique in that we treat software, soft skills, and life skills as languages where we continue to train students until we see they are fully fluent in the vocabulary. All the programs are interconnected and utilize our Curiosity Score to gauge the participation and aptitude achieved by each student. The Tao Learning Institute continues to bring on education partners to refine these while staying true to our pedagogical method which believes every student has limitless possibilities and they are the master of their own path. In this way, we can touch many lives around the world and focus our resources primarily on developing deeper Edutech through flip-school methodology.</p>
+
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="icon-box ibox-plain">
@@ -652,7 +625,8 @@
            	</div>
       	</div>
   	</div>
-  	<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a></div>
+      <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a></div>
+      
 <script src="../js/jquery-2.1.3.min.js"></script> <!-- Jquery Library Call -->
 <script src="../vendor/magnific/jquery.magnific-popup.min.js"></script> <!-- PrettyPhoto Plugin -->
 <script src="../js/ui-plugins.js"></script> <!-- UI Plugins -->
@@ -662,5 +636,56 @@
 <script src="../js/init.js"></script> <!-- All Scripts -->
 <script src="../vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
 <script src="../js/circle-progress.js"></script> <!-- Circle Progress Bars -->
+
+  
+<script src="../js/jquery.validate.js"></script>
+<script>
+    $("#request").validate();
+</script>
+
+<script>
+    $("#request").submit(function(event){
+    if (!$("#request").validate().form()) {
+    return false; //doesn't validate
+    }else
+    {
+    event.preventDefault(); //prevent default action 
+    var post_url = $(this).attr("action"); //get form action url
+    var request_method = $(this).attr("method"); //get form GET/POST method
+    var content_type = $(this).attr("enctype"); //get form GET/POST method
+    var form_data = $(this).serialize(); //Encode form elements for submission
+    $.ajax({
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function (data) {
+                $("#request")[0].reset();
+                $("input:checkbox").attr('checked', false);
+                Swal({
+                title: '<strong>Request Sent</strong>',
+                type: 'success',
+                html:
+                    'Please check your email for a response from us.<br>We also suggest to join the Ignicute Curiosity Community!',
+                showCloseButton: true,
+                focusConfirm: false,
+                confirmButtonText:
+                    '<a style="color: white" href="../get-involved/success.html"><i class="fa fa-address-card"></i> OK</a>',
+                confirmButtonAriaLabel: 'Login',
+            });
+                console.log('Submission was successful.');
+                console.log(data);
+                
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        }).then(function(response){ //
+        $("#server-results").html(response);
+    }); //form is validated do your work
+    }
+});
+</script>
+
 </body>
 </html>
