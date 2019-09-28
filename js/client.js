@@ -1,4 +1,4 @@
-const stripe = Stripe('pk_test_M4lUHJesnz3f9gWbUJzdncMV');
+const stripe = Stripe('pk_live_AT18iGVWTZZk5wOtQqlfhOm0');
 const fetchlink = 'https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==';
 
 const elements = stripe.elements();
@@ -12,7 +12,7 @@ var tel = document.getElementById('tel').value;
 var address = document.getElementById('address').value;
 var city = document.getElementById('city').value;
 var state = document.getElementById('state').value;
-var totalamount = 50000;
+var totalamount = 2500;
 var subscription = false;
 var membership = document.getElementById("membership").checked;
 
