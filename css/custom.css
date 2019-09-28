@@ -1,0 +1,19 @@
+.content2{
+	padding:75px 0 0;
+	min-height:400px;
+}
+
+.cta2{
+	border:1px solid #E6E6E6;
+	padding:25px;
+	margin:15px 0;
+	background:#F6F6F6;
+}
+.cta2 p{
+	font-size:20px;
+	line-height:35px;
+	margin-bottom:0;
+	text-transform:uppercase;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
