@@ -4,7 +4,12 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Tao Learning | iBlossom</title>
+<meta property="og:url"           content="https://www.taolearning.org" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Tao Learning Institute" />
+<meta property="og:description"   content="Increasing Literacy Worldwide" />
+<meta property="og:image"         content="https://taolearning.org/images/900/collage.jpg" />
+<title>Tao Learning | Thank You</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -20,19 +25,47 @@
 <link href="../vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css">
 <link href="../vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
 <link href="../vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
-<script src="../js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <link rel="stylesheet" href="../css/components/bs-switches.css" type="text/css" />
 <link rel="stylesheet" href="../css/components/radio-checkbox.css" type="text/css" />
-<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css" media="screen" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <link href="../css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
 <!-- Color Style -->
 <link href="../colors/color1.css" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
 <script src="../js/modernizr.js"></script><!-- Modernizr -->
-<link rel="shortcut icon" type="image/png" href="..//images/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    
+    // http://127.0.0.1:5500/get-involved/thankyou.html?name=Jo%20S&amount=500&membership=false&subscription=false&email=jo@example.org
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+}
+
+var name = getUrlParam('name','Donor');
+var amount = getUrlParam('amount','$0');
+var subscription = getUrlParam('subscription','Undefined');
+var email = getUrlParam('email','youremail@example.org');
+var membership = getUrlParam('membership','Unedefined');
+
+
+</script>
+
 </head>
-<body class="single-cause">
+<body>
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
@@ -413,7 +446,7 @@
     	<div class="page-banner parallax" style="background-image:url(../images/1280/books450.jpg);">
         	<div class="container">
             	<div class="page-banner-text">
-        			<h1 class="block-title">iBlossom&trade;</h1>
+        			<h1 class="block-title">$<script type="text/javascript">document.write(amount/100)</script> Donation Succeeded</h1>
                 </div>
             </div>
         </div>
@@ -422,163 +455,258 @@
     <div id="main-container">
     	<div class="content">
         	<div class="container">
-            	<div class="row">
-                	<div class="col-md-8 content-block">
-                    	<h3>Sprouting Good Habits</h3>
-                    	<div class="post-media">
-                        	<img src="../images/900/blossomfamily.jpg" alt="">
-                        </div>
-                        <span class="label label-default">Cause progress</span>
-                        <div class="progress">
-                            <div style="width: 88%;" class="progress-bar progress-bar-primary" data-appear-progress-animation="88%" data-appear-animation-delay="100"> <span class="progress-bar-tooltip">88%</span> </div>
-                        </div>
-                       	<div class="pull-left">Raised <strong>$176000</strong></div>
-                       	<div class="pull-right">Goal <strong class="accent-color">$200000</strong></div>
-                        <div class="spacer-20"></div>
-                        <div class="row">
-                        	<div class="col-md-5 col-sm-5">
-                        		<p class="lead">This is a journaling community that encourages inner happiness by focusing on the process of nourishment. You may read articles, get inspired to garden, and find the motivation to take better care of yourself. We also encourage each other to share their own story of awakening.</p>
-                      		</div>
-                            <div class="col-md-7 col-sm-7">
-                                <ul class="list-group">
-                          			<li class="list-group-item">Total Donors<span class="badge">18</span></li>
-                          			<li class="list-group-item">Total Participants<span class="badge">200</span></li>
-                          			<li class="list-group-item">Countries helping<span class="badge">6</span></li>
-                          		</ul>
-                               	<a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#DonateModal">Donate Now</a>
-                            </div>
-                        </div>
-                        <p>The iBlossom Community helps increase our positive vocabulary and shift away from negative habits. Often times, our environment pushes us towards or limited thinking. Small steps in life can go a long ways towards our goal of inner happiness. These tips, tricks, and inspiration are all share here in our community. For example, by opening more windows, increasing the light inside, and learning a love for tiny gardens, we can build habits of happiness.  We share a new perspective on wellness. We treat happiness as a language and teach fluency in it. One must practice numerous habits found within the iBlossom Community daily to become fluent in happiness. </p>
-                        <img src="../images/900/iblossom/book.png" width="250px" alt="" class="align-left">
-                        <p>These habits are as simple as enjoying tea instead of coffee or other harsh beverages, going on a walk surrounded by tall trees and lush grasses, or by putting small plants around your house to remind you of your connection with a larger universe. While there are scientific reasons this works, we focus more on the basic practices and the inspiration to our online community. To reduce impatience, we teach people to find a great appreciation for nature, gardening, and the rewarding process of planting seeds.</p>
-                        <p>In our fast-paced society that is quite disconnected from nature, we reconnect people with old-fashioned habits proven to increase health. The iBlossom Community brings a positive mood to slowing down and learning new arts &amp; crafts. On the site, you can find many articles that are equally therapeutic for the author, yet also instructional for the reader. The more one repeats and teaches happiness, the more good values are instilled within them. In this way, iBlossom becomes a needed outlet for our students in many other programs so they may find their own audience and also reiterate the lesson through the writing and editing process.</p>
-                        <p>While still in its infancy, we already have the framework of the site put together and the branding complete. We also have a large community of students in other programs who are ready to be introduced to this platform. In the years ahead, we will develop this more deeply with our overall desire to keep the quality higher than anything these students can currently find online since they may be susceptible to depression or negative habits. In doing so, we can create an environment that is safe and uplifting for their learning process.</p>
-                        <div class="text-center"><a href="https://iblossom.org"><img src="../images/900/iblossom/logobanner.png"></a></div>
-                    </div>
+                <div class="text-align-center">
+                    <h2><script type="text/javascript">document.write(unescape(name))</script>, Your Support Helps</h2>
+                    <p class="lead">Thank you for your contribution today. We appreciate your donation to our non-profit. We have emailed you a receipt for your records to <script type="text/javascript">document.write(email)</script>. This includes our Tax ID 83-3086300 to track your tax-deductbile donation of $<script type="text/javascript">document.write(amount/100)</script>. Below are just a few of the programs that you are helping fund.</p>
                     
-                    <!-- Sidebar -->
-                    <div class="col-md-4 sidebar-block">
-                        <div class="cta text-center">
-                            <p><a href="https://iblossom.org" target="_blank">Visit iBlossom</a></p>
+                    <!-- Load Facebook SDK for JavaScript -->
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                    <!-- Your share button code -->
+                    
+
+                    <div class="cta">
+                            <div class="fb-share-button pull-right" 
+                            data-href="https://www.taolearning.org" 
+                            data-layout="button_count">
                         </div>
-                        <a href="https://iblossom.org" target="_blank"><img src="../images/900/iblossom/cta.jpg"></a>
-                        <div class="spacer-20"></div>
-                        <div class="widget recent_posts">
-                            <h3 class="widgettitle">More Causes</h3>
-                            <ul>
-                                <li>
-                                    <a href="../cause/themov.html" class="media-box">
-                                        <img src="../images/600/themov2.jpg" alt="">
-                                    </a>
-                                    <h5><a href="../cause/themov.html">TheMOV Fitness Network</a></h5>
-                                    <span class="meta-data grid-item-meta">Health &amp; Wellness</span>
-                                </li>
-                                <li>
-                                    <a href="../cause/devdojo.html" class="media-box">
-                                        <img src="../images/600/devdojo.jpg" alt="">
-                                    </a>
-                                    <h5><a href="../cause/devdojo.html">Developer Dojo&trade; </a></h5>
-                                    <span class="meta-data grid-item-meta">Coding Academy</span>
-                                </li>
-                                <li>
-                                    <a href="../cause/curiosity.html" class="media-box">
-                                        <img src="../images/600/grasslearn.jpg" alt="">
-                                    </a>
-                                    <h5><a href="../cause/curiosity.html">Ignite Curiosity Program</a></h5>
-                                    <span class="meta-data grid-item-meta">Job Shadowing &amp; Internships</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <img src="../images/900/blossomsip.jpg" width="100%" alt="">
-                        <div class="spacer-20"></div>
-                        <div class="well widget widget_volunteer_form">
-                            <h3>Become a Volunteer</h3>
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <input type="text" placeholder="First Name" name="firstname" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <input type="text" placeholder="Last  Name" name="lastname" class="form-control">
+                        <p>Ask Your Friends to Help Our Cause.</p>
+                    </div>
+
+                    <div class="text-align-left">
+                        <div class="spacer-50"></div>
+                        <div class="row text-center">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="grid-item">
+                                    <h4>Curiosity Community</h4>
+                                    <a href="#"><img src="../images/230/ic.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>We have many online programs and in centers around the world to encourage children to find their inner voice. We inspire them to become authors, be creative, and express themselves at the earliest age possible. </p>
+                                        <a href="https://ignitecuriosity.org" target="_blank" class="btn btn-primary btn-lg scrollto">Visit Site</a>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <input type="email" placeholder="Email" name="email" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <input type="tel" placeholder="Phone Number" name="tel" class="form-control">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="grid-item">
+                                    <h4>Developer Community</h4>
+                                    <a href="#"><img src="../images/230/devdojo.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>As the world becomes more tech-savvy, we embrace a side of education but also emphasize the importance of social collaboration, hive mentality, and teamwork. Here, humans will find purpose in the future.</p>
+                                        <a href="https://developerdojo.org" target="_blank" class="btn btn-primary btn-lg scrollto">Visit Site</a>
                                     </div>
                                 </div>
-                                <label>Choose How to Help</label>
-                                <select name="interest" class="selectpicker">
-                                    <option>Teach Students Online</option>
-                                    <option>Travel to Developing Nation</option>
-                                    <option>Donate Items / Property</option>
-                                    <option>Create Education Material</option>
-                                    <option>Help with Business Operations</option>
-                                    <option>Other</option>
-                                </select>
-                                <input type="submit" class="btn btn-primary text-center" value="Submit">
-                                <div class="spacer-10"></div>
-                            </form>
-                            <p class="small short">We will get back with you as soon as we can.</p>
-                        </div>
-                        <div class="widget widget_testimonials">
-                            <h3 class="widgettitle">Words of Wisdom</h3>
-                            <div class="carousel-wrapper">
-                                <div class="row">
-                                    <ul class="owl-carousel carousel-fw" id="testimonials-slider" data-columns="1" data-autoplay="5000" data-pagination="no" data-arrows="yes" data-single-item="no" data-items-desktop="1" data-items-desktop-small="1" data-items-tablet="1" data-items-mobile="1">
-                                        <li class="item">
-                                            <div class="testimonial-block">
-                                                <blockquote>
-                                                    <p>If you only read the books that everyone else is reading, you can only think what everyone else is thinking.</p>
-                                                </blockquote>
-                                                <div class="testimonial-avatar"><img src="../images/75/haruki2.jpg" alt="" width="70" height="70"></div>
-                                                <div class="testimonial-info">
-                                                    <div class="testimonial-info-in">
-                                                        <strong>Haruki Murakami</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="testimonial-block">
-                                                <blockquote>
-                                                    <p>You can never get a cup of tea large enough or a book long enough to suit me.</p>
-                                                </blockquote>
-                                                <div class="testimonial-avatar"><img src="../images/75/cs2.jpg" alt="" width="70" height="70"></div>
-                                                <div class="testimonial-info">
-                                                    <div class="testimonial-info-in">
-                                                        <strong>C.S. Lewis</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="testimonial-block">
-                                                <blockquote>
-                                                    <p>If there's a book that you want to read, but it hasn't been written yet, then you must write it.</p>
-                                                </blockquote>
-                                                <div class="testimonial-avatar"><img src="../images/75/toni2.jpg" alt="" width="70" height="70"></div>
-                                                <div class="testimonial-info">
-                                                    <div class="testimonial-info-in">
-                                                        <strong>Toni Morrison</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="grid-item">
+                                    <h4>Focus Community</h4>
+                                    <a href="#"><img src="../images/230/focushive2.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>Tao Learning is partnered with multiple enterprises to give students the opportunity to job shadow and intern in international businesses across multiple sectors. We continue to build partnerships for this purpose. </p>
+                                        <a href="https://thefocushive.com" target="_blank" class="btn btn-primary btn-lg scrollto">Visit Site</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="widget sidebar-widget widget_search">
-                            <label>Subscribe to our Newsletter</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Email Address">
-                                <span class="input-group-btn">
-                                <button class="btn btn-primary" type="button"><i class="fa fa-newspaper"></i></button>
-                                </span>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="icon-box ibox-border">
+                                    <div class="ibox-icon">
+                                        <i class="fa fa-user-md"></i>
+                                    </div>
+                                    <h3>Health Benefits</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon-box ibox-border">
+                                    <div class="ibox-icon">
+                                        <i class="fa fa-bus"></i>
+                                    </div>
+                                    <h3>Transportation</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon-box ibox-border">
+                                    <div class="ibox-icon">
+                                        <i class="fa fa-mobile-phone"></i>
+                                    </div>
+                                    <h3>Gadgets &amp; Gears</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer-50 hidden-sm hidden-xs"></div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="icon-box ibox-border">
+                                    <div class="ibox-icon">
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <h3>Inner Satisfaction</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon-box ibox-border">
+                                    <div class="ibox-icon">
+                                        <i class="fa fa-plane"></i>
+                                    </div>
+                                    <h3>Travel the world</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon-box ibox-border">
+                                    <div class="ibox-icon">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <h3>401K Matching</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    	<div class="spacer-75 hidden-sm hidden-xs"></div>
+                   	</div>
+                </div>
+            </div>
+            <div class="spacer-75"></div>
+            <div class="padding-tb75 parallax parallax-light parallax1 counters" style="background-image:url(../images/1280/space.jpg)">
+            	<div class="overlay-accent"></div>
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-dollar fa-4x"></i> </div>
+                            <div class="timer" data-perc="9000"> <span class="count">1380089</span> </div>
+                            <span class="fact">Amount raised</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-heart-o fa-4x"></i> </div>
+                            <div class="timer" data-perc="96"> <span class="count">36</span> </div>
+                            <span class="fact">Causes</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-bar-chart-o fa-4x"></i> </div>
+                            <div class="timer" data-perc="1500"> <span class="count">1211</span> </div>
+                            <span class="fact">Total members</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="fact-ico"> <i class="fa fa-hand-peace-o fa-4x"></i> </div>
+                            <div class="timer" data-perc="1500"> <span class="count">61098</span> </div>
+                            <span class="fact">People Impacted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+            <div class="spacer-75"></div>
+                <div class="row">   
+                    <div class="col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="grid-item">
+                                    <h4>Healthy Living</h4>
+                                    <a href="#"><img src="../images/800/a285.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>Believe it or not, our health is the centerpiece to all of our learning. When we get the right nutrients, our brain craves knowledge. So before we can tackle other forms of literacy, we envision a world where fitness is first.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="grid-item">
+                                    <h4>Family Empowerment</h4>
+                                    <a href="#"><img src="../images/800/a310.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>It is no surprise that a happy family also means happy grades and a bright future. Thus, we not only encourage family involvement, but we build programs and tools to make sure nuclear families thrive and are honored.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="grid-item">
+                                    <h4>Literacy Automation</h4>
+                                    <a href="#"><img src="../images/800/a340.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>As we evolve, languages do, too. We create methods so people see the benefit of learning multiple languages and using advanced communication methods to streamline the transfer of information throughout the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="grid-item">
+                                    <h4>AI &amp; Aerospace </h4>
+                                    <a href="#"><img src="../images/800/a231.jpg" alt=""></a>
+                                    <div class="grid-item-content">
+                                        <p>Building new frontiers, the workforce of tomorrow will prioritize sectors such as AI, Aerospace, Robotics, and other areas that are currently just getting started. We are at the forefront of this with literacy programs for kids.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lead">While we can't predict an exact future, we do have a clear understanding that technology, aerospace, advanced health, and advanced literacy are guaranteed central focuses of our future. We also know that our future depends on a sustainable environment. Knowing this, we continue to create pedagogical methods and programs that prepare our civilization for the foundation needed of the future. We collabore with Ministers of Education, World Leaders, large Education Consortiums, and the general public to increase literacy in all the core languages of the future.</p>
+                            <div class="cta">
+                                <a href="../get-involved/give.html" class="btn btn-primary pull-right">Donate Now</a>
+                                <p>Help us Increase Literacy around the world.</p>
+                            </div>
+                            <div class="spacer-30"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-20"></div>
+                <h2>Executive Team</h2>
+                <div class="spacer-20"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="grid-item grid-staff-item">
+                            <div class="grid-item-inner">
+                                <div class="media-box"><img src="../images/600/mrhackney2.jpg" alt=""></div>
+                                <div class="grid-item-content">
+                                    <h3>Matthew Hackney</h3>
+                                    <span class="meta-data">President</span>
+                                    <ul class="social-icons-rounded social-icons-colored">
+                                        <li class="facebook"><a href="https://www.facebook.com/misterhackney"><i class="fab fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="https://www.twitter.com/misterhackney"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/misterhackney"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                    <p>Mr. Hackney sees shifts in culture, then create systems and strategies for desired societal outcomes while leading education teams in over 30 countries to innovate pedagogical methods.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="grid-item grid-staff-item">
+                            <div class="grid-item-inner">
+                                <div class="media-box"><img src="../images/600/mrraza3.jpg" alt=""></div>
+                                <div class="grid-item-content">
+                                    <h3>Zain Raza</h3>
+                                    <span class="meta-data">Vice President</span>
+                                    <ul class="social-icons-rounded social-icons-colored">
+                                        <li class="facebook"><a href="https://www.facebook.com/imdevzain"><i class="fab fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="https://twitter.com/imdevzain"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/devzain/"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                    <p>A Social Architect for over 10 years who works with Enterprises, traveling across Asia to teach children in developing nations while coaching 3rd world leaders in pedagogy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="grid-item grid-staff-item">
+                            <div class="grid-item-inner">
+                                <div class="media-box"><img src="../images/600/donna3.jpg" alt=""></div>
+                                <div class="grid-item-content">
+                                    <h3>Donna Lazarescu</h3>
+                                    <span class="meta-data">Development &amp; Operations Director</span>
+                                    <ul class="social-icons-rounded social-icons-colored">
+                                        <li class="facebook"><a href="https://www.facebook.com/pg/VictoryaBrandart/"><i class="fab fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="https://twitter.com/donnalazarescu"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/donnaagnes/"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                    <p>As a DevOps Expert &amp; Strategist, Ms. Lazarescu organizes productivity through leadership, human resource management, and creating industry workplace culture.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -647,72 +775,6 @@
       	</div>
   	</div>
   	<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a></div>
-<!-- Donate Form Modal -->
-<div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" data-backdrop="static">
-  	<div class="modal-dialog" role="document">
-    	<div class="modal-content">
-            <form action="#" method="post" id="payment-form">
-      		<div class="modal-header">
-        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        		<div class="row">
-                    <div class="col-md-6 col-sm-6 total-amount-option">
-                        <h4>Choose an amount</h4>
-                        <ul class="predefined-amount">
-                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="500">$5</label></li>
-                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="2500" checked="checked">$25</label></li>
-                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="9900">$99</label></li>
-                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="50000">$500</label></li>
-                            <li><label><input type="radio" name="total-amount" onclick="updateForm(this);" value="200000">$2000</label></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-sm-6 total-amount-option">
-                        <h4>Frequency</h4>
-                        <ul class="predefined-amount2 predefined-amount">
-                            <input class="bt-switch" type="checkbox" data-inverse="true" data-on-text="Monthly" data-off-text="One-Time" data-on-color="info" data-off-color="info" name="subscription" id="subscription">
-                        </ul>
-                    </div>
-               	</div>
-            </div>
-      		<div class="modal-body">
-       			<div class="row">
-                    <div class="col-md-6 col-sm-6 donation-form-infocol">
-                        <h4>Personal info</h4>
-                        <input type="text" class="form-control" placeholder="Full Name" name="name" id="cardholder-name">
-                        <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
-                        <input type="tel" class="form-control" placeholder="Phone Number" name="tel" id="tel">
-                        <div>
-                            <input id="membership" class="checkbox-style" name="membership" type="checkbox">
-                            <label for="membership" class="checkbox-style-1-label checkbox-small" style="font-weight:normal;">Register as a Member</label>
-                            </div>
-                    </div>
-                	<div class="col-md-6 col-sm-6 donation-form-infocol">
-                        <h4>Billing Details</h4>
-                        <div class="form-control"  id="card-element"></div>
-                        <input type="text" class="form-control" placeholder="Address" name="Address" id="address">
-       					<div class="row">
-                			<div class="col-md-8 col-sm-8 col-xs-8">
-                        		<input type="text" class="form-control" placeholder="City" name="city" id="city">
-                            </div>
-                			<div class="col-md-4 col-sm-4 col-xs-4">
-                        		<input type="text" class="form-control" placeholder="State" name="state" id="state">
-                            </div>
-                    	</div>
-                    </div>
-                 </div>
-      		</div>
-      		<div class="modal-footer text-align-center">
-                <button type="button" class="btn btn-primary" id="card-button">Make your donation now</button>
-                <div class="spacer-10"></div>
-                <div id="card-errors" role="alert" class="text-center alert-error"></div>
-                <div class="spacer-10"></div>
-                <p class="small">
-                <br>Tao Learning Institute is a Section 501(c)3 charitable organization, EIN 83-3086300.<br>All donation are deemed tax-deductible absent any limitations on deductibility applicable to a particular taxpayer.<br>No goods or services were provided in exchange for your contribution.</p>
-              </div>
-            </form>
-            <script src="https://js.stripe.com/v3/"></script>
-    	</div>
-  	</div>
-</div>
 <script src="../js/jquery-2.1.3.min.js"></script> <!-- Jquery Library Call -->
 <script src="../vendor/magnific/jquery.magnific-popup.min.js"></script> <!-- PrettyPhoto Plugin -->
 <script src="../js/ui-plugins.js"></script> <!-- UI Plugins -->
@@ -722,8 +784,5 @@
 <script src="../js/init.js"></script> <!-- All Scripts -->
 <script src="../vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
 <script src="../js/circle-progress.js"></script> <!-- Circle Progress Bars -->
-<script src="../js/client.js"></script> <!-- Krashnik Stripe Integration -->
-<script src="../js/components/bs-switches.js"></script>
-<script>jQuery(".bt-switch").bootstrapSwitch();</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const stripe = Stripe('pk_test_M4lUHJesnz3f9gWbUJzdncMV');
+const stripe = Stripe('pk_live_AT18iGVWTZZk5wOtQqlfhOm0');
 const fetchlink = 'https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==';
 
 const elements = stripe.elements();
@@ -49,7 +49,7 @@ if(subscription == false){
   } else {
   $("#card-errors").fadeOut();
   console.log("Send Payment Stringify to Server");
-  var fullbody = JSON.stringify({totalamount : totalamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: paymentMethod.id});
+  var fullbody = JSON.stringify({cardholderName: cardholderName.value, totalamount : totalamount, subscription : subscription, email : email, tel : tel, address: address, city : city, state : state, membership : membership, payment_method_id: paymentMethod.id});
   console.log(fullbody);
 
   const response = await fetch(fetchlink, {
@@ -99,6 +99,6 @@ const handleServerResponse = async (response) => {
     }
   } else {
     console.log("Payment Successful");    
-    // window.location.replace("thankyou.html?name=" + cardholderName.value) //+ "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription);
+    window.location.replace("get-involved/thankyou.html?name=" + encodeURIComponent(cardholderName.value) + "&amount=" + totalamount + "&membership=" + membership + "&subscription=" + subscription + "&email=" + email);
   }
 }
