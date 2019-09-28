@@ -1,4 +1,4 @@
-const stripe = Stripe('pk_live_AT18iGVWTZZk5wOtQqlfhOm0');
+const stripe = Stripe('pk_test_M4lUHJesnz3f9gWbUJzdncMV');
 const fetchlink = 'https://stripedonate.azurewebsites.net/api/StripeHttpTrigger?code=/xlyHNsnNnqie7yQTDf0fVgPAGaC/D259rKok9dNWRraEIX8MhX5yg==';
 
 const elements = stripe.elements();
