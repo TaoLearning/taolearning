@@ -1,7 +1,8 @@
 
 /* KRASHNIK */ 
 object{
-    pointer-events: none;
+	pointer-events: none;
+	
 }
 #loadOverlay{display: none;}
 
@@ -24,6 +25,11 @@ object{
 
 .content2{
 	padding:75px 0 0;
+	min-height:400px;
+}
+
+.content3{
+	padding:35px 0 0;
 	min-height:400px;
 }
 
