@@ -37,8 +37,6 @@
 <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
 <script src="https://js.stripe.com/v3/"></script>
 <script>
-    
-    // http://127.0.0.1:5500/get-involved/thankyou.html?name=Jo%20S&amount=500&membership=false&subscription=false&email=jo@example.org
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -46,7 +44,6 @@ function getUrlVars() {
     });
     return vars;
 }
-
 function getUrlParam(parameter, defaultvalue){
     var urlparameter = defaultvalue;
     if(window.location.href.indexOf(parameter) > -1){
@@ -54,14 +51,11 @@ function getUrlParam(parameter, defaultvalue){
         }
     return urlparameter;
 }
-
 var name = getUrlParam('name','Donor');
 var amount = getUrlParam('amount','$0');
 var subscription = getUrlParam('subscription','Undefined');
 var email = getUrlParam('email','youremail@example.org');
 var membership = getUrlParam('membership','Unedefined');
-
-
 </script>
 
 </head>
@@ -198,7 +192,7 @@ var membership = getUrlParam('membership','Unedefined');
                                                             <img src="../images/post1.jpg" alt="">
                                                         </a>
                                                 		<h5><a href="../partner/mope.html">Ministers of Education</a></h5>
-                                                		<span class="meta-data grid-item-meta">Country Partnerships</span>
+                                                		<span class="meta-data grid-item-meta">National Partnerships</span>
                                                     </li>
                                                 	<li>
                                                     	<a href="../partner/municipal.html" class="media-box">
