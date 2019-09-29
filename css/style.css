@@ -3972,26 +3972,3 @@ only screen and (                min-resolution: 2dppx) {
 		display:block;
 	}
 }
-
-/* KRASHNIK */ 
-object{
-    pointer-events: none;
-}
-#loadOverlay{display: none;}
-
-.btn-ghost.btn-light{
-  text-transform: uppercase;
-}
-
-#stories-slider .story-slider-cell{
-	/* vertical-align:top; */
-	height: auto;	
-}
-
-/* ADDED THESE TO FIX STAFF SECTION */
-.grid-staff-item-compact .grid-item-content h3{
-	font-size: 14px;
-}
-.grid-item h3{
-	letter-spacing:0px;
-}
