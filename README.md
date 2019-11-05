@@ -69,7 +69,3 @@ Tao Learning Menu
 		○ Become an Advocate
 		○ Volunteer
 		○ Register
-
-	• get-involved/give.html" class="btn btn-primary">Donate</a></div>
-	• Fundraise
-Donate
