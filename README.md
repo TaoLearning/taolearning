@@ -14,7 +14,7 @@
 * Hackney Foundation
 * Mahalo Fit
 * Tao Cottage
-* Tao Dreams
+* Instar Lab
 * Silk Yoga
 * Tao Media
 * Tao Studio
@@ -43,7 +43,7 @@ Tao Learning Menu
 			§ Sunny Hive
 			§ STEAM Hive
 			§ The Focus Hive
-			§ Tao Research Group
+			§ Instar Lab
 			§ Tao Mentor
 	• Partners
 		○ Introducing Partnerships
