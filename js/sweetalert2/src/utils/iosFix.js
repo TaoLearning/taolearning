@@ -1,7 +1,9 @@
 import * as dom from './dom/index'
 import { swalClasses } from '../utils/classes'
 
+
 // Fix iOS scrolling https://stackoverflow.com/q/39626302
+
 
 /* istanbul ignore next */
 export const iOSfix = () => {
