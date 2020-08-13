@@ -426,7 +426,6 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
    Init Functions
 ================================================== */
 $(document).ready(function(){
-	BORNTOGIVE.ContactForm();
 	BORNTOGIVE.scrollToTop();
 	BORNTOGIVE.accordion();
 	BORNTOGIVE.toggle();
