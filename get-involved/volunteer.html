@@ -482,7 +482,7 @@
                         <div class="spacer-20"></div>
                         <div class="well widget widget_volunteer_form">
                             <h3>Volunteer Inquiry</h3>
-                            <form id="volunteerForm" method="POST" action="https://prod-20.eastus.logic.azure.com:443/workflows/a8bed9230a7445338ffbbecaa103ec67/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=tz8jPn70VwbD7XM6aZw6T2gNB_sxAutBWp5I-hKv6cA">
+                            <form id="volunteerForm" method="POST" action="https://door.taolearning.org/api/form">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <input type="text" placeholder="First Name" name="firstname" class="form-control">
@@ -519,6 +519,7 @@
                                 <input type="hidden" name="test" value="off">
                                 <input type="hidden" name="owner" value="1fbe138f-30f2-e911-a972-000d3a34e213">
                                 <input type="hidden" name="token" value="">
+				<input type="hidden" name="formType" value="7">
                             </form>
                             <p class="small short">We will get back with you as soon as we can.</p>
                         </div>
