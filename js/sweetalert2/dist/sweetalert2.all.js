@@ -333,7 +333,7 @@ var focusInput = function focusInput(input) {
   input.focus(); // place cursor at end of text in text input
 
   if (input.type !== 'file') {
-    // http://stackoverflow.com/a/2345915
+    // https://stackoverflow.com/a/2345915
     var val = input.value;
     input.value = '';
     input.value = val;
@@ -1478,7 +1478,8 @@ var _Symbol = typeof Symbol === 'function' ? Symbol : function () {
 
 // WeakMap polyfill, needed for Android 4.4
 // Related issue: https://github.com/sweetalert2/sweetalert2/issues/1071
-// http://webreflection.blogspot.fi/2015/04/a-weakmap-polyfill-in-20-lines-of-code.html
+// https://webreflection.blogspot.fi/2015/04/a-weakmap-polyfill-in-20-lines-of-code.html
+
 /* istanbul ignore next */
 
 var WeakMap$1 = typeof WeakMap === 'function' ? WeakMap : function (s, dP, hOP) {
