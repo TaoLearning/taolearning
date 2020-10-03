@@ -30,16 +30,16 @@ Languages/Technologies used in the project:
 ### For developers using git
 1. First, <a href="https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo"><b>Fork</b></a> this repo.
 
-Clone the forked repo locally:
-```sh
-$ git clone your_forked_repo
-$ cd foco
-```
-If using <b>VS Code</b> project can be opened directly using command line:
-```sh
-$ code .
-```
-Else open the project in your code editor.
+2. Clone the forked repo locally:
+    ```sh
+    $ git clone your_forked_repo
+    $ cd foco
+    ```
+3. If using <b>VS Code</b> project can be opened directly using command line:
+    ```sh
+    $ code .
+    ```
+   Else open the project in your code editor.
 
 **Note: Always make a new branch before making changes.**
 
